@@ -1,0 +1,23 @@
+{
+  "name": "project_week_one",
+  "version": "0.1.0",
+  "description": "prototype from comp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbuchthal/project_week_one.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbuchthal/project_week_one/issues"
+  },
+  "homepage": "https://github.com/mbuchthal/project_week_one#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4"
+  }
+}
