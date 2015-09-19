@@ -91,39 +91,45 @@ div .skewed-container .inner-div {
 
 /* - sample -*/
 .sm-button-eclipse-border {
-  font-size: 0.8em;
   border: 0px solid #000;
   border-top-width: 2px;
   border-bottom-width: 2px;
-  padding: 0.375em 1.5em;
   border-color: aqua;
   border-top-left-radius: 0.75em 50%;
   border-top-right-radius: 0.75em 50%;
   border-bottom-right-radius: 0.75em 50%;
-  border-bottom-left-radius: 0.75em 50%; }
+  border-bottom-left-radius: 0.75em 50%;
+  padding: 0.375em 1.5em;
+  font-size: 0.8em; }
+  .sm-button-eclipse-border:hover {
+    border-color: #a9a9a9; }
 
 .med-button-eclipse-border {
   border: 0px solid #000;
   border-top-width: 3px;
   border-bottom-width: 3px;
-  padding: 0.5em 1.5em;
   border-color: aqua;
   border-top-left-radius: 1em 50%;
   border-top-right-radius: 1em 50%;
   border-bottom-right-radius: 1em 50%;
-  border-bottom-left-radius: 1em 50%; }
+  border-bottom-left-radius: 1em 50%;
+  padding: 0.5em 1.5em; }
+  .med-button-eclipse-border:hover {
+    border-color: #a9a9a9; }
 
 .lg-button-eclipse-border {
-  font-size: 1.2em;
   border: 0px solid #000;
   border-top-width: 4px;
   border-bottom-width: 4px;
-  padding: 0.75em 1.5em;
   border-color: aqua;
   border-top-left-radius: 1.5em 50%;
   border-top-right-radius: 1.5em 50%;
   border-bottom-right-radius: 1.5em 50%;
-  border-bottom-left-radius: 1.5em 50%; }
+  border-bottom-left-radius: 1.5em 50%;
+  padding: 0.75em 1.5em;
+  font-size: 1.2em; }
+  .lg-button-eclipse-border:hover {
+    border-color: #a9a9a9; }
 
 .sm-circular-eclipse-border {
   display: inline-block;
@@ -137,12 +143,16 @@ div .skewed-container .inner-div {
   -webkit-justify-content: center;
   -webkit-align-items: center;
   text-align: center;
-  width: 5em;
-  height: 5em;
-  border: 0px solid #a9a9a9;
+  border: 0px solid #000;
   border-top-width: 2px;
   border-bottom-width: 2px;
-  border-radius: 50%; }
+  width: 5em;
+  height: 5em;
+  border-color: aqua;
+  border-radius: 50%;
+  font-size: 0.8em; }
+  .sm-circular-eclipse-border:hover {
+    border-color: #a9a9a9; }
 
 .med-circular-eclipse-border {
   display: inline-block;
@@ -156,12 +166,15 @@ div .skewed-container .inner-div {
   -webkit-justify-content: center;
   -webkit-align-items: center;
   text-align: center;
-  width: 7em;
-  height: 7em;
-  border: 0px solid #a9a9a9;
+  border: 0px solid #000;
   border-top-width: 3px;
   border-bottom-width: 3px;
+  width: 7em;
+  height: 7em;
+  border-color: aqua;
   border-radius: 50%; }
+  .med-circular-eclipse-border:hover {
+    border-color: #a9a9a9; }
 
 .lg-circular-eclipse-border {
   display: inline-block;
@@ -175,12 +188,16 @@ div .skewed-container .inner-div {
   -webkit-justify-content: center;
   -webkit-align-items: center;
   text-align: center;
-  width: 10em;
-  height: 10em;
-  border: 0px solid #a9a9a9;
+  border: 0px solid #000;
   border-top-width: 4px;
   border-bottom-width: 4px;
-  border-radius: 50%; }
+  width: 10em;
+  height: 10em;
+  border-color: aqua;
+  border-radius: 50%;
+  font-size: 1.2em; }
+  .lg-circular-eclipse-border:hover {
+    border-color: #a9a9a9; }
 
 .sm-eclipse-border {
   display: inline-block;
@@ -201,7 +218,10 @@ div .skewed-container .inner-div {
   border-top-left-radius: 0.75em 50%;
   border-top-right-radius: 0.75em 50%;
   border-bottom-right-radius: 0.75em 50%;
-  border-bottom-left-radius: 0.75em 50%; }
+  border-bottom-left-radius: 0.75em 50%;
+  font-size: 0.8em; }
+  .sm-eclipse-border:hover {
+    border-color: #a9a9a9; }
 
 .med-eclipse-border {
   display: inline-block;
@@ -223,6 +243,8 @@ div .skewed-container .inner-div {
   border-top-right-radius: 1em 50%;
   border-bottom-right-radius: 1em 50%;
   border-bottom-left-radius: 1em 50%; }
+  .med-eclipse-border:hover {
+    border-color: #a9a9a9; }
 
 .lg-eclipse-border {
   display: inline-block;
@@ -243,4 +265,7 @@ div .skewed-container .inner-div {
   border-top-left-radius: 1.5em 50%;
   border-top-right-radius: 1.5em 50%;
   border-bottom-right-radius: 1.5em 50%;
-  border-bottom-left-radius: 1.5em 50%; }
+  border-bottom-left-radius: 1.5em 50%;
+  font-size: 1.2em; }
+  .lg-eclipse-border:hover {
+    border-color: #a9a9a9; }

@@ -1,14 +1,20 @@
 // border color and weight
-$border-color: aqua;
+$border-color-1: aqua;
 $border-color-2: #a9a9a9;
+$border-color-3: #fff;
+$hover-color-1: #a9a9a9;
+$hover-color-2: aqua;
+$hover-color-3: #fff;
 $heavy: 4px;
 $normal: 3px;
 $light: 2px;
 
 // sizes for CIRCULAR objects
 $small: 5em;
+$small-font: 0.8em;
 $medium: 7em;
 $large: 10em;
+$large-font: 1.2em;
 
 // sizes for OVOID objects
     // small
@@ -42,65 +48,82 @@ $lg-radius: ($lg-width - $lg-height) / 2;
   border-top-width: $weight;
   border-bottom-width: $weight;
 }
+@mixin border-look($color, $width, $height, $radius) {
+  border-color: $color;
+  border-top-left-radius: ($width / 2 - $radius) 50%;
+  border-top-right-radius: ($width / 2 - $radius) 50%;
+  border-bottom-right-radius: ($width / 2 - $radius) 50%;
+  border-bottom-left-radius: ($width / 2 - $radius) 50%;
+}
+@mixin button-hover($hover-color) {
+  &:hover {
+    border-color: $hover-color;
+  }
+}
 
 @mixin circular-eclipse-border($color, $weight, $size) {
   @include text-behavior;
+  @include border-weight($weight);
   width: $size;
   height: $size;
-  border: 0px solid $color;
-  border-top-width: $weight;
-  border-bottom-width: $weight;
+  border-color: $color;
   border-radius: 50%;
 }
 @mixin ovoid-eclipse-border ($color, $weight, $width, $height, $radius) {
   @include text-behavior;
   @include border-weight($weight);
-  border-color: $color;
-  border-top-left-radius: ($width / 2 - $radius) 50%;
-  border-top-right-radius: ($width / 2 - $radius) 50%;
-  border-bottom-right-radius: ($width / 2 - $radius) 50%;
-  border-bottom-left-radius: ($width / 2 - $radius) 50%;
+  @include border-look($color, $width, $height, $radius);
 }
 @mixin button-eclipse-border ($color, $weight, $width, $height, $radius) {
   @include border-weight($weight);
+  @include border-look($color, $width, $height, $radius);
   padding: ($height * 0.25) 1.5em;
-  border-color: $color;
-  border-top-left-radius: ($width / 2 - $radius) 50%;
-  border-top-right-radius: ($width / 2 - $radius) 50%;
-  border-bottom-right-radius: ($width / 2 - $radius) 50%;
-  border-bottom-left-radius: ($width / 2 - $radius) 50%;
 }
 
 // BUTTON CLASSES - to be applied to real button elements
 .sm-button-eclipse-border {
-  font-size: 0.8em;
-  @include button-eclipse-border($border-color, $light, $sm-width, $sm-height, $sm-radius);
+  @include button-eclipse-border($border-color-1, $light, $sm-width, $sm-height, $sm-radius);
+  @include button-hover($hover-color-1);
+  font-size: $small-font;
+  
 }
 .med-button-eclipse-border {
-  @include button-eclipse-border($border-color, $normal, $med-width, $med-height, $med-radius);
+  @include button-eclipse-border($border-color-1, $normal, $med-width, $med-height, $med-radius);
+  @include button-hover($hover-color-1);
 }
 .lg-button-eclipse-border {
-  font-size: 1.2em;
-  @include button-eclipse-border($border-color, $heavy, $lg-width, $lg-height, $lg-radius);
+  @include button-eclipse-border($border-color-1, $heavy, $lg-width, $lg-height, $lg-radius);
+  @include button-hover($hover-color-1);
+  font-size: $large-font;
 }
 
 // **CIRCULAR** MOCK BUTTON CLASSES - to be applied to <a></a> tags
 .sm-circular-eclipse-border {
-  @include circular-eclipse-border($border-color-2, $light, $small);
+  @include circular-eclipse-border($border-color-1, $light, $small);
+  @include button-hover($hover-color-1);
+  font-size: $small-font;
 }
 .med-circular-eclipse-border {
-  @include circular-eclipse-border($border-color-2, $normal, $medium);
+  @include circular-eclipse-border($border-color-1, $normal, $medium);
+  @include button-hover($hover-color-1);
 }
 .lg-circular-eclipse-border {
-  @include circular-eclipse-border($border-color-2, $heavy, $large);
+  @include circular-eclipse-border($border-color-1, $heavy, $large);
+  @include button-hover($hover-color-1);
+  font-size: $large-font;
 }
 // MOCK BUTTON CLASSES - to be applied to <a></a> tags
 .sm-eclipse-border {
-  @include ovoid-eclipse-border($border-color, $light, $sm-width, $sm-height, $sm-radius);
+  @include ovoid-eclipse-border($border-color-1, $light, $sm-width, $sm-height, $sm-radius);
+  @include button-hover($hover-color-1);
+  font-size: $small-font;
 }
 .med-eclipse-border {
-  @include ovoid-eclipse-border($border-color, $normal, $med-width, $med-height, $med-radius);
+  @include ovoid-eclipse-border($border-color-1, $normal, $med-width, $med-height, $med-radius);
+  @include button-hover($hover-color-1);
 }
 .lg-eclipse-border {
-  @include ovoid-eclipse-border($border-color, $heavy, $lg-width, $lg-height, $lg-radius);
+  @include ovoid-eclipse-border($border-color-1, $heavy, $lg-width, $lg-height, $lg-radius);
+  @include button-hover($hover-color-1);
+  font-size: $large-font;
 }
