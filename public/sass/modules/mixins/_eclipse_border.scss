@@ -1,0 +1,106 @@
+// border color and weight
+$border-color: aqua;
+$border-color-2: #a9a9a9;
+$heavy: 4px;
+$normal: 3px;
+$light: 2px;
+
+// sizes for CIRCULAR objects
+$small: 5em;
+$medium: 7em;
+$large: 10em;
+
+// sizes for OVOID objects
+    // small
+$sm-width: 5em;
+$sm-height: 1.5em;
+$sm-radius: ($sm-width - $sm-height) / 2;
+    // medium
+$med-width: 7em;
+$med-height: 2em;
+$med-radius: ($med-width - $med-height) / 2;
+    // large
+$lg-width: 10em;
+$lg-height: 3em;
+$lg-radius: ($lg-width - $lg-height) / 2;
+
+@mixin text-behavior {
+  display: inline-block;
+  display: flex;
+  display: -webkit-flex; 
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  text-align: center;
+}
+@mixin border-weight($weight) {
+  border: 0px solid #000;
+  border-top-width: $weight;
+  border-bottom-width: $weight;
+}
+
+@mixin circular-eclipse-border($color, $weight, $size) {
+  @include text-behavior;
+  width: $size;
+  height: $size;
+  border: 0px solid $color;
+  border-top-width: $weight;
+  border-bottom-width: $weight;
+  border-radius: 50%;
+}
+@mixin ovoid-eclipse-border ($color, $weight, $width, $height, $radius) {
+  @include text-behavior;
+  @include border-weight($weight);
+  border-color: $color;
+  border-top-left-radius: ($width / 2 - $radius) 50%;
+  border-top-right-radius: ($width / 2 - $radius) 50%;
+  border-bottom-right-radius: ($width / 2 - $radius) 50%;
+  border-bottom-left-radius: ($width / 2 - $radius) 50%;
+}
+@mixin button-eclipse-border ($color, $weight, $width, $height, $radius) {
+  @include border-weight($weight);
+  padding: ($height * 0.25) 1.5em;
+  border-color: $color;
+  border-top-left-radius: ($width / 2 - $radius) 50%;
+  border-top-right-radius: ($width / 2 - $radius) 50%;
+  border-bottom-right-radius: ($width / 2 - $radius) 50%;
+  border-bottom-left-radius: ($width / 2 - $radius) 50%;
+}
+
+// BUTTON CLASSES - to be applied to real button elements
+.sm-button-eclipse-border {
+  font-size: 0.8em;
+  @include button-eclipse-border($border-color, $light, $sm-width, $sm-height, $sm-radius);
+}
+.med-button-eclipse-border {
+  @include button-eclipse-border($border-color, $normal, $med-width, $med-height, $med-radius);
+}
+.lg-button-eclipse-border {
+  font-size: 1.2em;
+  @include button-eclipse-border($border-color, $heavy, $lg-width, $lg-height, $lg-radius);
+}
+
+// **CIRCULAR** MOCK BUTTON CLASSES - to be applied to <a></a> tags
+.sm-circular-eclipse-border {
+  @include circular-eclipse-border($border-color-2, $light, $small);
+}
+.med-circular-eclipse-border {
+  @include circular-eclipse-border($border-color-2, $normal, $medium);
+}
+.lg-circular-eclipse-border {
+  @include circular-eclipse-border($border-color-2, $heavy, $large);
+}
+// MOCK BUTTON CLASSES - to be applied to <a></a> tags
+.sm-eclipse-border {
+  @include ovoid-eclipse-border($border-color, $light, $sm-width, $sm-height, $sm-radius);
+}
+.med-eclipse-border {
+  @include ovoid-eclipse-border($border-color, $normal, $med-width, $med-height, $med-radius);
+}
+.lg-eclipse-border {
+  @include ovoid-eclipse-border($border-color, $heavy, $lg-width, $lg-height, $lg-radius);
+}

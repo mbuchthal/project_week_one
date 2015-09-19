@@ -15,7 +15,7 @@ div .skewed-container .inner-div {
   content: '';
   position: absolute;
   left: 0;
-  top: $top;   -- how far from top --
+  top: $top;   /* -- how far from top -- */
   width: 100%;
   height: $height; /* -- height of div -- */
   background: aqua;
