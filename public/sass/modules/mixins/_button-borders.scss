@@ -55,9 +55,10 @@ $lg-radius: ($lg-width - $lg-height) / 2;
   border-bottom-right-radius: ($width / 2 - $radius) 50%;
   border-bottom-left-radius: ($width / 2 - $radius) 50%;
 }
-@mixin button-hover($hover-color) {
+@mixin button-hover($border, $background) {
   &:hover {
-    border-color: $hover-color;
+    border-color: $border;
+    background-color: $background;
   }
 }
 
@@ -78,52 +79,4 @@ $lg-radius: ($lg-width - $lg-height) / 2;
   @include border-weight($weight);
   @include border-look($color, $width, $height, $radius);
   padding: ($height * 0.25) 1.5em;
-}
-
-// BUTTON CLASSES - to be applied to real button elements
-.sm-button-eclipse-border {
-  @include button-eclipse-border($border-color-1, $light, $sm-width, $sm-height, $sm-radius);
-  @include button-hover($hover-color-1);
-  font-size: $small-font;
-  
-}
-.med-button-eclipse-border {
-  @include button-eclipse-border($border-color-1, $normal, $med-width, $med-height, $med-radius);
-  @include button-hover($hover-color-1);
-}
-.lg-button-eclipse-border {
-  @include button-eclipse-border($border-color-1, $heavy, $lg-width, $lg-height, $lg-radius);
-  @include button-hover($hover-color-1);
-  font-size: $large-font;
-}
-
-// **CIRCULAR** MOCK BUTTON CLASSES - to be applied to <a></a> tags
-.sm-circular-eclipse-border {
-  @include circular-eclipse-border($border-color-1, $light, $small);
-  @include button-hover($hover-color-1);
-  font-size: $small-font;
-}
-.med-circular-eclipse-border {
-  @include circular-eclipse-border($border-color-1, $normal, $medium);
-  @include button-hover($hover-color-1);
-}
-.lg-circular-eclipse-border {
-  @include circular-eclipse-border($border-color-1, $heavy, $large);
-  @include button-hover($hover-color-1);
-  font-size: $large-font;
-}
-// MOCK BUTTON CLASSES - to be applied to <a></a> tags
-.sm-eclipse-border {
-  @include ovoid-eclipse-border($border-color-1, $light, $sm-width, $sm-height, $sm-radius);
-  @include button-hover($hover-color-1);
-  font-size: $small-font;
-}
-.med-eclipse-border {
-  @include ovoid-eclipse-border($border-color-1, $normal, $med-width, $med-height, $med-radius);
-  @include button-hover($hover-color-1);
-}
-.lg-eclipse-border {
-  @include ovoid-eclipse-border($border-color-1, $heavy, $lg-width, $lg-height, $lg-radius);
-  @include button-hover($hover-color-1);
-  font-size: $large-font;
 }

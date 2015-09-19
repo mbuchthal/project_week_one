@@ -102,7 +102,8 @@ div .skewed-container .inner-div {
   padding: 0.375em 1.5em;
   font-size: 0.8em; }
   .sm-button-eclipse-border:hover {
-    border-color: #a9a9a9; }
+    border-color: #a9a9a9;
+    background-color: aqua; }
 
 .med-button-eclipse-border {
   border: 0px solid #000;
@@ -115,7 +116,8 @@ div .skewed-container .inner-div {
   border-bottom-left-radius: 1em 50%;
   padding: 0.5em 1.5em; }
   .med-button-eclipse-border:hover {
-    border-color: #a9a9a9; }
+    border-color: #a9a9a9;
+    background-color: aqua; }
 
 .lg-button-eclipse-border {
   border: 0px solid #000;
@@ -129,7 +131,8 @@ div .skewed-container .inner-div {
   padding: 0.75em 1.5em;
   font-size: 1.2em; }
   .lg-button-eclipse-border:hover {
-    border-color: #a9a9a9; }
+    border-color: #a9a9a9;
+    background-color: aqua; }
 
 .sm-circular-eclipse-border {
   display: inline-block;
@@ -152,7 +155,8 @@ div .skewed-container .inner-div {
   border-radius: 50%;
   font-size: 0.8em; }
   .sm-circular-eclipse-border:hover {
-    border-color: #a9a9a9; }
+    border-color: #a9a9a9;
+    background-color: aqua; }
 
 .med-circular-eclipse-border {
   display: inline-block;
@@ -174,7 +178,8 @@ div .skewed-container .inner-div {
   border-color: aqua;
   border-radius: 50%; }
   .med-circular-eclipse-border:hover {
-    border-color: #a9a9a9; }
+    border-color: #a9a9a9;
+    background-color: aqua; }
 
 .lg-circular-eclipse-border {
   display: inline-block;
@@ -197,7 +202,8 @@ div .skewed-container .inner-div {
   border-radius: 50%;
   font-size: 1.2em; }
   .lg-circular-eclipse-border:hover {
-    border-color: #a9a9a9; }
+    border-color: #a9a9a9;
+    background-color: aqua; }
 
 .sm-eclipse-border {
   display: inline-block;
@@ -221,7 +227,8 @@ div .skewed-container .inner-div {
   border-bottom-left-radius: 0.75em 50%;
   font-size: 0.8em; }
   .sm-eclipse-border:hover {
-    border-color: #a9a9a9; }
+    border-color: #a9a9a9;
+    background-color: aqua; }
 
 .med-eclipse-border {
   display: inline-block;
@@ -244,7 +251,8 @@ div .skewed-container .inner-div {
   border-bottom-right-radius: 1em 50%;
   border-bottom-left-radius: 1em 50%; }
   .med-eclipse-border:hover {
-    border-color: #a9a9a9; }
+    border-color: #a9a9a9;
+    background-color: aqua; }
 
 .lg-eclipse-border {
   display: inline-block;
@@ -268,4 +276,5 @@ div .skewed-container .inner-div {
   border-bottom-left-radius: 1.5em 50%;
   font-size: 1.2em; }
   .lg-eclipse-border:hover {
-    border-color: #a9a9a9; }
+    border-color: #a9a9a9;
+    background-color: aqua; }
