@@ -1,0 +1,82 @@
+// border color and weight
+$border-color-1: aqua;
+$border-color-2: #a9a9a9;
+$border-color-3: #fff;
+$hover-color-1: #a9a9a9;
+$hover-color-2: aqua;
+$hover-color-3: #fff;
+$heavy: 4px;
+$normal: 3px;
+$light: 2px;
+
+// sizes for CIRCULAR objects
+$small: 5em;
+$small-font: 0.8em;
+$medium: 7em;
+$large: 10em;
+$large-font: 1.2em;
+
+// sizes for OVOID objects
+    // small
+$sm-width: 5em;
+$sm-height: 1.5em;
+$sm-radius: ($sm-width - $sm-height) / 2;
+    // medium
+$med-width: 7em;
+$med-height: 2em;
+$med-radius: ($med-width - $med-height) / 2;
+    // large
+$lg-width: 10em;
+$lg-height: 3em;
+$lg-radius: ($lg-width - $lg-height) / 2;
+
+@mixin text-behavior {
+  display: inline-block;
+  display: flex;
+  display: -webkit-flex; 
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  text-align: center;
+}
+@mixin border-weight($weight) {
+  border: 0px solid #000;
+  border-top-width: $weight;
+  border-bottom-width: $weight;
+}
+@mixin border-look($color, $width, $height, $radius) {
+  border-color: $color;
+  border-top-left-radius: ($width / 2 - $radius) 50%;
+  border-top-right-radius: ($width / 2 - $radius) 50%;
+  border-bottom-right-radius: ($width / 2 - $radius) 50%;
+  border-bottom-left-radius: ($width / 2 - $radius) 50%;
+}
+@mixin button-hover($border, $background) {
+  &:hover {
+    border-color: $border;
+    background-color: $background;
+  }
+}
+
+@mixin circular-eclipse-border($color, $weight, $size) {
+  @include text-behavior;
+  @include border-weight($weight);
+  width: $size;
+  height: $size;
+  border-color: $color;
+  border-radius: 50%;
+}
+@mixin ovoid-eclipse-border ($color, $weight, $width, $height, $radius) {
+  @include text-behavior;
+  @include border-weight($weight);
+  @include border-look($color, $width, $height, $radius);
+}
+@mixin button-eclipse-border ($color, $weight, $width, $height, $radius) {
+  @include border-weight($weight);
+  @include border-look($color, $width, $height, $radius);
+  padding: ($height * 0.25) 1.5em;
+}

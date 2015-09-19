@@ -1,0 +1,47 @@
+// BUTTON CLASSES - to be applied to real button elements
+.sm-button-eclipse-border {
+  @include button-eclipse-border($border-color-1, $light, $sm-width, $sm-height, $sm-radius);
+  @include button-hover($hover-color-1, $hover-color-2);
+  font-size: $small-font;
+  
+}
+.med-button-eclipse-border {
+  @include button-eclipse-border($border-color-1, $normal, $med-width, $med-height, $med-radius);
+  @include button-hover($hover-color-1, $hover-color-2);
+}
+.lg-button-eclipse-border {
+  @include button-eclipse-border($border-color-1, $heavy, $lg-width, $lg-height, $lg-radius);
+  @include button-hover($hover-color-1, $hover-color-2);
+  font-size: $large-font;
+}
+
+// **CIRCULAR** MOCK BUTTON CLASSES - to be applied to <a></a> tags
+.sm-circular-eclipse-border {
+  @include circular-eclipse-border($border-color-1, $light, $small);
+  @include button-hover($hover-color-1, $hover-color-2);
+  font-size: $small-font;
+}
+.med-circular-eclipse-border {
+  @include circular-eclipse-border($border-color-1, $normal, $medium);
+  @include button-hover($hover-color-1, $hover-color-2);
+}
+.lg-circular-eclipse-border {
+  @include circular-eclipse-border($border-color-1, $heavy, $large);
+  @include button-hover($hover-color-1, $hover-color-2);
+  font-size: $large-font;
+}
+// MOCK BUTTON CLASSES - to be applied to <a></a> tags
+.sm-eclipse-border {
+  @include ovoid-eclipse-border($border-color-1, $light, $sm-width, $sm-height, $sm-radius);
+  @include button-hover($hover-color-1, $hover-color-2);
+  font-size: $small-font;
+}
+.med-eclipse-border {
+  @include ovoid-eclipse-border($border-color-1, $normal, $med-width, $med-height, $med-radius);
+  @include button-hover($hover-color-1, $hover-color-2);
+}
+.lg-eclipse-border {
+  @include ovoid-eclipse-border($border-color-1, $heavy, $lg-width, $lg-height, $lg-radius);
+  @include button-hover($hover-color-1, $hover-color-2);
+  font-size: $large-font;
+}

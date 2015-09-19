@@ -29,3 +29,5 @@ Temporary Items
 node_modules/
 
 css/**/*.css
+
+playground.html
