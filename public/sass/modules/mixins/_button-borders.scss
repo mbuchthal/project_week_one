@@ -44,7 +44,7 @@ $lg-radius: ($lg-width - $lg-height) / 2;
   text-align: center;
 }
 @mixin border-weight($weight) {
-  border: 0px solid #000;
+  border: 1px solid #000;
   border-top-width: $weight;
   border-bottom-width: $weight;
 }
