@@ -91,7 +91,7 @@ div .skewed-container .inner-div {
 
 /* - sample -*/
 .sm-button-eclipse-border {
-  border: 0px solid #000;
+  border: 1px solid #000;
   border-top-width: 2px;
   border-bottom-width: 2px;
   border-color: aqua;
@@ -106,7 +106,7 @@ div .skewed-container .inner-div {
     background-color: aqua; }
 
 .med-button-eclipse-border {
-  border: 0px solid #000;
+  border: 1px solid #000;
   border-top-width: 3px;
   border-bottom-width: 3px;
   border-color: aqua;
@@ -120,7 +120,7 @@ div .skewed-container .inner-div {
     background-color: aqua; }
 
 .lg-button-eclipse-border {
-  border: 0px solid #000;
+  border: 1px solid #000;
   border-top-width: 4px;
   border-bottom-width: 4px;
   border-color: aqua;
@@ -146,7 +146,7 @@ div .skewed-container .inner-div {
   -webkit-justify-content: center;
   -webkit-align-items: center;
   text-align: center;
-  border: 0px solid #000;
+  border: 1px solid #000;
   border-top-width: 2px;
   border-bottom-width: 2px;
   width: 5em;
@@ -170,7 +170,7 @@ div .skewed-container .inner-div {
   -webkit-justify-content: center;
   -webkit-align-items: center;
   text-align: center;
-  border: 0px solid #000;
+  border: 1px solid #000;
   border-top-width: 3px;
   border-bottom-width: 3px;
   width: 7em;
@@ -193,7 +193,7 @@ div .skewed-container .inner-div {
   -webkit-justify-content: center;
   -webkit-align-items: center;
   text-align: center;
-  border: 0px solid #000;
+  border: 1px solid #000;
   border-top-width: 4px;
   border-bottom-width: 4px;
   width: 10em;
@@ -217,7 +217,7 @@ div .skewed-container .inner-div {
   -webkit-justify-content: center;
   -webkit-align-items: center;
   text-align: center;
-  border: 0px solid #000;
+  border: 1px solid #000;
   border-top-width: 2px;
   border-bottom-width: 2px;
   border-color: aqua;
@@ -242,7 +242,7 @@ div .skewed-container .inner-div {
   -webkit-justify-content: center;
   -webkit-align-items: center;
   text-align: center;
-  border: 0px solid #000;
+  border: 1px solid #000;
   border-top-width: 3px;
   border-bottom-width: 3px;
   border-color: aqua;
@@ -266,7 +266,7 @@ div .skewed-container .inner-div {
   -webkit-justify-content: center;
   -webkit-align-items: center;
   text-align: center;
-  border: 0px solid #000;
+  border: 1px solid #000;
   border-top-width: 4px;
   border-bottom-width: 4px;
   border-color: aqua;
@@ -278,3 +278,28 @@ div .skewed-container .inner-div {
   .lg-eclipse-border:hover {
     border-color: #a9a9a9;
     background-color: aqua; }
+
+.appbox-wh, .appbox-blk {
+  width: 10em; }
+  .appbox-wh img, .appbox-blk img {
+    width: 10em; }
+
+.appbox-wh {
+  background-color: #000; }
+  .appbox-wh .letters {
+    fill: #fff; }
+  .appbox-wh circle.letters {
+    fill: transparent;
+    stroke: #fff; }
+  .appbox-wh .underline {
+    fill: #05c3f9; }
+
+.appbox-blk {
+  background-color: #fff; }
+  .appbox-blk .letters {
+    fill: #000; }
+  .appbox-blk circle.letters {
+    fill: transparent;
+    stroke: #000; }
+  .appbox-blk .underline {
+    fill: #05c3f9; }

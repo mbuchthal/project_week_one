@@ -1,0 +1,42 @@
+//styles for inline APPBOX svg
+
+$light-logo-color: #fff;
+$dark-logo-color: #000;
+$theme-color: #05c3f9;
+$dark-background: #000;
+$light-background: #fff;
+
+%appbox {
+  width: 10em;
+  img {
+    width: 10em;
+  }
+}
+.appbox-wh {
+  @extend %appbox;
+  background-color: $dark-background;
+  .letters {
+    fill: $light-logo-color;
+  }
+  circle.letters {
+    fill: transparent;
+    stroke: $light-logo-color;
+  }
+  .underline {
+    fill: $theme-color;
+  }
+}
+.appbox-blk {
+  @extend %appbox;
+  background-color: $light-background;
+  .letters {
+    fill: $dark-logo-color;
+  }
+  circle.letters {
+    fill: transparent;
+    stroke: $dark-logo-color;
+  }
+  .underline {
+    fill: $theme-color;
+  }
+}

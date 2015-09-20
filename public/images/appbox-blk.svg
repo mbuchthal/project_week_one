@@ -1,0 +1,29 @@
+<!-- <?xml version="1.0" encoding="UTF-8" standalone="no"?> -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 588 150" xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <!-- A -->
+      <polygon points="80 40,80 120,100 120,100 0,80 0,0 120,25 120" stroke="none" fill="#000">
+      </polygon>
+      <!-- first P -->
+      <polygon points="108 120,128 120,128 0,108 0" stroke="none" fill="#000">
+      </polygon>
+      <path d="M126 0 h 21 c 57 0, 57 85, 0 85 h -21 v -18 h 18 c 34 0, 34 -48, 0 -48 h -18 z" stroke="none" fill="#000"/>
+      <!-- second P -->
+      <polygon points="199 120,219 120,219 0,199 0" stroke="none" fill="#000">
+      </polygon>
+      <path d="M217 0 h 21 c 57 0, 57 85, 0 85 h -21 v -18 h 18 c 34 0, 34 -48, 0 -48 h -18 z" stroke="none" fill="#000"/>
+      <!-- B -->
+      <polygon points="288 120,308 120,308 0,288 0" stroke="none" fill="#000">
+      </polygon>
+      <path d="M307 0 h 21 c 50 0, 50 50, 25 60 c 25 10, 25 60, -25 60 h -21 v -18 h 18 c 33 0, 30 -35, 0 -35 h -8 v -15 h 8 c 30 0, 38 -40, -18 -35 z" stroke="none" fill="#000"/>
+      <!-- O -->
+      <circle cx="434" cy="60" r="50" fill="transparent" stroke="#000" stroke-width="20"/>
+      <!-- X -->
+      <polygon points="500 0,523 0,588 120,565 120" stroke="none" fill="#000">
+      </polygon>
+      <polygon points="588 0,565 0,500 120,523 120" stroke="none" fill="#000">
+      </polygon>
+      <!-- underline -->
+      <polygon points="20 150, 66 85, 66 140, 588 140,588 150" stroke="none" fill="#05c3f9">
+      </polygon>
+</svg>
