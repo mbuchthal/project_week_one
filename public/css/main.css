@@ -92,8 +92,8 @@ div .skewed-container .inner-div {
 /* - sample -*/
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?6lnnx0");
-  src: url("fonts/icomoon.eot?#iefix6lnnx0") format("embedded-opentype"), url("fonts/icomoon.ttf?6lnnx0") format("truetype"), url("fonts/icomoon.woff?6lnnx0") format("woff"), url("fonts/icomoon.svg?6lnnx0#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?-qcuolu");
+  src: url("../fonts/icomoon.eot?#iefix-qcuolu") format("embedded-opentype"), url("../fonts/icomoon.ttf?-qcuolu") format("truetype"), url("../fonts/icomoon.woff?-qcuolu") format("woff"), url("../fonts/icomoon.svg?-qcuolu#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -183,7 +183,7 @@ div .skewed-container .inner-div {
 
 .social-icon-links li {
   display: inline-block;
-  background-color: green; }
+  background-color: red; }
 
 .sm-button-eclipse-border {
   border: 0px solid #000;
