@@ -92,8 +92,8 @@ div .skewed-container .inner-div {
 /* - sample -*/
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?-qcuolu");
-  src: url("../fonts/icomoon.eot?#iefix-qcuolu") format("embedded-opentype"), url("../fonts/icomoon.ttf?-qcuolu") format("truetype"), url("../fonts/icomoon.woff?-qcuolu") format("woff"), url("../fonts/icomoon.svg?-qcuolu#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?-qcuolu");
+  src: url("fonts/icomoon.eot?#iefix-qcuolu") format("embedded-opentype"), url("fonts/icomoon.ttf?-qcuolu") format("truetype"), url("fonts/icomoon.woff?-qcuolu") format("woff"), url("fonts/icomoon.svg?-qcuolu#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
