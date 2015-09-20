@@ -28,6 +28,6 @@ Temporary Items
 #Node Modules
 node_modules/
 
-css/**/*.css
+public/css/**/*.css
 
 playground.html
