@@ -1,0 +1,8 @@
+p {
+  footer & {
+    text-align: center;
+    @media screen and (min-width: 50em) {
+      text-align: left;
+    }
+  }
+}
