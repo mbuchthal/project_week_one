@@ -91,6 +91,47 @@ div .skewed-container .inner-div {
   margin-right: auto; }
 
 /* - sample -*/
+.animated-dots {
+  width: 0.5em;
+  height: 2.5em;
+  padding: 0; }
+  .animated-dots .single-dot {
+    margin-top: 0.5em;
+    float: left; }
+    .animated-dots .single-dot:first-child {
+      margin-top: 0; }
+
+.single-dot {
+  display: inline-block;
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 50%;
+  background: #e4e4e4;
+  -webkit-animation: animated-dots 4s linear infinite;
+  animation: animated-dots 4s linear infinite; }
+  .single-dot:nth-child(2) {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s; }
+  .single-dot:nth-child(3) {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s; }
+
+@-webkit-keyframes animated-dots {
+  0% {
+    background: #e4e4e4; }
+  50% {
+    background: #05c3f9; }
+  100% {
+    background: #e4e4e4; } }
+
+@keyframes animated-dots {
+  0% {
+    background: #e4e4e4; }
+  50% {
+    background: #05c3f9; }
+  100% {
+    background: #e4e4e4; } }
+
 footer {
   background-color: #232323;
   padding: 1em; }
@@ -246,7 +287,7 @@ footer p {
   padding: 1em; }
 
 .sm-button-eclipse-border {
-  border: 0px solid #000;
+  border: 1px solid #000;
   border-top-width: 2px;
   border-bottom-width: 2px;
   border-color: aqua;
@@ -261,7 +302,7 @@ footer p {
     background-color: aqua; }
 
 .med-button-eclipse-border {
-  border: 0px solid #000;
+  border: 1px solid #000;
   border-top-width: 3px;
   border-bottom-width: 3px;
   border-color: aqua;
@@ -275,7 +316,7 @@ footer p {
     background-color: aqua; }
 
 .lg-button-eclipse-border {
-  border: 0px solid #000;
+  border: 1px solid #000;
   border-top-width: 4px;
   border-bottom-width: 4px;
   border-color: aqua;
@@ -301,7 +342,7 @@ footer p {
   -webkit-justify-content: center;
   -webkit-align-items: center;
   text-align: center;
-  border: 0px solid #000;
+  border: 1px solid #000;
   border-top-width: 2px;
   border-bottom-width: 2px;
   width: 5em;
@@ -325,7 +366,7 @@ footer p {
   -webkit-justify-content: center;
   -webkit-align-items: center;
   text-align: center;
-  border: 0px solid #000;
+  border: 1px solid #000;
   border-top-width: 3px;
   border-bottom-width: 3px;
   width: 7em;
@@ -348,7 +389,7 @@ footer p {
   -webkit-justify-content: center;
   -webkit-align-items: center;
   text-align: center;
-  border: 0px solid #000;
+  border: 1px solid #000;
   border-top-width: 4px;
   border-bottom-width: 4px;
   width: 10em;
@@ -372,7 +413,7 @@ footer p {
   -webkit-justify-content: center;
   -webkit-align-items: center;
   text-align: center;
-  border: 0px solid #000;
+  border: 1px solid #000;
   border-top-width: 2px;
   border-bottom-width: 2px;
   border-color: aqua;
@@ -397,7 +438,7 @@ footer p {
   -webkit-justify-content: center;
   -webkit-align-items: center;
   text-align: center;
-  border: 0px solid #000;
+  border: 1px solid #000;
   border-top-width: 3px;
   border-bottom-width: 3px;
   border-color: aqua;
@@ -421,7 +462,7 @@ footer p {
   -webkit-justify-content: center;
   -webkit-align-items: center;
   text-align: center;
-  border: 0px solid #000;
+  border: 1px solid #000;
   border-top-width: 4px;
   border-bottom-width: 4px;
   border-color: aqua;
@@ -433,3 +474,28 @@ footer p {
   .lg-eclipse-border:hover {
     border-color: #a9a9a9;
     background-color: aqua; }
+
+.appbox-wh, .appbox-blk {
+  width: 10em; }
+  .appbox-wh img, .appbox-blk img {
+    width: 10em; }
+
+.appbox-wh {
+  background-color: #000; }
+  .appbox-wh .letters {
+    fill: #fff; }
+  .appbox-wh circle.letters {
+    fill: transparent;
+    stroke: #fff; }
+  .appbox-wh .underline {
+    fill: #05c3f9; }
+
+.appbox-blk {
+  background-color: #fff; }
+  .appbox-blk .letters {
+    fill: #000; }
+  .appbox-blk circle.letters {
+    fill: transparent;
+    stroke: #000; }
+  .appbox-blk .underline {
+    fill: #05c3f9; }
