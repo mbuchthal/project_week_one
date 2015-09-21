@@ -54,7 +54,7 @@ a {
 img, nav, figure {
   max-width: 100%; }
 
-button, input[type="button"], textarea[type="button"] {
+button, input[type="button"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -98,7 +98,7 @@ div .skewed-container .inner-div {
   .animated-dots .single-dot {
     margin-top: 0.5em;
     float: left; }
-    .animated-dots .single-dot:first-child {
+    .animated-dots .single-dot:first-child, .animated-dots form.fullform input.single-dot:nth-child(2), form.fullform .animated-dots input.single-dot:nth-child(2) {
       margin-top: 0; }
 
 .single-dot {
@@ -507,30 +507,33 @@ footer p {
   border: 3px solid #05c3f9;
   overflow: hidden; }
 
-input, textarea {
+input {
   box-sizing: border-box;
   border: none;
   padding: 0; }
-  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  input::-webkit-input-placeholder {
     color: #bbb;
-    font-size: 1.2em;
     line-height: 1; }
-  input:-moz-placeholder, textarea:-moz-placeholder {
+  input:-moz-placeholder {
     /* Firefox 18- */ }
-  input::-moz-placeholder, textarea::-moz-placeholder {
+  input::-moz-placeholder {
     /* Firefox 19+ */ }
-  .quickform input, .quickform textarea {
+  .quickform input {
     padding-bottom: 0.5em;
-    height: 2em;
+    height: 3em;
     width: 60%; }
-  .fullform input, .fullform textarea {
+  .fullform input {
     padding-bottom: 0.5em;
-    padding-right: 0.5em;
-    border-bottom: 1px solid #bbb;
-    height: 3em; }
+    height: 3em;
+    border-bottom: 1px solid #bbb; }
 
 textarea {
-  padding: 0; }
+  box-sizing: border-box;
+  padding: 0.5em 0 0 0;
+  border: none;
+  border-bottom: 1px solid #bbb;
+  font-size: 0.7em;
+  color: #bbb; }
 
 label {
   color: #bbb; }
@@ -545,21 +548,35 @@ form {
     border-bottom: 1px solid #bbb; }
     form.quickform legend {
       margin-bottom: 1em; }
-    form.quickform input, form.quickform textarea {
+    form.quickform input {
       margin-bottom: 5px; }
     form.quickform button {
       float: right;
       margin-top: 0.1em; }
-  form.fullform input, form.fullform textarea {
-    margin-bottom: 1em;
-    width: 50%;
-    float: left; }
+  form.fullform label {
+    font-size: 1em; }
+  form.fullform input:first-child, form.fullform input:nth-child(2) {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em; }
+    @media screen and (min-width: 50em) {
+      form.fullform input:first-child, form.fullform input:nth-child(2) {
+        margin-right: 0.5%;
+        margin-bottom: 3em;
+        width: 49.5%;
+        float: left; } }
+  form.fullform input:nth-child(2) {
+    margin-bottom: 2em; }
+    @media screen and (min-width: 50em) {
+      form.fullform input:nth-child(2) {
+        margin-left: 0.5%;
+        margin-right: 0; } }
   form.fullform label {
     display: block;
     clear: left; }
   form.fullform textarea {
     display: block;
     width: 100%;
-    margin-bottom: 1em; }
+    margin-bottom: 2em; }
   form.fullform button {
     float: left; }

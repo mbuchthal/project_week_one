@@ -4,7 +4,6 @@ input {
   padding: 0;
   &::-webkit-input-placeholder {
     color: #bbb;
-    font-size: 1.2em;
     line-height: 1;
   }
   &:-moz-placeholder { /* Firefox 18- */
@@ -15,13 +14,12 @@ input {
     @extend -webkit-input-placeholder }
   .quickform & {
     padding-bottom: 0.5em;
-    height: 2em;
+    height: 3em;
     width: 60%;
   }
   .fullform & {
     padding-bottom: 0.5em;
-    padding-right: 0.5em;
-    border-bottom: 1px solid #bbb;
     height: 3em;
+    border-bottom: 1px solid #bbb;
   }
 }
