@@ -7,11 +7,19 @@ li {
   .features & {
     display: inline-block;
     width: 100%;
-    div, span {
+    span {
       margin: 0 auto;
     }
     h3 {
       text-align: center;
+      margin: 0.5em;
+    }
+    p {
+      margin: 0.5em;
+    }
+    &:hover {
+      color: red;
+      background: green;
     }
   }
 }
