@@ -54,7 +54,7 @@ a {
 img, nav, figure {
   max-width: 100%; }
 
-button, input[type="button"] {
+button, input[type="button"], textarea[type="button"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -175,8 +175,7 @@ footer p {
   text-transform: none;
   line-height: 1;
   /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -webkit-font-smoothing: antialiased; }
 
 .icon-box:before {
   content: ""; }
@@ -507,3 +506,60 @@ footer p {
   border-radius: 50%;
   border: 3px solid #05c3f9;
   overflow: hidden; }
+
+input, textarea {
+  box-sizing: border-box;
+  border: none;
+  padding: 0; }
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #bbb;
+    font-size: 1.2em;
+    line-height: 1; }
+  input:-moz-placeholder, textarea:-moz-placeholder {
+    /* Firefox 18- */ }
+  input::-moz-placeholder, textarea::-moz-placeholder {
+    /* Firefox 19+ */ }
+  .quickform input, .quickform textarea {
+    padding-bottom: 0.5em;
+    height: 2em;
+    width: 60%; }
+  .fullform input, .fullform textarea {
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
+    border-bottom: 1px solid #bbb;
+    height: 3em; }
+
+textarea {
+  padding: 0; }
+
+label {
+  color: #bbb; }
+
+legend {
+  color: #000; }
+
+form {
+  margin: 2em;
+  font-family: Roboto, sans-serif; }
+  form.quickform {
+    border-bottom: 1px solid #bbb; }
+    form.quickform legend {
+      margin-bottom: 1em; }
+    form.quickform input, form.quickform textarea {
+      margin-bottom: 5px; }
+    form.quickform button {
+      float: right;
+      margin-top: 0.1em; }
+  form.fullform input, form.fullform textarea {
+    margin-bottom: 1em;
+    width: 50%;
+    float: left; }
+  form.fullform label {
+    display: block;
+    clear: left; }
+  form.fullform textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em; }
+  form.fullform button {
+    float: left; }
