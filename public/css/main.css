@@ -222,10 +222,6 @@ div .skewed-container .inner-div {
 .icon-dribbble:before {
   content: ""; }
 
-footer img {
-  width: 20px;
-  height: 20px; }
-
 .sm-button-eclipse-border {
   border: 1px solid #000;
   border-top-width: 2px;
@@ -447,3 +443,46 @@ footer img {
   border-radius: 50%;
   border: 3px solid #05c3f9;
   overflow: hidden; }
+
+footer p {
+  text-align: center; }
+  @media screen and (min-width: 50em) {
+    footer p {
+      text-align: left; } }
+
+.social-icon-links img {
+  width: 1em;
+  height: 1em;
+  color: red; }
+
+.social-icon-links li {
+  padding: 1em;
+  display: inline-block;
+  font-size: 1em; }
+
+ul.social-icon-links {
+  text-align: center; }
+  @media screen and (min-width: 50em) {
+    ul.social-icon-links {
+      text-align: right; } }
+
+@media screen and (min-width: 50em) {
+  footer {
+    height: 5em;
+    padding-left: 5em;
+    padding-right: 5em; } }
+
+ul.social-icon-links footer {
+  margin: 0 auto; }
+  @media screen and (min-width: 50em) {
+    ul.social-icon-links footer {
+      float: right;
+      display: inline; } }
+
+footer p {
+  margin: 0 auto; }
+  @media screen and (min-width: 50em) {
+    footer p {
+      float: left;
+      display: inline;
+      margin-top: 1em; } }

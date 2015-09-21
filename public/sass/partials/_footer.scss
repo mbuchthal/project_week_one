@@ -1,0 +1,27 @@
+footer {
+  @media screen and (min-width: 50em) {
+    height: 5em;
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  ul.social-icon-links & {
+    margin: 0 auto;
+    @media screen and (min-width: 50em) {
+      float: right;
+      display: inline;
+    }
+  }
+  p {
+    margin: 0 auto;
+    @media screen and (min-width: 50em) {
+      float: left;
+      display: inline;
+      margin-top: 1em;
+    }
+  }
+}
+
+
+
+
+
