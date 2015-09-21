@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)*/
@@ -90,6 +91,33 @@ div .skewed-container .inner-div {
   margin-right: auto; }
 
 /* - sample -*/
+footer {
+  background-color: #232323;
+  padding: 1em; }
+  @media screen and (min-width: 50em) {
+    footer {
+      height: 5em;
+      padding-left: 5em;
+      padding-right: 5em; } }
+  @media screen and (min-width: 50em) {
+    footer ul {
+      float: right;
+      display: inline; } }
+  footer p {
+    margin: 0 auto; }
+    @media screen and (min-width: 50em) {
+      footer p {
+        float: left;
+        display: inline;
+        margin-top: 1em; } }
+
+footer p {
+  text-align: center;
+  color: #969696; }
+  @media screen and (min-width: 50em) {
+    footer p {
+      text-align: left; } }
+
 @font-face {
   font-family: 'icomoon';
   src: url("fonts/icomoon.eot?-qcuolu");
@@ -97,7 +125,7 @@ div .skewed-container .inner-div {
   font-weight: normal;
   font-style: normal; }
 
-[class^="icon-"], [class*=" icon-"] {
+.icon-box:before, .icon-flask:before, .icon-phone:before, .icon-mail:before, .icon-location:before, .icon-display:before, .icon-laptop:before, .icon-forward:before, .icon-reply:before, .icon-bubble:before, .icon-quotes:before, .icon-search:before, .icon-gear:before, .icon-mug:before, .icon-plane:before, .icon-flag:before, .icon-play:before, .icon-apple:before, .icon-android:before, .icon-facebook:before, .icon-twitter:before, .icon-google:before, .icon-pinterest:before, .icon-dribbble:before {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -110,80 +138,112 @@ div .skewed-container .inner-div {
   -moz-osx-font-smoothing: grayscale; }
 
 .icon-box:before {
-  content: "\e600"; }
+  content: ""; }
 
 .icon-flask:before {
-  content: "\e601"; }
+  content: ""; }
 
 .icon-phone:before {
-  content: "\e603"; }
+  content: ""; }
 
 .icon-mail:before {
-  content: "\e604"; }
+  content: ""; }
 
 .icon-location:before {
-  content: "\e605"; }
+  content: ""; }
 
 .icon-display:before {
-  content: "\e607"; }
+  content: ""; }
 
 .icon-laptop:before {
-  content: "\e606"; }
+  content: ""; }
 
 .icon-forward:before {
-  content: "\e609"; }
+  content: ""; }
 
 .icon-reply:before {
-  content: "\e60a"; }
+  content: ""; }
 
 .icon-bubble:before {
-  content: "\e60b"; }
+  content: ""; }
 
 .icon-quotes:before {
-  content: "\e60c"; }
+  content: ""; }
 
 .icon-search:before {
-  content: "\e617"; }
+  content: ""; }
 
 .icon-gear:before {
-  content: "\e60d"; }
+  content: ""; }
 
 .icon-mug:before {
-  content: "\e60e"; }
+  content: ""; }
 
 .icon-plane:before {
-  content: "\e60f"; }
+  content: ""; }
 
 .icon-flag:before {
-  content: "\e610"; }
+  content: ""; }
 
 .icon-play:before {
-  content: "\e611"; }
-
-.icon-google:before {
-  content: "\e612"; }
-
-.icon-facebook:before {
-  content: "\e613"; }
-
-.icon-twitter:before {
-  content: "\e602"; }
-
-.icon-dribbble:before {
-  content: "\e614"; }
+  content: ""; }
 
 .icon-apple:before {
-  content: "\e608"; }
+  content: ""; }
 
 .icon-android:before {
-  content: "\e615"; }
+  content: ""; }
+
+.icon-facebook:before {
+  content: ""; }
+
+.icon-twitter:before {
+  content: ""; }
+
+.icon-google:before {
+  content: ""; }
 
 .icon-pinterest:before {
-  content: "\e616"; }
+  content: ""; }
+
+.icon-dribbble:before {
+  content: ""; }
+
+.icon-facebook:before {
+  color: #969696;
+  background-color: #232323;
+  border-radius: 50%; }
+
+.icon-twitter:before {
+  color: #969696;
+  background-color: #232323;
+  border-radius: 50%; }
+
+.icon-google:before {
+  color: #969696;
+  background-color: #232323;
+  border-radius: 50%; }
+
+.icon-pinterest:before {
+  color: #969696;
+  background-color: #232323;
+  border-radius: 50%; }
+
+.icon-dribbble:before {
+  color: #969696;
+  background-color: #232323;
+  border-radius: 50%; }
+
+.social-icon-links {
+  text-align: center; }
+  @media screen and (min-width: 50em) {
+    .social-icon-links {
+      text-align: right; } }
 
 .social-icon-links li {
   display: inline-block;
-  background-color: red; }
+  font-size: 1em;
+  padding: 1em; }
 
 .sm-button-eclipse-border {
   border: 0px solid #000;

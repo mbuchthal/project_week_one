@@ -1,6 +1,14 @@
 .social-icon-links {
-  li {
+  text-align: center;
+  @media screen and (min-width: 50em) {
+    text-align: right;
+  }
+}
+
+li {
+  .social-icon-links & {
     display: inline-block;
-    background-color: red;
+    font-size: 1em;
+    padding: 1em;
   }
 }
