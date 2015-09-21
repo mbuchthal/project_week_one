@@ -98,7 +98,7 @@ div .skewed-container .inner-div {
   .animated-dots .single-dot {
     margin-top: 0.5em;
     float: left; }
-    .animated-dots .single-dot:first-child {
+    .animated-dots .single-dot:first-child, .animated-dots form.fullform input.single-dot:nth-child(2), form.fullform .animated-dots input.single-dot:nth-child(2) {
       margin-top: 0; }
 
 .single-dot {
@@ -444,6 +444,81 @@ div .skewed-container .inner-div {
   border: 3px solid #05c3f9;
   overflow: hidden; }
 
+<<<<<<< HEAD
+input {
+  box-sizing: border-box;
+  border: none;
+  padding: 0; }
+  input::-webkit-input-placeholder {
+    color: #bbb;
+    line-height: 1; }
+  input:-moz-placeholder {
+    /* Firefox 18- */ }
+  input::-moz-placeholder {
+    /* Firefox 19+ */ }
+  .quickform input {
+    padding-bottom: 0.5em;
+    height: 3em;
+    width: 60%; }
+  .fullform input {
+    padding-bottom: 0.5em;
+    height: 3em;
+    border-bottom: 1px solid #bbb; }
+
+textarea {
+  box-sizing: border-box;
+  padding: 0.5em 0 0 0;
+  border: none;
+  border-bottom: 1px solid #bbb;
+  font-size: 0.7em;
+  color: #bbb; }
+
+label {
+  color: #bbb; }
+
+legend {
+  color: #000; }
+
+form {
+  margin: 2em;
+  font-family: Roboto, sans-serif; }
+  form.quickform {
+    border-bottom: 1px solid #bbb; }
+    form.quickform legend {
+      margin-bottom: 1em; }
+    form.quickform input {
+      margin-bottom: 5px; }
+    form.quickform button {
+      float: right;
+      margin-top: 0.1em; }
+  form.fullform label {
+    font-size: 1em; }
+  form.fullform input:first-child, form.fullform input:nth-child(2) {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em; }
+    @media screen and (min-width: 50em) {
+      form.fullform input:first-child, form.fullform input:nth-child(2) {
+        margin-right: 0.5%;
+        margin-bottom: 3em;
+        width: 49.5%;
+        float: left; } }
+  form.fullform input:nth-child(2) {
+    margin-bottom: 2em; }
+    @media screen and (min-width: 50em) {
+      form.fullform input:nth-child(2) {
+        margin-left: 0.5%;
+        margin-right: 0; } }
+  form.fullform label {
+    display: block;
+    clear: left; }
+  form.fullform textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 2em; }
+  form.fullform button {
+    float: left; }
+=======
 footer p {
   text-align: center; }
   @media screen and (min-width: 50em) {
@@ -486,3 +561,4 @@ footer p {
       float: left;
       display: inline;
       margin-top: 1em; } }
+>>>>>>> master

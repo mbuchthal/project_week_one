@@ -1,0 +1,25 @@
+input {
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  &::-webkit-input-placeholder {
+    color: #bbb;
+    line-height: 1;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    @extend -webkit-input-placeholder }
+  &::-moz-placeholder {  /* Firefox 19+ */
+    @extend -webkit-input-placeholder }
+  &:-ms-input-placeholder {  
+    @extend -webkit-input-placeholder }
+  .quickform & {
+    padding-bottom: 0.5em;
+    height: 3em;
+    width: 60%;
+  }
+  .fullform & {
+    padding-bottom: 0.5em;
+    height: 3em;
+    border-bottom: 1px solid #bbb;
+  }
+}

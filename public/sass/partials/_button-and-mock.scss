@@ -3,7 +3,6 @@
   @include button-eclipse-border($border-color-1, $light, $sm-width, $sm-height, $sm-radius);
   @include button-hover($hover-color-1, $hover-color-2);
   font-size: $small-font;
-  
 }
 .med-button-eclipse-border {
   @include button-eclipse-border($border-color-1, $normal, $med-width, $med-height, $med-radius);
