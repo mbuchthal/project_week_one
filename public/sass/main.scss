@@ -6,9 +6,9 @@
 @import "modules/mixins/button-borders";
 @import "modules/animated-dots";
 
-@import "modules/footer";
 @import "modules/icon-styles";
 @import "modules/social-icon-links";
+@import "modules/colors";
 
 // Partials
 
@@ -20,6 +20,14 @@
 @import "partials/label";
 @import "partials/legend";
 @import "partials/form";
+@import "partials/typography";
+
+@import "partials/paragraphs";
+@import "partials/images";
+@import "partials/list-items";
+@import "partials/unordered-list";
+@import "partials/footer";
+
 
 // Third Party
 
