@@ -100,7 +100,7 @@ footer {
       padding-left: 5em;
       padding-right: 5em; } }
   @media screen and (min-width: 50em) {
-    footer ul {
+    .social-icon-links footer {
       float: right;
       display: inline; } }
   footer p {
