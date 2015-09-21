@@ -33,7 +33,7 @@ $lg-radius: ($lg-width - $lg-height) / 2;
 @mixin text-behavior {
   display: inline-block;
   display: flex;
-  display: -webkit-flex; 
+  display: -webkit-flex;
   flex-direction: column;
   -webkit-flex-direction: column;
   justify-content: center;
