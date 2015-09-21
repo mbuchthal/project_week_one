@@ -29,38 +29,33 @@ $icons: (box "\e600") (flask "\e601") (phone "\e603") (mail "\e604") (location "
     @extend %icon-fonts;
   }
 }
-// Footer Icons
+// ----- Footer Icons ------ //
 .icon-facebook:before {
   // color: rgba(150,150,150,1);
   // background-color: rgba(35,35,35,1);
-  // border-radius: 50%;
 }
 .icon-twitter:before {
   // color: rgba(150,150,150,1);
   // background-color: rgba(35,35,35,1);
-  // border-radius: 50%;
 }
 .icon-google:before {
   // color: rgba(150,150,150,1);
   // background-color: rgba(35,35,35,1);
-  // border-radius: 50%;
 }
 .icon-pinterest:before {
   // color: rgba(150,150,150,1);
   // background-color: rgba(35,35,35,1);
-  // border-radius: 50%;
 }
 .icon-dribbble:before {
   // color: rgba(150,150,150,1);
   // background-color: rgba(35,35,35,1);
-  // border-radius: 50%;
 }
 
-// // Top search box
+// // ------ Top search box ----- //
 // .icon-search:before {
 //   content: "\e617";
 // }
-// // Download buttons
+// // ------ Download buttons ------ //
 // .icon-play:before {
 //   content: "\e611";
 // }
@@ -70,7 +65,7 @@ $icons: (box "\e600") (flask "\e601") (phone "\e603") (mail "\e604") (location "
 // .icon-reply:before {
 //   content: "\e60a";
 // }
-// // Some Amazing Features
+// // ------ Some Amazing Features -----//
 // .icon-laptop:before {
 //   content: "\e606";
 // }
