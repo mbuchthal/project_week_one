@@ -455,16 +455,69 @@ footer p {
   height: 1em;
   color: red; }
 
-.social-icon-links li {
-  padding: 1em;
-  display: inline-block;
-  font-size: 1em; }
+li {
+  text-align: center; }
+  .social-icon-links li {
+    padding: 1em;
+    display: inline-block;
+    font-size: 1em; }
+  li.pricing-list-item {
+    border: 1px solid lightgray;
+    width: 20em;
+    list-style: none;
+    position: relative;
+    margin: 0 1em; }
+    li.pricing-list-item > span {
+      position: absolute;
+      margin: 0 6.5em;
+      background-color: white; }
+      li.pricing-list-item > span > .price {
+        font-size: x-large; }
+      li.pricing-list-item > span > .permonth {
+        font-size: .8em; }
+    li.pricing-list-item li {
+      list-style: none;
+      line-height: 2; }
+    li.pricing-list-item a {
+      width: 8em;
+      margin: 2.5em 6em 2em;
+      padding: .5em 0; }
+    li.pricing-list-item h3 {
+      font-size: 1.25em;
+      margin: 2em 0 0 0;
+      font-weight: 700;
+      padding-bottom: 2.5em; }
 
 ul.social-icon-links {
   text-align: center; }
   @media screen and (min-width: 50em) {
     ul.social-icon-links {
       text-align: right; } }
+
+ul.pricing-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center; }
+
+ul.pricing-features {
+  border-top: 1px solid lightgray;
+  margin-top: 3.5em; }
+  ul.pricing-features :first-child {
+    margin-top: 5.5em; }
 
 @media screen and (min-width: 50em) {
   footer {
