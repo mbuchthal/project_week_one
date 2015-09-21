@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'icomoon';
+  src:url('fonts/icomoon.eot?-qcuolu');
+  src:url('fonts/icomoon.eot?#iefix-qcuolu') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?-qcuolu') format('truetype'),
+    url('fonts/icomoon.woff?-qcuolu') format('woff'),
+    url('fonts/icomoon.svg?-qcuolu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+%icon-fonts {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$icons: (box "\e600") (flask "\e601") (phone "\e603") (mail "\e604") (location "\e605") (display "\e607") (laptop "\e606") (forward "\e609") (reply "\e60a") (bubble "\e60b") (quotes "\e60c") (search "\e617") (gear "\e60d") (mug "\e60e") (plane "\e60f") (flag "\e610") (play "\e611") (apple "\e608") (android "\e615") (facebook "\e613") (twitter "\e602") (google "\e612") (pinterest "\e616") (dribbble "\e614");
+
+@each $icon in $icons {
+  .icon-#{nth($icon, 1)}:before {
+    content: nth($icon, 2);
+    @extend %icon-fonts;
+  }
+}
+// Footer Icons
+.icon-facebook:before {
+  color: rgba(150,150,150,1);
+  background-color: rgba(35,35,35,1);
+  border-radius: 50%;
+}
+.icon-twitter:before {
+  color: rgba(150,150,150,1);
+  background-color: rgba(35,35,35,1);
+  border-radius: 50%;
+}
+.icon-google:before {
+  color: rgba(150,150,150,1);
+  background-color: rgba(35,35,35,1);
+  border-radius: 50%;
+}
+.icon-pinterest:before {
+  color: rgba(150,150,150,1);
+  background-color: rgba(35,35,35,1);
+  border-radius: 50%;
+}
+.icon-dribbble:before {
+  color: rgba(150,150,150,1);
+  background-color: rgba(35,35,35,1);
+  border-radius: 50%;
+}
+
+// // Top search box
+// .icon-search:before {
+//   content: "\e617";
+// }
+// // Download buttons
+// .icon-play:before {
+//   content: "\e611";
+// }
+// .icon-apple:before {
+//   content: "\e608";
+// }
+// .icon-reply:before {
+//   content: "\e60a";
+// }
+// // Some Amazing Features
+// .icon-laptop:before {
+//   content: "\e606";
+// }
+// .icon-flask:before {
+//   content: "\e601";
+// }
+// .icon-plane:before {
+//   content: "\e60f";
+// }
+// .icon-gear:before {
+//   content: "\e60d";
+// }
+// // Live conference support available
+// .icon-forward:before {
+//   content: "\e609";
+// }
+// .icon-android:before {
+//   content: "\e615";
+// }
+// // Why Choose AppBox
+// .icon-box:before {
+//   content: "\e600";
+// }
+// .icon-display:before {
+//   content: "\e607";
+// }
+// .icon-flag:before {
+//   content: "\e610";
+// }
+// .icon-bubble:before {
+//   content: "\e60b";
+// }
+// .icon-mug:before {
+//   content: "\e60e";
+// }
+// // App Reviews
+// .icon-quotes:before {
+//   content: "\e60c";
+// }
+// // App Support
+// .icon-location:before {
+//   content: "\e605";
+// }
+// .icon-phone:before {
+//   content: "\e603";
+// }
+// .icon-mail:before {
+//   content: "\e604";
+// }
+
+
+
+
