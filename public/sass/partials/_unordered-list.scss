@@ -5,6 +5,12 @@ ul {
       text-align: right;
     }
   }
+  &.features {
+    li {
+      margin: 1em auto;
+    }
+  }
+
   &.pricing-list {
     @include flexbox;
   }
