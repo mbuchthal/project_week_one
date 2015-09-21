@@ -1,0 +1,31 @@
+// these move into a Typography or Font file
+h1 {
+  padding-bottom: 1em;  // REQUIRED for accent bar do not remove
+  position: relative;   // REQUIRED for accent bar do not remove
+  &.center-align { //this is purely for sample purposes!
+    text-align: center;
+  }
+  .accent-bar-L {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .accent-bar-C {
+    position: absolute;
+    bottom: 0;
+    left: 50% - 3%;
+  }
+}
+
+// these stay here
+%accent-bar {
+  background-color: black;
+  height: 0.1em;
+  width: 6%;
+}
+.accent-bar-L {
+  @extend %accent-bar;
+}
+.accent-bar-C {
+  @extend %accent-bar;
+}
