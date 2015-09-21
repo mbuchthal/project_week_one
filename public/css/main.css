@@ -499,3 +499,11 @@ footer p {
     stroke: #000; }
   .appbox-blk .underline {
     fill: #05c3f9; }
+
+.circular-frame {
+  display: block;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  border: 3px solid #05c3f9;
+  overflow: hidden; }
