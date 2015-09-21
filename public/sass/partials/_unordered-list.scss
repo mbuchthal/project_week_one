@@ -5,10 +5,22 @@ ul {
       text-align: right;
     }
   }
+<<<<<<< HEAD
   &.features {
     li {
       margin: 1em auto;
     }
 
+=======
+  &.pricing-list {
+    @include flexbox;
+  }
+  &.pricing-features {
+    border-top: 1px solid lightgray;
+    margin-top: 3.5em;
+    :first-child {
+      margin-top: 5.5em;
+    }
+>>>>>>> master
   }
 }

@@ -4,6 +4,7 @@
 
 @import "modules/mixins/skewed_div";
 @import "modules/mixins/button-borders";
+@import "modules/mixins/flex-box";
 @import "modules/animated-dots";
 
 @import "modules/icon-styles";
@@ -11,6 +12,7 @@
 
 // Partials
 
+@import "partials/accent-bar";
 @import "partials/button-and-mock";
 @import "partials/appbox";
 @import "partials/circular-images";

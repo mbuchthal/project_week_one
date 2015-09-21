@@ -1,9 +1,11 @@
 li {
+  text-align: center;
   .social-icon-links & {
     padding: 1em;
     display: inline-block;
     font-size: 1em;
   }
+<<<<<<< HEAD
   .features & {
     display: inline-block;
     width: 100%;
@@ -20,6 +22,39 @@ li {
     &:hover {
       color: red;
       background: green;
+=======
+  &.pricing-list-item {
+    border: 1px solid lightgray;
+    width: 20em;
+    list-style: none;
+    position: relative;
+    margin: 0 1em;
+    > span {
+      position: absolute;
+      margin: 0 6.5em;
+      background-color: white;
+      > .price {
+        font-size: x-large;
+      }
+      > .permonth {
+        font-size: .8em;
+      }
+    }
+    & li {
+      list-style: none;
+      line-height: 2;
+    }
+    a {
+      width: 8em;
+      margin: 2.5em 6em 2em;
+      padding: .5em 0;
+    }
+    h3 {
+      font-size: 1.25em;
+      margin: 2em 0 0 0;
+      font-weight: 700;
+      padding-bottom: 2.5em;
+>>>>>>> master
     }
   }
 }
