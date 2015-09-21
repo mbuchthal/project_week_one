@@ -4,4 +4,14 @@ li {
     display: inline-block;
     font-size: 1em;
   }
+  .features & {
+    display: inline-block;
+    width: 100%;
+    div, span {
+      margin: 0 auto;
+    }
+    h3 {
+      text-align: center;
+    }
+  }
 }
