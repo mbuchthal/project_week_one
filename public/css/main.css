@@ -175,8 +175,7 @@ footer p {
   text-transform: none;
   line-height: 1;
   /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -webkit-font-smoothing: antialiased; }
 
 .icon-box:before {
   content: ""; }
