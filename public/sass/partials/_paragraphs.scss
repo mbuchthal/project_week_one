@@ -1,3 +1,13 @@
+a {
+  .live-support & {
+    font: $small-button-link-font;
+    background-color: $color-link-button-background;
+    width: 5em;
+    &:hover {
+      background-color: $color-link-button-background-h;
+    }
+  }
+}
 h1 {
   .amazing-features & {
     text-align: center;
