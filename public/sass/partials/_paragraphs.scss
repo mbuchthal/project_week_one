@@ -1,7 +1,24 @@
+h1 {
+  .amazing-features & {
+    text-align: center;
+  }
+}
+
 h2 {
   .why-choose & {
     text-align: center;
     font-size: 150%;
+  }
+  .amazing-features & {
+    color: $color-text-light;
+    font: $head-big-medium-font;
+  }
+
+}
+h3 {
+  .features & {
+    font: $head-small-bold-font;
+    text-align: center;
   }
 }
 h4 {
@@ -34,5 +51,12 @@ p {
   }
   .features & {
     text-align: center;
+    font: $text-light-font;
+    color: $color-text-dark;
+  }
+  .live-support & {
+    text-align: left;
+    font: $text-light-font;
+    color: $color-text-light;
   }
 }
