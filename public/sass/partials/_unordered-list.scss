@@ -7,7 +7,6 @@ ul {
   }
   &.features {
     @include flexbox;
-    background-color: $color-background-lightGray;
     li {
       margin: 1em;
     }

@@ -1,6 +1,9 @@
 h1 {
   .amazing-features & {
     text-align: center;
+    font: $head-big-bold-font;
+    color: $color-text-dark;
+    padding-top: 1em;
   }
 }
 
@@ -9,11 +12,10 @@ h2 {
     text-align: center;
     font-size: 150%;
   }
-  .amazing-features & {
+  .live-support & {
     color: $color-text-light;
     font: $head-big-medium-font;
   }
-
 }
 h3 {
   .features & {

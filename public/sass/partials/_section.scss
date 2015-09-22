@@ -11,11 +11,21 @@
 }
 
 .amazing-features {
+  background-color: $color-background-lightGray;
+
   div.live-support {
+    padding: 2em;
     background-color: $color-background-blue;
+    h2 {
+      margin-bottom: 1em;
+    }
+    p {
+      margin-bottom: 2em;
+    }
     aside {
       color: $color-text-light;
       font: $text-bold-font;
     }
+
   }
 }
