@@ -46,9 +46,10 @@ li {
   }
 
 /*-- Design Pricing List --*/
+
   .features & {
-    display: inline-block;
-    width: 100%;
+    @include flex_item;
+    width: 12em;
     span {
       margin: 0 auto;
     }
@@ -60,20 +61,22 @@ li {
       margin: 0.5em;
     }
     &:hover {
-      color: red;
-      background: green;
+			color: $color-icon-h;
+			background: $color-icon-background-h;
     }
   }
+
   &.pricing-list-item {
-    border: 1px solid lightgray;
+		border: 1px solid $color-border;
     width: 20em;
     list-style: none;
     position: relative;
     margin: 0 1em;
     margin-bottom: 1em;
+    text-align: center;
     &:hover {
-      background-color: $color-8;
-      box-shadow: 0 0 8px 8px $color-8;
+			background-color: $color-background-price-h;
+			box-shadow: 0 0 8px 8px $color-background-price-h;
       > h3 {
         background-color: $color-2;
         color: $color-3;
@@ -123,5 +126,31 @@ li {
       padding-bottom: 4.5em;
     }
   }
+
+}
+
+.why-choose-item {
+  @include flexbox;
+  & > div {
+    width: 15em;
+    > h3 {
+      margin-bottom: 1em;
+      font-weight: 700;
+    }
+    > p {
+      color: $color-4;
+      font-size: .9em;
+    }
+  }
+  & > span {
+    color: $color-2;
+    &:hover {
+      color: $color-4;
+    }
+  }
+}
+
+.why-choose-wrapper {
+  @include flexbox;
 }
 
