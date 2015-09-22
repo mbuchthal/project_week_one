@@ -42,6 +42,7 @@ li {
     position: relative;
     margin: 0 1em;
     margin-bottom: 1em;
+    text-align: center;
     &:hover {
 			background-color: $color-background-price-h;
 			box-shadow: 0 0 8px 8px $color-background-price-h;
@@ -97,12 +98,6 @@ li {
 
 }
 
-// .app-store:before {
-//   content: '';
-//   background-image: url("assets/icons/appStorIcon.svg") no-repeat;
-// }
-
-
 .why-choose-item {
   @include flexbox;
   & > div {
@@ -122,12 +117,6 @@ li {
       color: $color-4;
     }
   }
-
-
-}
-
-.why-choose-img {
-  width: 15em;
 }
 
 .why-choose-wrapper {
