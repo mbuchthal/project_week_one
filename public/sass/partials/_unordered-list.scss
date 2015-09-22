@@ -7,9 +7,8 @@ ul {
   }
   &.features {
     @include flexbox;
-
     li {
-      margin: 1em auto;
+      margin: 1em;
     }
   }
   &.pricing-list {
