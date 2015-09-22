@@ -47,28 +47,31 @@ li {
   .carousel-wrap & {
     padding: 1em;
   }
-
-/*-- Design Pricing List --*/
-
   .features & {
     @include flex_item;
-    width: 12em;
+    width: 11em;
+    padding: 2em 0;
     span {
       margin: 0 auto;
+      color: $color-icon-circle-h;
     }
     h3 {
-      text-align: center;
-      margin: 0.5em;
+      margin: 1em;
     }
     p {
-      margin: 0.5em;
+      margin: 1em;
     }
     &:hover {
-			color: $color-icon-h;
 			background: $color-icon-background-h;
+      box-shadow: -0.01em -0.01em 1em 0.05em #888888;
+      span {
+        color: $color-icon-h;
+        border-color: $hover-color-1;
+        }
+      }
     }
   }
-
+/*-- Design Pricing List --*/
   &.pricing-list-item {
 		border: 1px solid $color-border;
     width: 20em;
@@ -129,7 +132,6 @@ li {
       padding-bottom: 4.5em;
     }
   }
-}
 .why-choose-item {
   @include flexbox;
   & > div {
