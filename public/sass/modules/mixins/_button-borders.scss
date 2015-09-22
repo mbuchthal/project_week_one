@@ -1,12 +1,12 @@
 // border color and weight
-$border-color-1: aqua;
-$border-color-2: #a9a9a9;
-$border-color-3: #fff;
-$hover-color-1: #a9a9a9;
-$hover-color-2: aqua;
-$hover-color-3: #fff;
+$border-color-1: $color-4;
+$border-color-2: $color-4;
+$border-color-3: $color-4;
+$hover-color-1: $color-3;
+$hover-color-2: $color-3;
+$hover-color-3: $color-3;
 $heavy: 4px;
-$normal: 3px;
+$normal: 5px;
 $light: 2px;
 
 // sizes for CIRCULAR objects
@@ -33,7 +33,7 @@ $lg-radius: ($lg-width - $lg-height) / 2;
 @mixin text-behavior {
   display: inline-block;
   display: flex;
-  display: -webkit-flex; 
+  display: -webkit-flex;
   flex-direction: column;
   -webkit-flex-direction: column;
   justify-content: center;
