@@ -1,0 +1,46 @@
+
+.bestway-wrapper {
+  @include flexbox;
+  align-items: center;
+  margin-top: 8em;
+  h1 {
+    font: $head-big-bold-font;
+  }
+  p {
+
+    font: $head-small-light-font;
+    span {
+      font: $head-small-bold-font;
+    }
+  }
+}
+.bestway {
+  padding: 5em;
+  width: 34em;
+}
+.bestway, .bestway-image-wrapper {
+  width: 34em;
+}
+.bestway-image-wrapper {
+  text-align: center;
+  img {
+    max-width: 13em;
+    @media only screen and (min-width: 600px) {
+      max-width: 22em;
+    }
+  }
+}
+
+.learn-more-link {
+  width: 8em;
+  margin: 2.5em 6em 2em 0;
+  padding: .5em 0;
+  background-color: $color-2;
+  color: $color-3;
+  border-color: $color-7;
+  font: $small-button-link-font;
+  &:hover {
+    border-color: $color-2;
+    background-color: $color-7;
+  }
+}
