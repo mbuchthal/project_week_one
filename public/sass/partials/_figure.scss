@@ -1,0 +1,12 @@
+figure {
+  &.app-reviewer {
+    padding: 0.5em 1em 0 1em;
+    @media screen and (min-width: 50em) {
+      padding-top: 1em;
+    }
+    .sm-circular-frame {
+      float: left;
+      margin: 0 0.5em 0 1em;
+    }
+  }
+}

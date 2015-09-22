@@ -5,6 +5,37 @@ li {
       margin: 0 35%;
     }
   }
+  .img-carousel & { 
+    list-style-type: none;
+    figure {
+      width: 90%;
+    }
+    p {
+      margin-top: 1em;
+      @media screen and (min-width: 50em) {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+  .img-carousel ul & { 
+    float: left; 
+  }
+  .img-carousel ol &.dot {
+    display: inline-block;
+    padding: 0;
+    border: 1px solid $color-link-button-background;
+    border-radius: 50%;
+    height: 0.5em;
+    width: 0.5em;
+    background-color: transparent;
+    @media screen and (min-width: 50em) {
+      display: block;
+    }
+    &.active {
+      background-color: $color-link-button-background;
+    }
+  } 
   .social-icon-links & {
     padding: 1em;
     display: inline-block;

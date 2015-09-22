@@ -1,19 +1,15 @@
-.carousel-wrap {
-  @include flexbox;
-  // border: 1px solid #bbb;
-  border-radius: 1.5em;
-  @media screen and (min-width: 50em) {
-    // border: none;
-  }
-  %carousel-button {
+.img-carousel {
+  padding-bottom: 1.5em;
+  overflow: auto; 
+  ol {
+    position: absolute;
+    width: 20%;
+    top: 0;
+    right: 40%;
     @media screen and (min-width: 50em) {
-      display: none;
+      width: 1%;
+      top: 0;
+      right: 10px;
     }
-  } 
+  }
 }
-.fig-carousel {
-  width: 80%;
-  margin: 0 auto;
-}
-
-

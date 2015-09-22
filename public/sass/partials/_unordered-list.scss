@@ -10,16 +10,21 @@ ul {
       margin: 1em auto;
     }
   }
-
   &.pricing-list {
     @include flexbox;
 
   }
-
   &.pricing-features {
     border-top: 1px solid lightgray;
     :first-child {
       margin-top: 5.5em;
+    }
+  }
+
+  .img-carousel & {
+    width: none;
+    & li {
+      margin: 0 auto;
     }
   }
 }
