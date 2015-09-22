@@ -44,24 +44,19 @@ $icons: (box "\e600") (flask "\e601") (phone "\e603") (mail "\e604") (location "
 
 // ----- Footer Icons ------ //
 .icon-facebook:before {
-  // color: rgba(150,150,150,1);
-  // background-color: rgba(35,35,35,1);
+  color: $color-icon-circle;
 }
 .icon-twitter:before {
-  // color: rgba(150,150,150,1);
-  // background-color: rgba(35,35,35,1);
+  color: $color-icon-circle;
 }
 .icon-google:before {
-  // color: rgba(150,150,150,1);
-  // background-color: rgba(35,35,35,1);
+  color: $color-icon-circle;
 }
 .icon-pinterest:before {
-  // color: rgba(150,150,150,1);
-  // background-color: rgba(35,35,35,1);
+  color: $color-icon-circle;
 }
 .icon-dribbble:before {
-  // color: rgba(150,150,150,1);
-  // background-color: rgba(35,35,35,1);
+  color: $color-icon-circle;
 }
 
 // // ------ Top search box ----- //
