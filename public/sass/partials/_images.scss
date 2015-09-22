@@ -2,7 +2,9 @@ img {
   .social-icon-links & {
     width: 1em;
     height: 1em;
-    color: red;
+    svg {
+      color: white;
+    }
   }
   .circular-frame &, .sm-circular-frame & {
     height: auto;
