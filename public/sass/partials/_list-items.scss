@@ -1,28 +1,4 @@
 li {
-  .features & {
-    @include flex_item;
-    width: 11em;
-    padding: 2em 0;
-    span {
-      margin: 0 auto;
-      color: $color-icon-circle-h;
-    }
-    h3 {
-      margin: 1em;
-    }
-    p {
-      margin: 1em;
-    }
-    &:hover {
-			background: $color-icon-background-h;
-      box-shadow: -0.01em -0.01em 1em 0.05em #888888;
-      span {
-        color: $color-icon-h;
-        border-color: $hover-color-1;
-        }
-      }
-    }
-  }
 /*-- Design Pricing List --*/
   &.pricing-list-item {
 		border: 1px solid $color-border;
@@ -108,4 +84,4 @@ li {
 .why-choose-wrapper {
   @include flexbox;
 }
-
+}
