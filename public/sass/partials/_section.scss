@@ -3,7 +3,7 @@
     margin-top: 1em;
   }
   .img-carousel {
-    position: relative; 
+    position: relative;
     margin: 0 auto;
     max-width: 100%;
     @media screen and (min-width: 50em) {
@@ -20,7 +20,7 @@
 
 .amazing-features {
   background-color: $color-background-lightGray;
-  div.live-support {
+  div.feature-image-wrapper {
     padding: 2em;
     background-color: $color-background-blue;
     h2 {

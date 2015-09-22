@@ -1,5 +1,5 @@
 a {
-  .live-support & {
+  .feature-image-wrapper & {
     font: $small-button-link-font;
     background-color: $color-link-button-background;
     width: 5em;
@@ -22,7 +22,7 @@ h2 {
     text-align: center;
     font-size: 150%;
   }
-  .live-support & {
+  .feature-image-wrapper & {
     color: $color-text-light;
     font: $head-big-medium-font;
   }
@@ -56,7 +56,7 @@ p {
     font: $text-light-font;
     color: $color-text-dark;
   }
-  .live-support & {
+  .feature-image-wrapper & {
     text-align: left;
     font: $text-light-font;
     color: $color-text-light;
