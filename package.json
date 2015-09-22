@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/mbuchthal/project_week_one#readme",
   "devDependencies": {
+    "express": "^4.13.3",
     "gulp": "^3.9.0",
     "gulp-sass": "^2.0.4"
   }
