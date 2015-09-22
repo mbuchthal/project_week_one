@@ -16,14 +16,18 @@ ul {
     @include flexbox;
 
   }
-
   &.pricing-features {
 		border-top: 1px solid $color-border;
     :first-child {
       margin-top: 5.5em;
     }
   }
-
+  .img-carousel & {
+    width: none;
+    & li {
+      margin: 0 auto;
+    }
+  }
   &.why-choose-list-l {
     @include flexbox;
     width: 23em;
@@ -53,5 +57,4 @@ ul {
       }
     }
   }
-
 }

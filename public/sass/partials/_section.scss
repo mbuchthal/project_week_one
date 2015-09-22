@@ -2,6 +2,14 @@
   h2 {
     margin-top: 1em;
   }
+  .img-carousel {
+    position: relative; 
+    margin: 0 auto;
+    max-width: 100%;
+    @media screen and (min-width: 50em) {
+      width: 80%;
+    }
+  }
   .sm-semicircular-eclipse-border {
     margin: 0 auto;
     .icon-quotes {
