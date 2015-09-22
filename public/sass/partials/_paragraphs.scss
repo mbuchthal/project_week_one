@@ -1,3 +1,16 @@
+h2 {
+  .why-choose & {
+    text-align: center;
+    font-size: 150%;
+  }
+}
+h4 {
+  .why-choose & {
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+}
 p {
   li & {
     text-align: center;
