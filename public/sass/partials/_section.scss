@@ -1,19 +1,45 @@
 .why-choose {
-  // position: relative;
+  background-color: $color-7;
+  padding-bottom: 2em;
   h2 {
     margin-top: 1em;
+    font: $head-big-light-font;
+    font-size: 150%;
+    color: $color-text-light;
+    text-align: center;
+  }
+  h4 { 
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    font: $head-x-small-light-font;
+    color: $color-text-light;
+    text-align: center;
+    @media screen and (min-width: 50em) {
+      padding-bottom: 3em;
+    }
+  }
+  .icon-quotes {
+    color: $color-text-light;
+  }
+  .sm-semicircular-eclipse-border {
+    margin: 0 auto;
+    .icon-quotes {
+      margin-top: 1em;
+    }
+  }
+  .focus-arrow:before {
+    content: " ";
+    display: inline-block;
+    width: 42px;
+    height: 83px;
+    background-image: url("../assets/arrow.svg");
+    background-repeat: no-repeat;
   }
   .img-carousel {
     position: relative;
     margin: 0 auto;
     @media screen and (min-width: 50em) {
       width: 80%;
-    }
-  }
-  .sm-semicircular-eclipse-border {
-    margin: 0 auto;
-    .icon-quotes {
-      margin-top: 1em;
     }
   }
 }
