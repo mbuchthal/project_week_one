@@ -6,6 +6,12 @@
     list-style-type: none;
     float: left;
   }
+  ul {
+    width: none;
+    li {
+      margin: 0 auto;
+    }
+  }
   // carousel dots
   ol {  
     position: absolute;
