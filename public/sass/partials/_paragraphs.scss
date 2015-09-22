@@ -11,4 +11,7 @@ p {
   .features & {
     text-align: center;
   }
+  .img-carousel & {
+    font: $text-light-font;
+  }
 }

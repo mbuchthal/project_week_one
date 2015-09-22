@@ -1,11 +1,13 @@
 h2 {
   .why-choose & {
+    font: $head-big-medium-font;
     text-align: center;
     font-size: 150%;
   }
 }
 h4 {
   .why-choose & {
+    font: $head-x-small-light-font;
     padding-top: 0.5em;
     padding-bottom: 1em;
     text-align: center;
