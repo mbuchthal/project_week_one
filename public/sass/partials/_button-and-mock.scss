@@ -61,7 +61,7 @@
 }
 // SPECIAL CLASSES
 .sm-semicircular-eclipse-border {
-  @include circular-eclipse-border($border-color-1, $light, $small);
+  @include circular-eclipse-border($color-icon-semicircle, $light, $small);
   border-top: none;
   border-left: none;
   border-right: none;

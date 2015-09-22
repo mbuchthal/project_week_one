@@ -1,14 +1,72 @@
+a {
+  .feature-image-wrapper & {
+    font: $small-button-link-font;
+    background-color: $color-link-button-background;
+    width: 5em;
+    &:hover {
+      background-color: $color-link-button-background-h;
+    }
+  }
+}
+h1 {
+  .amazing-features & {
+    text-align: center;
+    font: $head-big-bold-font;
+    color: $color-text-dark;
+    padding-top: 1em;
+  }
+}
+
+h2 {
+  .why-choose & {
+    text-align: center;
+    font-size: 150%;
+  }
+  .feature-image-wrapper & {
+    color: $color-text-light;
+    font: $head-big-medium-font;
+  }
+}
+h3 {
+  .features & {
+    font: $head-small-bold-font;
+    text-align: center;
+  }
+}
+h4 {
+  .why-choose & {
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+}
+
 p {
   li & {
     text-align: center;
   }
   footer & {
     text-align: center;
+    color: $color-text-light;
+    font: $footer-font;
     @media screen and (min-width: 50em) {
       text-align: left;
     }
   }
   .features & {
     text-align: center;
+    font: $text-light-font;
+    color: $color-text-dark;
+  }
+  .feature-image-wrapper & {
+    text-align: left;
+    font: $text-light-font;
+    color: $color-text-light;
+  }
+  .img-carousel & {
+    font: $text-light-font;
+    font-style: italic;
+    color: $color-text-light;
+    padding-top: 1em;
   }
 }
