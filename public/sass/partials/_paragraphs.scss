@@ -1,4 +1,31 @@
+h2 {
+  .why-choose & {
+    text-align: center;
+    font-size: 150%;
+  }
+}
+h4 {
+  .why-choose & {
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+}
 p {
+  li & {
+    text-align: center;
+  }
+  .app-reviewer & {
+    padding-top: 1em;
+    text-align: left;
+    @media screen and (min-width: 50em) {
+    }
+    .reviewer-name {
+      padding-bottom: 0.2em;
+      font-size: 120%;
+      display: block;
+    }
+  }
   footer & {
     text-align: center;
     @media screen and (min-width: 50em) {

@@ -1,13 +1,20 @@
 li {
-  text-align: center;
+  .app-reviewer {
+    margin: 0 5%;
+    @media screen and (min-width: 50em) {
+      margin: 0 35%;
+    }
+  }
   .social-icon-links & {
     padding: 1em;
     display: inline-block;
     font-size: 1em;
   }
+  .carousel-wrap & {
+    padding: 1em;
+  }
 
 /*-- Design Pricing List --*/
-
   .features & {
     display: inline-block;
     width: 100%;
@@ -26,7 +33,6 @@ li {
 			background: $color-icon-background-h;
     }
   }
-
   &.pricing-list-item {
 		border: 1px solid $color-border;
     width: 20em;
@@ -87,3 +93,4 @@ li {
     }
   }
 }
+
