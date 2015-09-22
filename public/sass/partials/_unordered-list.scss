@@ -15,12 +15,6 @@ ul {
       margin-top: 5.5em;
     }
   }
-  .img-carousel & {
-    width: none;
-    & li {
-      margin: 0 auto;
-    }
-  }
   &.why-choose-list-l {
     @include flexbox;
     width: 23em;

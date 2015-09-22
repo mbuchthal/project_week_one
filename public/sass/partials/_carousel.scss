@@ -1,10 +1,12 @@
 .img-carousel {
   padding-bottom: 1.5em;
   overflow: auto; 
+  max-width: 100%;
   // carousel items
   li {
-    list-style-type: none;
     float: left;
+    margin: 0 auto;
+    list-style-type: none;
   }
   // carousel dots
   ol {  
@@ -12,6 +14,7 @@
     width: 20%;
     top: 0;
     right: 40%;
+    text-align: center;
     @media screen and (min-width: 50em) {
       width: 1%;
       top: 0;
@@ -19,6 +22,7 @@
     }
     .dot {
       display: inline-block;
+      margin: 0.25em;
       padding: 0;
       border: 1px solid $color-link-button-background;
       border-radius: 50%;
@@ -36,22 +40,35 @@
   // review paragraph
   p {
     margin: 1em auto;
+    padding-top: 1em;
     width: 90%;
+    font: $text-light-font;
+    font-style: italic;
+    color: $color-text-light;
     @media screen and (min-width: 50em) {
-      width: 70%;
       margin: 0 auto;
+      width: 70%;
     }
   }
   // reviewer info
   .app-reviewer {
-    width: 60%;
     margin: 0 20%;
+    width: 60%;
     @media screen and (min-width: 50em) {
-      width: 20%;
       margin: 0 40%;
+      width: 20%;
     }
   }
-}
-body {
-  background: $color-7;
+  // reviewer photo
+  .sm-circular-frame {
+    @extend .circular-frame;
+    width: 3em;
+    height: 3em;
+    img {
+      display: inline;
+      margin: 0 auto;
+      height: auto;
+      width: 100%;
+    }
+  }
 }
