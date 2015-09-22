@@ -1,25 +1,25 @@
 
 // --- Pricing Features Section --- //
 
-@mixin flexbox ($direction:row) {
+@mixin flexbox ($align: center) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: -moz-flex;
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: $direction;
-    -ms-flex-direction: $direction;
-    flex-direction: $direction;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-
+    -webkit-align-content: $align;
+    -ms-flex-line-pack: $align;
+    align-content: $align;
+}
 
 // --- Some Amazing Features Section --- //
 // flex_wrapper works for this section.
@@ -41,3 +41,4 @@
   -webkit-flex-shrink: 0;
   flex-grow: 1;
   flex-shrink: 0;
+}
