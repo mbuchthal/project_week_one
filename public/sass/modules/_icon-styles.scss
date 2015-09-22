@@ -8,6 +8,16 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'icomoon';
+  src:url('fonts/icomoon.eot?log50y');
+  src:url('fonts/icomoon.eot?#iefixlog50y') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?log50y') format('truetype'),
+    url('fonts/icomoon.woff?log50y') format('woff'),
+    url('fonts/icomoon.svg?log50y#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 %icon-fonts {
   font-family: 'icomoon';
@@ -21,7 +31,7 @@
   -webkit-font-smoothing: antialiased;
 }
 
-$icons: (box "\e600") (flask "\e601") (phone "\e603") (mail "\e604") (location "\e605") (display "\e607") (laptop "\e606") (forward "\e609") (reply "\e60a") (bubble "\e60b") (quotes "\e60c") (search "\e617") (gear "\e60d") (mug "\e60e") (plane "\e60f") (flag "\e610") (play "\e611") (apple "\e608") (android "\e615") (facebook "\e613") (twitter "\e602") (google "\e612") (pinterest "\e616") (dribbble "\e614");
+$icons: (box "\e600") (flask "\e601") (phone "\e603") (mail "\e604") (location "\e605") (display "\e607") (laptop "\e606") (forward "\e609") (reply "\e60a") (bubble "\e60b") (quotes "\e60c") (search "\e617") (gear "\e60d") (mug "\e60e") (plane "\e60f") (flag "\e610") (play "\e611") (apple "\e608") (android "\e615") (facebook "\e613") (twitter "\e602") (google "\e612") (pinterest "\e616") (dribbble "\e614") (go-right "\e619") (go-left "\e618");
 
 @each $icon in $icons {
   .icon-#{nth($icon, 1)}:before {
@@ -29,6 +39,9 @@ $icons: (box "\e600") (flask "\e601") (phone "\e603") (mail "\e604") (location "
     @extend %icon-fonts;
   }
 }
+
+
+
 // ----- Footer Icons ------ //
 .icon-facebook:before {
   // color: rgba(150,150,150,1);
@@ -85,22 +98,29 @@ $icons: (box "\e600") (flask "\e601") (phone "\e603") (mail "\e604") (location "
 // .icon-android:before {
 //   content: "\e615";
 // }
-// // Why Choose AppBox
-// .icon-box:before {
-//   content: "\e600";
-// }
-// .icon-display:before {
-//   content: "\e607";
-// }
-// .icon-flag:before {
-//   content: "\e610";
-// }
-// .icon-bubble:before {
-//   content: "\e60b";
-// }
-// .icon-mug:before {
-//   content: "\e60e";
-// }
+
+// // Why Choose AppBox Icons
+.icon-box:before {
+  font-size: 2em;
+}
+.icon-display:before {
+  font-size: 2em;
+}
+.icon-flag:before {
+  font-size: 2em;
+}
+.icon-apple:before {
+  font-size: 2em;
+}
+.icon-apple:before {
+  font-size: 2em;
+}
+.icon-bubble:before {
+  font-size: 2em;
+}
+.icon-mug:before {
+  font-size: 2em;
+}
 // // App Reviews
 // .icon-quotes {
   // margin: 0 auto;
