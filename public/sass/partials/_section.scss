@@ -1,4 +1,5 @@
 .why-choose {
+  // position: relative;
   h2 {
     margin-top: 1em;
   }
@@ -14,6 +15,20 @@
     margin: 0 auto;
     .icon-quotes {
       margin-top: 1em;
+    }
+  }
+  .arrow-position-wrapper {
+    position: relative;
+    width: 50%;
+    margin: 0 25%;
+    .focus-arrow {
+      position: absolute;
+      bottom: 0;
+      right: -3em;
+      @media screen and (min-width: 50em) {
+        bottom: 1.5em;
+        right: 5em;
+      }
     }
   }
 }

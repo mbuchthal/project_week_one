@@ -136,7 +136,14 @@ $icons: (box "\e600") (flask "\e601") (phone "\e603") (mail "\e604") (location "
 // .icon-mail:before {
 //   content: "\e604";
 // }
-
+.focus-arrow:before {
+  content: " ";
+  display: inline-block;
+  width: 42px; 
+  height: 83px;
+  background-image: url("../assets/arrow.svg");
+  background-repeat: no-repeat;
+}
 
 
 
