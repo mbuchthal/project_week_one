@@ -1,13 +1,20 @@
 h2 {
   .why-choose & {
+    font: $head-big-light-font;
     text-align: center;
     font-size: 150%;
+    color: $color-text-light;
   }
 }
 h4 {
   .why-choose & {
+    font: $head-x-small-light-font;
     padding-top: 0.5em;
     padding-bottom: 1em;
     text-align: center;
+    color: $color-text-light;
+    @media screen and (min-width: 50em) {
+      padding-bottom: 3em;
+    }
   }
 }

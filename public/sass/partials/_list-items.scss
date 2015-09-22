@@ -1,25 +1,28 @@
 li {
   .app-reviewer {
-    margin: 0 5%;
+    width: 60%;
+    margin: 0 20%;
     @media screen and (min-width: 50em) {
-      margin: 0 35%;
+      width: 20%;
+      margin: 0 40%;
     }
   }
-  .img-carousel & { 
+  .img-carousel & {
     list-style-type: none;
     figure {
       width: 90%;
     }
     p {
-      margin-top: 1em;
+      margin: 1em auto;
+      width: 90%;
       @media screen and (min-width: 50em) {
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
       }
     }
   }
-  .img-carousel ul & { 
-    float: left; 
+  .img-carousel ul & {
+    float: left;
   }
   .img-carousel ol &.dot {
     display: inline-block;
@@ -35,9 +38,9 @@ li {
     &.active {
       background-color: $color-link-button-background;
     }
-  } 
+  }
   .social-icon-links & {
-    padding: 1em;
+    padding: 0.5em;
     display: inline-block;
     font-size: 1em;
   }
@@ -129,9 +132,6 @@ li {
       padding-bottom: 4.5em;
     }
   }
-
-
-
 .why-choose-item {
   @include flexbox;
   & > div {

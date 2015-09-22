@@ -47,6 +47,8 @@ p {
   }
   footer & {
     text-align: center;
+    color: $color-text-light;
+    font: $footer-font;
     @media screen and (min-width: 50em) {
       text-align: left;
     }
@@ -60,5 +62,11 @@ p {
     text-align: left;
     font: $text-light-font;
     color: $color-text-light;
+  }
+  .img-carousel & {
+    font: $text-light-font;
+    font-style: italic;
+    color: $color-text-light;
+    padding-top: 1em;
   }
 }
