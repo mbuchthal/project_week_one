@@ -21,9 +21,6 @@ div .skewed-container .inner-div {
   background: aqua;
   z-index: $z-index;
   -webkit-transform: skewY($angle);
-  -moz-transform: skewY($angle);
-  -ms-transform: skewY($angle);
-  -o-transform: skewY($angle);
   transform: skewY($angle);
 }
 /* - sample -*/
