@@ -17,7 +17,7 @@ ul {
   }
 
   &.pricing-features {
-    border-top: 1px solid lightgray;
+		border-top: 1px solid $color-4;
     :first-child {
       margin-top: 5.5em;
     }
