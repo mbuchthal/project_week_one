@@ -6,9 +6,8 @@ ul {
     }
   }
   &.features {
-    @media screen and (min-width: 50em) {
-      @include flex_wrapper;
-    }
+    @include flexbox;
+
     li {
       margin: 1em auto;
     }
@@ -19,7 +18,7 @@ ul {
   }
 
   &.pricing-features {
-    border-top: 1px solid lightgray;
+		border-top: 1px solid $color-border;
     :first-child {
       margin-top: 5.5em;
     }
