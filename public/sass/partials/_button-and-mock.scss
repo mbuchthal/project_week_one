@@ -1,3 +1,18 @@
+%carousel-button {
+  margin: 1em;
+  @media screen and (min-width: 50em) {
+    margin-top: 3em;
+  }
+}
+.prev {
+  @extend %carousel-button;
+  float: left;
+}
+.next {
+  @extend %carousel-button;
+  float: right;
+}
+
 // BUTTON CLASSES - to be applied to real button elements
 .sm-button-eclipse-border {
   @include button-eclipse-border($border-color-1, $light, $sm-width, $sm-height, $sm-radius);

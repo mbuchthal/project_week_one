@@ -5,85 +5,19 @@
   @media screen and (min-width: 50em) {
     border: none;
   }
+  %carousel-button {
+    margin-top: 7em;
+    @media screen and (min-width: 50em) {
+      display: none;
+    }
+  } 
 }
 .fig-carousel {
-  @extend .img-carousel;
   width: 80%;
   margin: 0 auto;
   @media screen and (min-width: 50em) {
     border: none;
-    p {
-      margin-top: 1em;
-      line-height: none;
-    }
-  }
-  h3 {
-    margin-top: 1em;
-    padding: 0;
-    color: aqua;
-    line-height: 1;
-    @media screen and (min-width: 50em) {
-      display: inline;
-      margin: 0 1em;
-    }
-  }
-  h4 {
-    padding: 0.5em 0;
-    color: black;
-    line-height: 1;
-    @media screen and (min-width: 50em) {
-      padding: 0;
-      display: inline;
-      margin: 0 1em;
-    }
-  }
-  figure {
-    margin: 0 0.5em;
-    @media screen and (min-width: 50em) {
-      border: none;
-      border-radius: 0;
-      padding: 1.5em;
-    }
-  }
-  figcaption {
-    width: 100%;
-    @media screen and (min-width: 50em) {
-      float: left;
-      margin-left: 1em;
-      margin-right: 1em;
-      width: calc(90% - 82px); /*82px is the img dimension*/
-    }
-  }
-  & .client {
-    @media screen and (min-width: 50em) {
-      float: left;
-      margin-left: 1em;
-    }
   }
 }
-%slider-button {
-  margin: 1em;
-  @media screen and (min-width: 50em) {
-    margin-top: 3em;
-  }
-}
-.prev {
-  @extend %slider-button;
-  float: left;
-}
-.next {
-  @extend %slider-button;
-  float: right;
-}
-.icon-go-right:before, .icon-go-left:before  {
-  display: inline-block;
-  border-radius: 50%;
-  font-size: 1.777em;
-  font-weight: 600;
-  color: white;
-  @media screen and (min-width: 50em) {
-    font-size: 2.369em;
-    color: aqua;
-  }
-}
+
 

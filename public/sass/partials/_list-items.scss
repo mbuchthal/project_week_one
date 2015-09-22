@@ -1,11 +1,16 @@
 li {
+  .app-reviewer {
+    margin: 0 5%;
+    @media screen and (min-width: 50em) {
+      margin: 0 35%;
+    }
+  }
   .social-icon-links & {
     padding: 1em;
     display: inline-block;
     font-size: 1em;
   }
-  .sm-circular-frame {
-    float: left;
-    margin-right: 1em;
+  .carousel-wrap & {
+    padding: 1em;
   }
 }
