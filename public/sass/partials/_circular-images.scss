@@ -1,14 +1,21 @@
-.circular-frame {
+.circular-frame  {
+  position: relative;
   display: block;
   width: 10em;
   height: 10em;
+  border: 2px solid aqua;
   border-radius: 50%;
-  border: 3px solid $theme-color;
   overflow: hidden;
+  img {
+    margin: 0 auto;
+  }
 }
-
-// SAMPLE IMG
-
-// <span class="circular-frame">
-//   <img src="images/lincoln.png" alt="Portrait of Abraham Lincoln">
-// </span>
+.sm-circular-frame {
+  @extend .circular-frame;
+  width: 5em;
+  height: 5em;
+  img {
+    display: inline;
+    margin: 0 auto;
+  }
+}

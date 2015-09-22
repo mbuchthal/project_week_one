@@ -1,0 +1,87 @@
+// --- MOBILE NAV BAR --- //
+
+// <a> tags in ul
+a {
+  .menu &{
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: $color-3;
+    background: $color-1;
+    padding: 0.2em;
+    &:hover {
+      color: $color-2;
+    }
+    @media screen and (min-width: 50em) {
+      &:hover + .hidden, .hidden:hover {
+        display: block;
+      }
+    }
+  }
+}
+li {
+  .menu & {
+    width: 100%;
+    @media screen and (min-width: 50em) {
+      display: inline-block;
+      width: 11%;
+    }
+  }
+}
+ul {
+  &.menu {
+    display: none;
+    @media screen and (min-width: 50em) {
+      display: inline;
+      float: right;
+      text-align: right;
+    }
+  }
+}
+nav {
+  font-family: arial;
+  background: $color-1;
+  color: $color-3;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 3em;
+  z-index: 1;
+  @media screen and (min-width: 50em) {
+    height: 5em;
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .show-menu {
+    display: block;
+    text-decoration: none;
+    background: $color-1;
+    color: $color-3;
+    text-align: center;
+    padding: 0.5em 0;
+    @media screen and (min-width: 50em) {
+      display: none;
+    }
+  }
+  input[type=checkbox]{
+      display: none;
+  }
+  input[type=checkbox]:checked ~ .menu{
+      display: block;
+  }
+  .appbox-logo {
+    margin: 0 auto;
+    display: block;
+    width: 5em;
+    @media screen and (min-width: 50em) {
+      float: left;
+      margin-top: 2em;
+    }
+  }
+}
+body {
+  margin-top: 4em;
+}
+
+

@@ -1,0 +1,22 @@
+.carousel-wrap {
+  border: 1px solid #bbb;
+  border-radius: 1.5em;
+  @media screen and (min-width: 50em) {
+    border: none;
+  }
+  %carousel-button {
+    margin-top: 7em;
+    @media screen and (min-width: 50em) {
+      display: none;
+    }
+  } 
+}
+.fig-carousel {
+  width: 80%;
+  margin: 0 auto;
+  @media screen and (min-width: 50em) {
+    border: none;
+  }
+}
+
+
