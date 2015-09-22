@@ -18,7 +18,6 @@ div .skewed-container .inner-div {
   top: $top;   /* -- how far from top -- */
   width: 100%;
   height: $height; /* -- height of div -- */
-  background: aqua;
   z-index: $z-index;
   -webkit-transform: skewY($angle);
   transform: skewY($angle);
@@ -38,5 +37,8 @@ div .skewed-container .inner-div {
 //   -o-transform: skewY(5deg);
 //   transform: skewY(5deg);
 // }
+
+//to make a trapezoid shape with flat bottom -
+//use above skewed mixin inside another div
 
 
