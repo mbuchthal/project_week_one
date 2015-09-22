@@ -1,9 +1,4 @@
 li {
-  .social-icon-links & {
-    padding: 0.5em;
-    display: inline-block;
-    font-size: 1em;
-  }
   .features & {
     @include flex_item;
     width: 11em;
