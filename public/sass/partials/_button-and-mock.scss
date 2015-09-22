@@ -1,18 +1,3 @@
-%carousel-button {
-  margin: 1em;
-  @media screen and (min-width: 50em) {
-    margin-top: 3em;
-  }
-}
-.prev {
-  @extend %carousel-button;
-  float: left;
-}
-.next {
-  @extend %carousel-button;
-  float: right;
-}
-
 // BUTTON CLASSES - to be applied to real button elements
 .sm-button-eclipse-border {
   @include button-eclipse-border($border-color-1, $light, $sm-width, $sm-height, $sm-radius);
@@ -61,7 +46,7 @@
 }
 // SPECIAL CLASSES
 .sm-semicircular-eclipse-border {
-  @include circular-eclipse-border($border-color-1, $light, $small);
+  @include circular-eclipse-border($color-icon-semicircle, $light, $small);
   border-top: none;
   border-left: none;
   border-right: none;

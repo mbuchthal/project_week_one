@@ -1,21 +1,18 @@
 .circular-frame  {
   position: relative;
   display: block;
-  width: 10em;
-  height: 10em;
-  border: 2px solid $color-2;
+  width: 6em;
+  height: 6em;
+  border: 2px solid $color-7;
   border-radius: 50%;
   overflow: hidden;
   img {
     margin: 0 auto;
+    height: auto;
+    width: 100%;
   }
 }
-.sm-circular-frame {
-  @extend .circular-frame;
-  width: 5em;
-  height: 5em;
-  img {
-    display: inline;
-    margin: 0 auto;
-  }
-}
+
+
+// this should go into the partial for the Team section
+
