@@ -6,9 +6,8 @@ ul {
     }
   }
   &.features {
-    @media screen and (min-width: 50em) {
-      @include flex_wrapper;
-    }
+    @include flexbox;
+
     li {
       margin: 1em auto;
     }
