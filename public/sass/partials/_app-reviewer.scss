@@ -1,0 +1,28 @@
+.app-reviewer {
+  padding-top: 1em;
+  @media screen and (min-width: 50em) {
+    padding-top: 2em;
+  }
+  figcaption {
+    font: $head-x-small-light-font;
+    padding-top: 0.5em;
+    text-align: left;
+    color: $color-text-light;
+    .reviewer-name {
+      font-size: 120%;
+      display: block;
+    }
+  }
+}
+
+.sm-circular-frame {
+  float: left;
+  margin: 0 0.5em;
+  @media screen and (min-width: 50em) {
+    margin-left: 0;
+  }
+}
+    
+    
+  }
+}

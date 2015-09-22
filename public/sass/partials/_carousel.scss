@@ -1,6 +1,23 @@
 .img-carousel {
   padding-bottom: 1.5em;
   overflow: auto; 
+  p {
+    margin: 1em auto;
+    width: 90%;
+    @media screen and (min-width: 50em) {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+  li {
+    list-style-type: none;
+    figure {
+      width: 90%;
+    }
+  }
+  ul li {
+    float: left;
+  }
   ol {
     position: absolute;
     width: 20%;
@@ -11,5 +28,23 @@
       top: 0;
       right: 10px;
     }
+    .dot {
+      display: inline-block;
+      padding: 0;
+      border: 1px solid $color-link-button-background;
+      border-radius: 50%;
+      height: 0.5em;
+      width: 0.5em;
+      background-color: transparent;
+      &.active {
+        background-color: $color-link-button-background;
+      }
+      @media screen and (min-width: 50em) {
+        display: block;
+      }
+    }
   }
+}
+body {
+  background: $color-7;
 }
