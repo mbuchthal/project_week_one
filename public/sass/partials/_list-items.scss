@@ -1,8 +1,10 @@
 li {
   .app-reviewer {
-    margin: 0 5%;
+    width: 60%;
+    margin: 0 20%;
     @media screen and (min-width: 50em) {
-      margin: 0 35%;
+      width: 20%;
+      margin: 0 40%;
     }
   }
   .img-carousel & { 
@@ -11,7 +13,8 @@ li {
       width: 90%;
     }
     p {
-      margin-top: 1em;
+      margin: 1em auto;
+      width: 90%;
       @media screen and (min-width: 50em) {
         width: 70%;
         margin: 0 auto;

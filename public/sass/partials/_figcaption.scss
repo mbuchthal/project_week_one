@@ -1,11 +1,10 @@
 figcaption {
+  font: $head-x-small-light-font;
   .app-reviewer & {
-    padding-top: 1em;
+    padding-top: 0.5em;
     text-align: left;
-    @media screen and (min-width: 50em) {
-    }
+    color: $color-text-light;
     .reviewer-name {
-      padding-bottom: 0.2em;
       font-size: 120%;
       display: block;
     }

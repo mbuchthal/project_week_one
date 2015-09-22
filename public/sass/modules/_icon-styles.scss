@@ -122,9 +122,10 @@ $icons: (box "\e600") (flask "\e601") (phone "\e603") (mail "\e604") (location "
   font-size: 2em;
 }
 // // App Reviews
-// .icon-quotes {
+.icon-quotes {
   // margin: 0 auto;
-// }
+  color: $color-text-light;
+}
 // // App Support
 // .icon-location:before {
 //   content: "\e605";

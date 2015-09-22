@@ -13,5 +13,8 @@ p {
   }
   .img-carousel & {
     font: $text-light-font;
+    font-style: italic;
+    color: $color-text-light;
+    padding-top: 1em;
   }
 }
