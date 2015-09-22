@@ -1,4 +1,5 @@
 .app-reviewer {
+  width: 90%;
   padding-top: 1em;
   @media screen and (min-width: 50em) {
     padding-top: 2em;
@@ -13,16 +14,11 @@
       display: block;
     }
   }
-}
-
-.sm-circular-frame {
-  float: left;
-  margin: 0 0.5em;
-  @media screen and (min-width: 50em) {
-    margin-left: 0;
-  }
-}
-    
-    
+  .sm-circular-frame {
+    float: left;
+    margin: 0 0.5em;
+    @media screen and (min-width: 50em) {
+      margin-left: 0;
+    }
   }
 }

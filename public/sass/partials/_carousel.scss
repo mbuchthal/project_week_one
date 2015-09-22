@@ -1,24 +1,13 @@
 .img-carousel {
   padding-bottom: 1.5em;
   overflow: auto; 
-  p {
-    margin: 1em auto;
-    width: 90%;
-    @media screen and (min-width: 50em) {
-      width: 70%;
-      margin: 0 auto;
-    }
-  }
+  // carousel items
   li {
     list-style-type: none;
-    figure {
-      width: 90%;
-    }
-  }
-  ul li {
     float: left;
   }
-  ol {
+  // carousel dots
+  ol {  
     position: absolute;
     width: 20%;
     top: 0;
@@ -42,6 +31,24 @@
       @media screen and (min-width: 50em) {
         display: block;
       }
+    }
+  }
+  // review paragraph
+  p {
+    margin: 1em auto;
+    width: 90%;
+    @media screen and (min-width: 50em) {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+  // reviewer info
+  .app-reviewer {
+    width: 60%;
+    margin: 0 20%;
+    @media screen and (min-width: 50em) {
+      width: 20%;
+      margin: 0 40%;
     }
   }
 }
