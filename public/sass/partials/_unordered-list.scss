@@ -1,10 +1,4 @@
 ul {
-  &.social-icon-links {
-    text-align: center;
-    @media screen and (min-width: 50em) {
-      text-align: right;
-    }
-  }
   &.features {
     @include flexbox;
     li {

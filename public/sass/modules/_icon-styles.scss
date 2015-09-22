@@ -40,8 +40,6 @@ $icons: (box "\e600") (flask "\e601") (phone "\e603") (mail "\e604") (location "
   }
 }
 
-
-
 // ----- Footer Icons ------ //
 .icon-facebook:before {
   color: $color-icon-circle;
@@ -134,7 +132,7 @@ $icons: (box "\e600") (flask "\e601") (phone "\e603") (mail "\e604") (location "
 .focus-arrow:before {
   content: " ";
   display: inline-block;
-  width: 42px; 
+  width: 42px;
   height: 83px;
   background-image: url("../assets/arrow.svg");
   background-repeat: no-repeat;
