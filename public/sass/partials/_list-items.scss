@@ -17,8 +17,8 @@ li {
 /*-- Design Pricing List --*/
 
   .features & {
-    display: inline-block;
-    width: 100%;
+    @include flex_item;
+    width: 12em;
     span {
       margin: 0 auto;
     }
