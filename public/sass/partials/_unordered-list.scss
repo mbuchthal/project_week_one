@@ -1,10 +1,4 @@
 ul {
-  &.features {
-    @include flexbox;
-    li {
-      margin: 1em;
-    }
-  }
   &.pricing-list {
     @include flexbox;
 
