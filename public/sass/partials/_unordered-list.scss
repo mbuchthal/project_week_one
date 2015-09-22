@@ -6,11 +6,13 @@ ul {
     }
   }
   &.features {
+    @media screen and (min-width: 50em) {
+      @include flex_wrapper;
+    }
     li {
       margin: 1em auto;
     }
   }
-
   &.pricing-list {
     @include flexbox;
   }
