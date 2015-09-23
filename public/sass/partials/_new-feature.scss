@@ -32,19 +32,15 @@
     @include flexbox;
     color: $color-text-light;
     width: 22em;
+
     .download-text-wrapper {
+      width: 10em;
       padding-top: 1em;
       @include flex_item;
-      h3 {
-        margin: 0;
-        display: inline;
-        font: $text-bold-font;
-        position: relative;
-      }
-      img {
-        position: absolute;
+      &:after {
+        @include pic-insert(url("../assets/arrow.svg"), contain);
         padding-top: 1em;
-        width: 1.5em;
+        margin-left: 3em;
 
         filter: FlipH;
         -ms-filter: "FlipH";
@@ -52,10 +48,14 @@
         -webkit-transform: rotate(-60deg) scaleX(-1); /* Chrome, Safari, Opera */
         transform: rotate(-60deg) scaleX(-1);
       }
+      h3 {
+        margin: 0;
+        display: inline;
+        font: $text-bold-font;
+      }
     }
     .download-icons-wrapper {
       @include flex_item;
-      margin-left: 2em;
       figure {
         display: inline-block;
         text-align: center;

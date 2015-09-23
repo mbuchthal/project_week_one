@@ -55,9 +55,10 @@ $icons: (box "\e600") (flask "\e601") (phone "\e603") (mail "\e604") (location "
 // .icon-play:before {
 //   content: "\e611";
 // }
-// .icon-apple:before {
-//   content: "\e608";
-// }
+.icon-apple:before {
+  content: "\e608";
+  font-size: 2em;
+}
 // .icon-reply:before {
 //   content: "\e60a";
 // }
