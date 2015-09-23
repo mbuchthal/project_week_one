@@ -1,0 +1,17 @@
+.info {
+  padding: 0.5em;
+  .logo:before {
+    content: " ";
+    display: block;
+    margin-top: 0.2em;
+    width: 105px;
+    height: 26px;
+    background: url("../images/appbox-wh.svg");
+    background-repeat: no-repeat;
+  }
+  p {
+    font: $text-small-light-font; 
+    color: $color-text-medium-light;
+    margin-top: 2em;  
+  }
+}
