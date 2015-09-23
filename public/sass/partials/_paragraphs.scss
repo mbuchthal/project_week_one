@@ -1,54 +1,7 @@
-a {
-  .feature-image-wrapper & {
-    font: $small-button-link-font;
-    background-color: $color-link-button-background;
-    width: 5em;
-    &:hover {
-      background-color: $color-link-button-background-h;
-    }
-  }
-}
-h1 {
-  .amazing-features & {
-    text-align: center;
-    font: $head-big-bold-font;
-    color: $color-text-dark;
-    padding-top: 1em;
-  }
-}
-
-h2 {
-  .feature-image-wrapper & {
-    color: $color-text-light;
-    font: $head-big-medium-font;
-  }
-}
-h3 {
-  .features & {
-    font: $head-small-bold-font;
-    text-align: center;
-  }
-}
 h4 {
   .why-choose & {
     padding-top: 0.5em;
     padding-bottom: 1em;
     text-align: center;
-  }
-}
-
-p {
-  li & {
-    text-align: center;
-  }
-  .features & {
-    text-align: center;
-    font: $text-light-font;
-    color: $color-text-dark;
-  }
-  .feature-image-wrapper & {
-    text-align: left;
-    font: $text-light-font;
-    color: $color-text-light;
   }
 }
