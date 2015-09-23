@@ -1,8 +1,8 @@
-.circular-frame  {
+@mixin circular-frame($size) {
   position: relative;
   display: block;
-  width: 6em;
-  height: 6em;
+  width: $size;
+  height: $size;
   border: 2px solid $color-7;
   border-radius: 50%;
   overflow: hidden;
@@ -12,10 +12,10 @@
     width: 100%;
   }
 }
-.sm-circular-frame {
-  @extend .circular-frame;
-  width: 3em;
-  height: 3em;
+@mixin sm-circular-frame($size) {
+  @include circular-frame($size);
+  width: $size;
+  height: $size;
   img {
     display: inline;
     margin: 0 auto;
@@ -23,8 +23,3 @@
     width: 100%;
   }
 }
-
-
-
-// this should go into the partial for the Team section
-
