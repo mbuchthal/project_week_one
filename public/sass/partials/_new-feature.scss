@@ -1,0 +1,77 @@
+.new-feature-wrapper {
+  padding: 2em;
+  background-color: $color-background-blue;
+  @include flexbox;
+}
+.feature-text-wrapper {
+  width: 15em;
+  @include flex_item;
+  .sm-eclipse-border {  // small button
+    font: $small-button-link-font;
+    background-color: $color-link-button-background;
+    width: 5em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    &:hover {
+      background-color: $color-link-button-background-h;
+    }
+  }
+  h2 {
+    text-align: left;
+    color: $color-text-light;
+    font: $head-big-medium-font;
+    margin-bottom: 1em;
+  }
+  p {
+    text-align: left;
+    font: $text-light-font;
+    color: $color-text-light;
+    margin-bottom: 3em;
+  }
+  aside {
+    @include flexbox;
+    color: $color-text-light;
+    width: 22em;
+
+    .download-text-wrapper {
+      width: 10em;
+      padding-top: 1em;
+      @include flex_item;
+      &:after {
+        @include pic-insert(url("../assets/arrow.svg"), contain);
+        padding-top: 1em;
+        margin-left: 3em;
+
+        filter: FlipH;
+        -ms-filter: "FlipH";
+        -ms-transform: rotate(-60deg) scaleX(-1); /* IE 9 */
+        -webkit-transform: rotate(-60deg) scaleX(-1); /* Chrome, Safari, Opera */
+        transform: rotate(-60deg) scaleX(-1);
+      }
+      h3 {
+        margin: 0;
+        display: inline;
+        font: $text-bold-font;
+      }
+    }
+    .download-icons-wrapper {
+      @include flex_item;
+      figure {
+        display: inline-block;
+        text-align: center;
+        padding-left: 1em;
+      }
+      figcaption {
+        font: $text-small-light-font;
+        margin-top: 1em;
+      }
+    }
+  }
+}
+.feature-img-wrapper {
+  @include flex_item;
+  margin-top: 2em;
+  img {
+    height: 20em;
+  }
+}

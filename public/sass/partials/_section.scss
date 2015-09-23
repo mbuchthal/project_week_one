@@ -1,20 +1,10 @@
-
 .amazing-features {
   background-color: $color-background-lightGray;
-  div.feature-image-wrapper {
-    padding: 2em;
-    background-color: $color-background-blue;
-    h2 {
-      margin-bottom: 1em;
-    }
-    p {
-      margin-bottom: 2em;
-    }
-    aside {
-      color: $color-text-light;
-      font: $text-bold-font;
-    }
-
+  h1 {
+    text-align: center;
+    font: $head-big-bold-font;
+    color: $color-text-dark;
+    padding-top: 1em;
   }
 }
 .pricing {
@@ -65,7 +55,9 @@
   .profile {
     width: 100%;
     margin-top: 2em;
-    .circular-frame {
+    .circle {
+      @include circular-frame(6em);
+    // .circular-frame {
       margin: 0 auto;
     }
     figcaption {
