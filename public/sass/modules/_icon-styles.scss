@@ -62,25 +62,30 @@ $icons: (box "\e600") (flask "\e601") (phone "\e603") (mail "\e604") (location "
 //   content: "\e60a";
 // }
 // // ------ Some Amazing Features -----//
-// .icon-laptop:before {
-//   content: "\e606";
-// }
-// .icon-flask:before {
-//   content: "\e601";
-// }
-// .icon-plane:before {
-//   content: "\e60f";
-// }
-// .icon-gear:before {
-//   content: "\e60d";
-// }
-// // Live conference support available
-// .icon-forward:before {
-//   content: "\e609";
-// }
-// .icon-android:before {
-//   content: "\e615";
-// }
+.icon-laptop:before {
+  content: "\e606";
+  font-size: 2em;
+}
+.icon-flask:before {
+  content: "\e601";
+  font-size: 2em;
+}
+.icon-plane:before {
+  content: "\e60f";
+  font-size: 2em;
+}
+.icon-gear:before {
+  content: "\e60d";
+  font-size: 2em;
+}
+// Live conference support available
+.icon-forward:before {
+  content: "\e609";
+}
+.icon-android:before {
+  content: "\e615";
+  font-size: 2em;
+}
 
 // // Why Choose AppBox Icons
 .icon-box:before {
