@@ -1,0 +1,49 @@
+
+.newspaper-section {
+  h1 {
+    font: $head-big-light-font;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    color: $color-5;
+  }
+}
+
+
+
+.newspaper-list {
+  @include flexbox;
+  @media only screen and (min-width: 850px) {
+    margin: auto 8em;
+  }
+  @media only screen and (min-width: 1200px) {
+    margin: auto 12em;
+  }
+
+  li {
+    &:first-child {
+      @include newspaper(url("../images/NewYorkTimes.svg.png"), 90%)
+    }
+    &:nth-child(2) {
+      @include newspaper(url("../images/Forbes_logo.svg"), 40%)
+    }
+    &:nth-child(3) {
+      @include newspaper(url("../images/The_Wall_Street_Journal_Logo.svg.png"), 90%)
+    }
+    &:nth-child(4) {
+      @include newspaper(url("../images/The_Guardian.svg.png"), 75%)
+    }
+    &:nth-child(5) {
+      @include newspaper(url("../images/The_Verge_wordmark.svg"), 50%)
+    }
+    &:nth-child(6) {
+      @include newspaper(url("../images/tc-techcrunch.svg"), 60%)
+    }
+    &:nth-child(7) {
+      @include newspaper(url("../images/lifehacker-uk.svg"), 60%)
+    }
+    &:nth-child(8) {
+      @include newspaper(url("../images/Mashable.png"), 55%)
+    }
+  }
+}
