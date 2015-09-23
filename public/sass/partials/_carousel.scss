@@ -11,9 +11,9 @@
   // carousel dots
   ol {  
     position: absolute;
-    width: 20%;
+    width: 30%;
     top: 0;
-    right: 40%;
+    right: 32%;
     text-align: center;
     @media screen and (min-width: 50em) {
       width: 1%;
@@ -22,13 +22,19 @@
     }
     .dot {
       display: inline-block;
-      margin: 0.25em;
+      margin: 0.25em 0.5em;
       padding: 0;
       border: 1px solid $color-link-button-background;
       border-radius: 50%;
       height: 0.5em;
       width: 0.5em;
       background-color: transparent;
+      &:first-child {
+        margin-left: 0.75em;
+        @media screen and (min-width: 50em) {
+          margin-left: 0;
+        }
+      }
       &.active {
         background-color: $color-link-button-background;
       }

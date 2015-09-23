@@ -8,16 +8,6 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'icomoon';
-  src:url('fonts/icomoon.eot?log50y');
-  src:url('fonts/icomoon.eot?#iefixlog50y') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?log50y') format('truetype'),
-    url('fonts/icomoon.woff?log50y') format('woff'),
-    url('fonts/icomoon.svg?log50y#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 
 %icon-fonts {
   font-family: 'icomoon';
@@ -115,10 +105,7 @@ $icons: (box "\e600") (flask "\e601") (phone "\e603") (mail "\e604") (location "
   font-size: 2em;
 }
 // // App Reviews
-.icon-quotes {
-  // margin: 0 auto;
-  color: $color-text-light;
-}
+
 // // App Support
 // .icon-location:before {
 //   content: "\e605";
@@ -129,14 +116,7 @@ $icons: (box "\e600") (flask "\e601") (phone "\e603") (mail "\e604") (location "
 // .icon-mail:before {
 //   content: "\e604";
 // }
-.focus-arrow:before {
-  content: " ";
-  display: inline-block;
-  width: 42px;
-  height: 83px;
-  background-image: url("../assets/arrow.svg");
-  background-repeat: no-repeat;
-}
+
 
 
 
