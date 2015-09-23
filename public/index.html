@@ -217,7 +217,11 @@
       <svg>arrow</svg>
       <a href="#"><img src="assets/googleLogo.svg" alt="Google Play">Google Play</a>
       <a href="#"><span class="icon-apple"></span>iOS App Store</a>
-      <form action=""><fieldset><legend>Subscribe To Newsletter</legend><input type="email" placeholder="Enter your email address"/><button type="submit">SUBMIT</button></fieldset></form>
+      <form id="newsletter-signup" class="quickform">
+        <legend>Subscribe To Newsletter</legend>
+        <input type="email" placeholder="Enter your email address" name="email" id="email">
+        <button type="submit" class="sm-button-eclipse-border">SUBMIT</button>
+      </form>
     </section>
     <section id="blog-nav" class="pricing clearfix">
       <h1>Discounted Pricing</h1>
@@ -346,7 +350,7 @@
           </li>
         </ul>
     </section>
-		<section id="support-nav">
+		<section id="support-nav" class="clearfix">
       <h1>App Support</h1>
       <ul>
         <li>
@@ -368,7 +372,12 @@
         </li>
       </ul>
       <p>Nullam id odio quis risus placerat aliquam. Cum sociis natoque penatibus et magnis dis part urient montes nascetur ridiculus mus curabitur tellus lacus.</p>
-      <form action=""><input type="text" placeholder="Full Name"><input type="email" placeholder="Email"><textarea name="" id="" cols="30" rows="10">Message</textarea><button type="submit">SEND</button></form>
+      <form id="helpform" class="fullform">
+        <input type="text" placeholder="Full Name" name="help-name" id="help-name">
+        <input type="email" placeholder="Email" name="help-email" id="help-email">
+        <textarea name="message" form="helpform" rows="8">Message</textarea>
+        <button type="submit" class="sm-button-eclipse-border">SEND</button>
+      </form>
     </section>
     <section>
       <h1><span>APPBOX logo</span></h1>
