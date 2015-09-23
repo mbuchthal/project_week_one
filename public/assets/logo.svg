@@ -2,11 +2,11 @@
 <svg xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	width="105px" height="26px" viewBox="0 0 105 26">
-<style type="text/css"><![CDATA[
+<!-- <style type="text/css"><![CDATA[
 .style0 {
   font-size: 26px;
   font-family: "Strasua-Regular";
   fill: rgb(255,255,255);
 }
-]]></style>
+]]></style> -->
 <text transform="translate(-217.00,-57.00)" class="style0"><tspan y="77.00" x="218.00 234.00 249.00 264.00 278.00 292.00" fill="rgb(255,255,255)">AppBox</tspan></text><path fillRule="evenodd" d="M 4 26C 4 26 105 26 105 26 105 26 105 24 105 24 105 24 11 24 11 24 11 24 11 15 11 15 11 15 4 26 4 26Z" fill="rgb(4,194,248)"/></svg>
