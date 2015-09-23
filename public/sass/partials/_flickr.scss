@@ -1,0 +1,32 @@
+
+.flickr {
+  h1 {
+    font: $head-med-bold-font;
+    color: $color-text-theme;
+    margin-bottom: 2em;
+    .accent-bar-L {
+      height: 0.2em;
+      width: 20%;
+      background-color: $color-5;
+    }
+  }
+  div {
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    margin: .5em .5em .5em 0;
+    display: inline-block;
+    &:nth-child(odd) {
+      background-color: $color-11;
+      &:hover {
+        background-color: $color-7;
+      }
+    }
+    &:nth-child(even) {
+      background-color: $color-8;
+      &:hover {
+        background-color: $color-2;
+      }
+    }
+  }
+}
