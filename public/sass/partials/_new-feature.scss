@@ -76,7 +76,8 @@
   @include flex_item;
   margin-top: 2em;
   img {
-    width: 30em;
+    width: 28em;
     margin: 0 auto;
+    display: block;
   }
 }
