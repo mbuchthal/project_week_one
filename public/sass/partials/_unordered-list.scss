@@ -9,33 +9,6 @@ ul {
       margin-top: 5.5em;
     }
   }
-  &.why-choose-list-l {
-    @include flexbox;
-    width: 23em;
-    margin: 5em 2em 5em 0;
-
-    align-content: space-around;
-    > li > div {
-      text-align: right;
-      margin-top: 1em;
-      margin-right: 2em;
-      > p {
-        text-align: right;
-      }
-    }
-  }
-  &.why-choose-list-r {
-    @include flexbox;
-    width: 23em;
-    margin: 5em 0 5em 2em;
-    align-content: space-around;
-    > li > div {
-      text-align: left;
-      margin-top: 1em;
-      margin-left: 2em;
-      > p {
-        text-align: left;
-      }
-    }
-  }
+  
 }
+

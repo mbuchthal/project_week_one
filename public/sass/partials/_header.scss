@@ -1,0 +1,72 @@
+// --- MOBILE NAV BAR --- //
+nav {
+	font-family: $header-font;
+	background: $color-background-header;
+	color: $color-text-light;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	height: 3em;
+	z-index: 1;
+	.appbox-logo {
+		margin: 0 auto;
+		display: block;
+		width: 5em;
+		float: left;
+		padding-top: 1.5em;
+	}
+	.show-menu {
+		display: block;
+		text-decoration: none;
+		background: $color-background-header;
+		color: $color-text-light;
+		text-align: center;
+		padding: 0.5em 0; 
+	}
+	input[type=checkbox]{
+		display: none;
+	}
+	input[type=checkbox]:checked ~
+	.menu {
+		display: block;
+		a {
+			display: block;
+			text-align: center;
+			text-decoration: none;
+			color: $color-text-light;
+			background: $color-background-header;
+			padding: 0.5em;
+			&:hover {
+				color: $color-link-button-h;
+			}
+		}
+		li {
+			width: 100%;
+		}
+	}
+	@media (min-width: 50em) {
+		height: 5em;
+		padding-left: 5em;
+		padding-right: 5em;
+		.appbox-log {
+			float: left;
+			margin-top: 2em;
+		}
+		.show-menu {
+			display: none;
+		}
+		.menu {
+			display: inline;
+			float: right;
+			text-align: right;
+			a &:hover + .hidden, .hidden:hover {
+				display: block;
+			}
+			li {
+				display: inline-block;
+				padding-top: 1.5em;
+				padding-right: 1em;
+			}
+		}
+	}
+}

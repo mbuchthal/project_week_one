@@ -3,7 +3,7 @@
   width: 50%;
   margin: 0 25%;
 }
-.drawn-arrow {
+.drawn-arrow-wh, .drawn-arrow-blk {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -12,11 +12,19 @@
     bottom: 0;
   }
 }
-.drawn-arrow:before {
+.drawn-arrow-wh:before {
   content: " ";
   display: inline-block;
   width: 42px;
   height: 83px;
   background: url("../assets/arrow.svg");
+  background-repeat: no-repeat;
+}
+.drawn-arrow-blk:before {
+  content: " ";
+  display: inline-block;
+  width: 62px;
+  height: 22px;
+  background: url("../assets/whiteArrow.svg");
   background-repeat: no-repeat;
 }

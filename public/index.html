@@ -28,7 +28,7 @@
         <li><a href="#screens-nav">SCREENS</a></li>
         <li><a href="#blog-nav">BLOG</a></li>
         <li><a href="#support-nav">SUPPORT</a></li>
-        <li><a href="#"><span class="icon-search">search place holder</span></a></li>
+        <li><a href="#"><span class="icon-search"></span></a></li>
       </ul>
     </nav>
 		<section id="home-nav">
@@ -107,38 +107,34 @@
      </div>
     </section>
 		<section id="about-nav" class="why-choose">
-      <h1>Why Choose AppBox</h1>
-      <div class="why-choose-wrapper">
-        <ul class="why-choose-list-l">
-          <li class="why-choose-item">
+      <h1 class="why-choose-header">Why Choose AppBox<span class="accent-bar-C"></span></h1>
+      <div class="two-column-wrapper">
+        <ul class="column-one-list">
+          <li class="column-item">
             <div>
               <h3>APP STORE</h3>
               <p>Eliefend morbi velit porttitor sed ipsum imperdiet ac ullamcorper fusce</p>
             </div>
             <span class="icon-box sm-circular-eclipse-border"></span>
           </li>
-          <div class="dot-wrapper-l">
             <div class="animated-dots">
               <div class="single-dot"></div>
               <div class="single-dot"></div>
               <div class="single-dot"></div>
             </div>
-          </div>
-          <li class="why-choose-item">
+          <li class="column-item">
             <div>
               <h3>RETINA READY</h3>
               <p>Eliefend morbi velit porttitor sed ipsum imperdiet ac ullamcorper fusce</p>
             </div>
             <span class="icon-display sm-circular-eclipse-border"></span>
           </li>
-          <div class="dot-wrapper-l">
             <div class="animated-dots">
               <div class="single-dot"></div>
               <div class="single-dot"></div>
               <div class="single-dot"></div>
             </div>
-          </div>
-          <li class="why-choose-item">
+          <li class="column-item">
             <div>
               <h3>PREMIUM SUPPORT</h3>
               <p>Eliefend morbi velit porttitor sed ipsum imperdiet ac ullamcorper fusce</p>
@@ -147,36 +143,35 @@
           </li>
         </ul>
         <img src="assets/iphoneFlat.png" alt="phone" class="why-choose-img">
-        <ul class="why-choose-list-r">
-          <li class="why-choose-item">
+        <div class="arrow-position-wrapper">
+          <span class="drawn-arrow-blk">&nbsp;</span>
+        </div>
+        <ul class="column-two-list">
+          <li class="column-item">
             <span class="icon-flag sm-circular-eclipse-border"></span>
             <div>
               <h3>MULTIPURPOSE LAYOUT</h3>
               <p>Eliefend morbi velit porttitor sed ipsum imperdiet ac ullamcorper fusce</p>
             </div>
           </li>
-          <div class="dot-wrapper-r">
             <div class="animated-dots">
               <div class="single-dot"></div>
               <div class="single-dot"></div>
               <div class="single-dot"></div>
             </div>
-          </div>
-          <li class="why-choose-item">
+          <li class="column-item">
             <span class="icon-bubble sm-circular-eclipse-border"></span>
             <div>
               <h3>LIVE CHAT SUPPORT</h3>
               <p>Eliefend morbi velit porttitor sed ipsum imperdiet ac ullamcorper fusce</p>
             </div>
           </li>
-          <div class="dot-wrapper-r">
             <div class="animated-dots">
               <div class="single-dot"></div>
               <div class="single-dot"></div>
               <div class="single-dot"></div>
             </div>
-          </div>
-          <li class="why-choose-item">
+          <li class="column-item">
             <span class="icon-mug sm-circular-eclipse-border"></span>
             <div>
               <h3>AND MANY MORE</h3>
@@ -189,7 +184,7 @@
       <span class="sm-semicircular-eclipse-border"><span class="icon-quotes"></span></span>
       <h2 id="reviews-nav" class="center-align">App Reviews</h2>
       <h4>Read What Our Happy Customers Are Saying</h4>
-      <span class="drawn-arrow">&nbsp;</span>
+      <span class="drawn-arrow-wh">&nbsp;</span>
     </div>
     <div class="img-carousel">
       <ul>
@@ -224,15 +219,19 @@
     </div>
     </section>
 		<section id="screens-nav">
-      <h1>AppBox Screenshots</h1>
-      <div>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+      <h1 class="screenshot-header">AppBox Screenshots<span class="accent-bar-C"></span></h1>
+      <ul class="screenshot-list">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div class="screenshot-arrow-wrapper">
+        <div class="screenshot-arrow-left"></div>
+        <div class="screenshot-arrow-right"></div>
       </div>
     </section>
     <section class="video-section">
-      <h1>App Video Showcase</h1>
+      <h1 class="video-header">App Video Showcase<span class="accent-bar-C"></span></h1>
       <video id="video1" width=420px src="video/mov_bbb.mp4">Your browser does not support HTML5 video.</video>
     </section>
     <section>
@@ -241,7 +240,11 @@
       <svg>arrow</svg>
       <a href="#"><img src="assets/googleLogo.svg" alt="Google Play">Google Play</a>
       <a href="#"><span class="icon-apple"></span>iOS App Store</a>
-      <form action=""><fieldset><legend>Subscribe To Newsletter</legend><input type="email" placeholder="Enter your email address"/><button type="submit">SUBMIT</button></fieldset></form>
+      <form id="newsletter-signup" class="quickform">
+        <legend>Subscribe To Newsletter</legend>
+        <input type="email" placeholder="Enter your email address" name="email" id="email">
+        <button type="submit" class="sm-button-eclipse-border">SUBMIT</button>
+      </form>
     </section>
     <section id="blog-nav" class="pricing clearfix">
       <h1>Discounted Pricing</h1>
@@ -287,7 +290,7 @@
     <div class="arrow-position-wrapper">
       <h2>Team Members</h2>
       <h4>Our Apps Are Made By Professionals, Meet Them Here</h4>
-      <span class="drawn-arrow">&nbsp;</span>
+      <span class="drawn-arrow-wh">&nbsp;</span>
     </div>
       <ul class="team">
         <li>
@@ -342,7 +345,7 @@
       </ul>
     </section>
     <section class="newspaper-section">
-      <h1>AppBox Featured In ...</h1>
+      <h1>AppBox Featured In ...<span class="accent-bar-C"></span></h1>
         <ul class="newspaper-list">
           <li>
             <a href="http://www.nytimes.com/2009/09/10/technology/personaltech/10app.html?_r=0"></a>
@@ -370,7 +373,7 @@
           </li>
         </ul>
     </section>
-		<section id="support-nav">
+		<section id="support-nav" class="clearfix">
       <h1>App Support</h1>
       <ul>
         <li>
@@ -392,7 +395,12 @@
         </li>
       </ul>
       <p>Nullam id odio quis risus placerat aliquam. Cum sociis natoque penatibus et magnis dis part urient montes nascetur ridiculus mus curabitur tellus lacus.</p>
-      <form action=""><input type="text" placeholder="Full Name"><input type="email" placeholder="Email"><textarea name="" id="" cols="30" rows="10">Message</textarea><button type="submit">SEND</button></form>
+      <form id="helpform" class="fullform">
+        <input type="text" placeholder="Full Name" name="help-name" id="help-name">
+        <input type="email" placeholder="Email" name="help-email" id="help-email">
+        <textarea name="message" form="helpform" rows="8">Message</textarea>
+        <button type="submit" class="sm-button-eclipse-border">SEND</button>
+      </form>
     </section>
     <section>
       <h1><span>APPBOX logo</span></h1>
