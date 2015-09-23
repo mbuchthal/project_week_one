@@ -19,12 +19,21 @@
 		}
 	}
 	.download-link {
-		h1, svg {
-			width: 100%;
-		}
-		p {
-			width: 100%;
-			
+		h1 {
+			@include pic-insert(url("../assets/arrowblack.svg"), contain);
+			background-position: 70%, 90%; 
+			background-size: 8%;
+			height: 5em;
+			width: 20em;
+			font: $head-big-light-font;
+			span {
+				font: $head-big-bold-font;
+				}
+			}
+		p {			
+			font: $text-light-font;
+			color: $color-text-medium;
+			padding: 2em;
 		}
 	}
 	.download-form {
