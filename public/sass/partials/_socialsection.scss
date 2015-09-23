@@ -1,8 +1,12 @@
-
 .social-section {
   @include flexbox;
   margin: 2em;
-  > section {
-    width: 25%;
+  padding: 2em;
+  background-color: $color-background-widget;
+  section {
+    width: 100%;
+    @media screen and (min-width: 50em) {
+      width: 25%;
+    }
   }
 }
