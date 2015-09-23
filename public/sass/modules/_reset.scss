@@ -50,6 +50,9 @@ table {
 a {
   text-decoration: none;
   color: inherit;
+  &:hover {
+    cursor: pointer;
+  }
 }
 img, nav, figure {
   max-width: 100%;

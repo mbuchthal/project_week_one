@@ -1,0 +1,22 @@
+.arrow-position-wrapper {
+  position: relative;
+  width: 50%;
+  margin: 0 25%;
+}
+.drawn-arrow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  @media screen and (min-width: 50em) {
+    right: 0;
+    bottom: 0;
+  }
+}
+.drawn-arrow:before {
+  content: " ";
+  display: inline-block;
+  width: 42px;
+  height: 83px;
+  background: url("../assets/arrow.svg");
+  background-repeat: no-repeat;
+}

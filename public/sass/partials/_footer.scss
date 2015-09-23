@@ -9,22 +9,35 @@ footer {
     padding-left: 5em;
     padding-right: 5em;
   }
-  ul.social-icon-links & {
+  .social-icon-links {
+    text-align: center;
     margin: 0 auto;
     @media screen and (min-width: 50em) {
       float: right;
       display: inline;
+      text-align: right;
+    }
+    li {
+      padding: 0.5em;
+      display: inline-block;
+      font-size: 1em;
     }
   }
   p {
+    text-align: center;
+    color: $color-text-light;
+    font: $footer-font;
     margin: 0 auto;
     @media screen and (min-width: 50em) {
+      text-align: left;
       float: left;
       display: inline;
       margin-top: 1em;
     }
   }
 }
+
+
 
 
 

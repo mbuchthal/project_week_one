@@ -23,7 +23,7 @@
       <ul class="menu">
         <li><a href="#home-nav">HOME</a></li>
         <li><a href="#about-nav">ABOUT</a></li>
-        <li><a href="#fearures-nav">FEATURES</a></li>
+        <li><a href="#features-nav">FEATURES</a></li>
         <li><a href="#reviews-nav">REVIEWS</a></li>
         <li><a href="#screens-nav">SCREENS</a></li>
         <li><a href="#blog-nav">BLOG</a></li>
@@ -32,14 +32,24 @@
       </ul>
     </nav>
 		<section id="home-nav">
-      <h1>Best Way To Present Your Beautiful Mobile App</h1>
-      <p>AppBox is full of awesome features. It's designed for <span>App Landing and App Store site</span></p>
-      <a href="#">LEARN MORE</a>
-      <h2>GET IT FOR FREE</h2>
+      <div class="bestway-wrapper">
+        <div class="bestway">
+          <h1>Best Way To Present Your Beautiful Mobile App</h1>
+          <p>AppBox is full of awesome features. It's designed for <span>App Landing and App Store site</span></p>
+          <a href="#" class="learn-more-link med-eclipse-border">LEARN MORE</a>
+        </div>
+        <div class="bestway-image-wrapper">
+          <img src="assets/iPhone.png" alt="iPhone">
+        </div>
+      </div>
+      <h2 class="getitfree">GET IT FOR FREE</h2>
+    <div>
       <p>Choose your native platform and download the app FREE!</p>
-      <svg>arrow</svg>
-      <a href="#"><img src="assets/googleLogo.svg" alt="Google Play">Google Play</a>
-      <a href="#"><span class="icon-apple">iOS App Store</span></a>
+    </div>
+      <div class="getitfree-link-wrapper">
+        <a href="#" class="google-play-link lg-eclipse-border"><svg width=32 height=32></svg>Google Play</a>
+        <a href="#" class="ios-store-link lg-eclipse-border"><span class="icon-apple">iOS App Store</span></a>
+      </div>
     </section>
     <section id="features-nav" class="amazing-features">
       <h1>Some Amazing Features</h1>
@@ -154,37 +164,37 @@
       </div>
     <div class="arrow-position-wrapper">
       <span class="sm-semicircular-eclipse-border"><span class="icon-quotes"></span></span>
-      <h2 class="center-align">App Reviews</h2>
+      <h2 id="reviews-nav" class="center-align">App Reviews</h2>
       <h4>Read What Our Happy Customers Are Saying</h4>
-      <span class="focus-arrow">&nbsp;</span>
+      <span class="drawn-arrow">&nbsp;</span>
     </div>
     <div class="img-carousel">
       <ul>
         <li>
           <p>Eleifend morbi orci velit porttitor sed imperdiet ac ullamcorper Fusce eget tortor vel magna iaculis convallis. Aeneaneros vitae metus pellentesque tincidunt.Cum sociis natoque penatibus et magnis dis parturient montes turpis donec tincidunt tellus.</p>
-            <figure class="app-reviewer">
+            <figure class="profile">
               <span class="sm-circular-frame">
                 <img src="images/edison.jpg" alt="Portrait of Thomas Edison">
               </span>
-              <figcaption><span class="reviewer-name">Thomas Edison</span>Inventor : The Lightbulb</figcaption>
+              <figcaption><span class="name">Thomas Edison</span>Inventor : The Lightbulb</figcaption>
             </figure>
         </li>
         <li>
           <p>Eleifend morbi orci velit porttitor sed imperdiet ac ullamcorper Fusce eget tortor vel magna iaculis convallis. Aeneaneros vitae metus pellentesque tincidunt.Cum sociis natoque penatibus et magnis dis parturient montes turpis donec tincidunt tellus.</p>
-            <figure class="app-reviewer clearfix">
+            <figure class="profile clearfix">
               <span class="sm-circular-frame">
                 <img src="images/edison.jpg" alt="Portrait of Thomas Edison">
               </span>
-              <figcaption><span class="reviewer-name">Thomas Edison</span>Inventor : The Lightbulb</figcaption>
+              <figcaption><span class="name">Thomas Edison</span>Inventor : The Lightbulb</figcaption>
             </figure>
         </li>
         <li>
           <p>Eleifend morbi orci velit porttitor sed imperdiet ac ullamcorper Fusce eget tortor vel magna iaculis convallis. Aeneaneros vitae metus pellentesque tincidunt.Cum sociis natoque penatibus et magnis dis parturient montes turpis donec tincidunt tellus.</p>
-            <figure class="app-reviewer clearfix">
+            <figure class="profile clearfix">
               <span class="sm-circular-frame">
                 <img src="images/edison.jpg" alt="Portrait of Thomas Edison">
               </span>
-              <figcaption><span class="reviewer-name">Thomas Edison</span>Inventor : The Lightbulb</figcaption>
+              <figcaption><span class="name">Thomas Edison</span>Inventor : The Lightbulb</figcaption>
             </figure>
         </li>
       </ul>
@@ -210,7 +220,7 @@
       <a href="#"><span class="icon-apple"></span>iOS App Store</a>
       <form action=""><fieldset><legend>Subscribe To Newsletter</legend><input type="email" placeholder="Enter your email address"/><button type="submit">SUBMIT</button></fieldset></form>
     </section>
-    <section>
+    <section id="blog-nav" class="pricing clearfix">
       <h1>Discounted Pricing</h1>
       <p>Nullam id odio quis risus placerat aliquam. Cum sociis natoque penatibus et magnis dis part urient montes nascetur ridiculus mus curabitur tellus lacus.</p>
       <ul class="pricing-list">
@@ -251,68 +261,89 @@
           <a href="" class="med-eclipse-border">BUY NOW</a>
         </li>
       </ul>
+    <div class="arrow-position-wrapper">
       <h2>Team Members</h2>
       <h4>Our Apps Are Made By Professionals, Meet Them Here</h4>
-      <svg>arrow</svg>
-      <ul>
+      <span class="drawn-arrow">&nbsp;</span>
+    </div>
+      <ul class="team">
         <li>
-          <img src="" alt=""/>
-          <p>Oscar Mendis</p>
-          <p>AppBox CEO</p>
+
+            <figure class="profile">
+              <a class="circular-frame">
+                  <img src="images/grant.jpg" alt="Portrait of Ulysses S Grant"/>
+              </a>
+              <figcaption><span class="name">Ulysses Grant</span>AppBox CEO</figcaption>
+            </figure>
         </li>
         <li>
-          <img src="" alt=""/>
-          <p>Thomas Hill</p>
-          <p>UX UI Designer</p>
+          <figure class="profile">
+            <a class="circular-frame">
+              <img src="images/anthony.jpg" alt="Portrait of Susan B Anthony"/>
+            </a>
+            <figcaption><span class="name">Susan B Anthony</span>UX UI Designer</figcaption>
+          </figure>
         </li>
         <li>
-          <img src="" alt=""/>
-          <p>John Adam</p>
-          <p>Developer</p>
+          <figure class="profile">
+            <a class="circular-frame">
+              <img src="images/douglass.jpg" alt="Portrait of Frederick Douglass"/>
+            </a>
+            <figcaption><span class="name">Frederick Douglass</span>Developer</figcaption>
+          </figure>
         </li>
         <li>
-          <img src="" alt=""/>
-          <p>Olivia Jason</p>
-          <p>JavaScript</p>
+          <figure class="profile">
+            <a class="circular-frame">
+              <img src="images/roosevelt.jpg" alt="Portrait of Eleanor Roosevelt"/>
+            </a>
+            <figcaption><span class="name">Eleanor Roosevelt</span>JavaScript</figcaption>
+          </figure>
         </li>
         <li>
-          <img src="" alt=""/>
-          <p>Tom Hasman</p>
-          <p>Beta Tester</p>
+          <figure class="profile">
+            <a class="circular-frame">
+              <img src="images/lincoln.png" alt="Portrait of Abraham Lincoln"/>
+            </a>
+            <figcaption><span class="name">Abraham Lincoln</span>Beta Tester</figcaption>
+          </figure>
         </li>
         <li>
-          <img src="" alt=""/>
-          <p>Liza Camron</p>
-          <p>Developer</p>
+          <figure class="profile">
+            <a class="circular-frame">
+              <img src="images/tubman.jpg" alt="Portrait of Harriet Tubman"/>
+            </a>
+            <figcaption><span class="name">Harriet Tubman</span>Developer</figcaption>
+          </figure>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="newspaper-section">
       <h1>AppBox Featured In ...</h1>
-        <ul>
+        <ul class="newspaper-list">
           <li>
-            <a href="http://www.nytimes.com/2009/09/10/technology/personaltech/10app.html?_r=0">The New York Times</a>
+            <a href="http://www.nytimes.com/2009/09/10/technology/personaltech/10app.html?_r=0"></a>
           </li>
           <li>
-            <a href="">Forbes</a>
+            <a href=""></a>
           </li>
           <li>
-            <a href="">Wall Street Journal</a>
+            <a href=""></a>
           </li>
           <li>
-            <a href="">the Guardian</a>
+            <a href=""></a>
           </li>
           <li>
-            <a href="">the Verge</a>
+            <a href=""></a>
           </li>
           <li>
-            <a href="">Tech Crunch</a>
+            <a href=""></a>
           </li>
           <li>
-            <a href="">lifehacker</a>
+            <a href=""></a>
           </li>
           <li>
-            <a href="">Mashable</a>
+            <a href=""></a>
           </li>
         </ul>
     </section>
@@ -384,6 +415,7 @@
   <script type="text/javascript" src="js/deps/unslider.min.js"></script>
   <script type="text/javascript" src="js/carousel.js"></script>
   <script type="text/javascript" src="js/video.js"></script>
+  <script type="text/javascript" src="js/smooth-scroll.js"></script>
   <script type="text/javascript" src="js/nav-search.js"></script>
 </body>
 </html>
