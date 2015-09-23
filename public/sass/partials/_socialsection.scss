@@ -1,0 +1,8 @@
+
+.social-section {
+  @include flexbox;
+  margin: 2em;
+  > section {
+    width: 25%;
+  }
+}
