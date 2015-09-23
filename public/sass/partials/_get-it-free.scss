@@ -1,0 +1,54 @@
+
+.getitfree {
+  font: $head-big-medium-font;
+  text-align: center;
+  margin-top: 3em;
+  + div p {
+    text-align: center;
+    margin-top: 0.5em;
+    font: $head-small-light-font;
+    color: $color-4;
+    display: flex;
+    justify-content: center;
+    margin-left: 4em;
+    &:after {
+      background: url("../assets/arrowblack.svg") no-repeat;
+      background-size: contain;
+      display: block;
+      content: '';
+      height: 4em;
+      width: 2em;
+      margin-left: 2em;
+    }
+  }
+}
+
+.getitfree-link-wrapper {
+  @include flexbox;
+  margin-bottom: 3em;
+}
+
+.google-play-link {
+    width: 11.5em;
+    height: 4em;
+    font: 300 1em Roboto;
+  > svg {
+    content: '';
+    display: block;
+    height: 2em;
+    background: url("../assets/googleLogo.svg") no-repeat;
+    background-size: contain;
+  }
+}
+
+.ios-store-link {
+  width: 9.5em;
+  height: 3.35em;
+  background-color: $color-2;
+  border-color: $color-7;
+  span {
+    font: $small-button-link-font;
+    color: $color-3;
+  }
+
+}
