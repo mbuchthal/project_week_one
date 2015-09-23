@@ -1,6 +1,10 @@
 .new-feature-wrapper {
   background-color: $color-background-blue;
   @include flexbox;
+  @media screen and (min-width: 50em) {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
 }
 .feature-text-wrapper {
   width: 40%;
