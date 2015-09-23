@@ -23,7 +23,7 @@
       <ul class="menu">
         <li><a href="#home-nav">HOME</a></li>
         <li><a href="#about-nav">ABOUT</a></li>
-        <li><a href="#fearures-nav">FEATURES</a></li>
+        <li><a href="#features-nav">FEATURES</a></li>
         <li><a href="#reviews-nav">REVIEWS</a></li>
         <li><a href="#screens-nav">SCREENS</a></li>
         <li><a href="#blog-nav">BLOG</a></li>
@@ -32,14 +32,22 @@
       </ul>
     </nav>
 		<section id="home-nav">
-      <h1>Best Way To Present Your Beautiful Mobile App</h1>
-      <p>AppBox is full of awesome features. It's designed for <span>App Landing and App Store site</span></p>
-      <a href="#">LEARN MORE</a>
-      <h2 class="get-it-free">GET IT FOR FREE</h2>
-      <p>Choose your native platform and download the app FREE!</p>
-      <svg>arrow</svg>
-      <a href="#" class="google-play-link lg-eclipse-border"><img src="assets/googleLogo.svg" alt="Google Play">Google Play</a>
-      <a href="#" class="ios-store-link lg-eclipse-border"><span class="icon-apple">iOS App Store</span></a>
+
+      <div class="bestway-wrapper">
+        <div class="bestway">
+          <h1>Best Way To Present Your Beautiful Mobile App</h1>
+          <p>AppBox is full of awesome features. It's designed for <span>App Landing and App Store site</span></p>
+          <a href="#" class="learn-more-link med-eclipse-border">LEARN MORE</a>
+        </div>
+        <div class="bestway-image-wrapper">
+          <img src="assets/iPhone.png" alt="iPhone">
+        </div>
+      </div>
+        <h2>GET IT FOR FREE</h2>
+        <p>Choose your native platform and download the app FREE!</p>
+        <svg>arrow</svg>
+        <a href="#" class="google-play-link lg-eclipse-border"><img src="assets/googleLogo.svg" alt="Google Play">Google Play</a>
+        <a href="#" class="ios-store-link lg-eclipse-border"><span class="icon-apple">iOS App Store</span></a>
 
     </section>
     <section id="features-nav" class="amazing-features">
@@ -155,7 +163,7 @@
       </div>
     <div class="arrow-position-wrapper">
       <span class="sm-semicircular-eclipse-border"><span class="icon-quotes"></span></span>
-      <h2 class="center-align">App Reviews</h2>
+      <h2 id="reviews-nav" class="center-align">App Reviews</h2>
       <h4>Read What Our Happy Customers Are Saying</h4>
       <span class="focus-arrow">&nbsp;</span>
     </div>
@@ -211,7 +219,7 @@
       <a href="#"><span class="icon-apple"></span>iOS App Store</a>
       <form action=""><fieldset><legend>Subscribe To Newsletter</legend><input type="email" placeholder="Enter your email address"/><button type="submit">SUBMIT</button></fieldset></form>
     </section>
-    <section>
+    <section id="blog-nav">
       <h1>Discounted Pricing</h1>
       <p>Nullam id odio quis risus placerat aliquam. Cum sociis natoque penatibus et magnis dis part urient montes nascetur ridiculus mus curabitur tellus lacus.</p>
       <ul class="pricing-list">
@@ -385,6 +393,7 @@
   <script type="text/javascript" src="js/deps/unslider.min.js"></script>
   <script type="text/javascript" src="js/carousel.js"></script>
   <script type="text/javascript" src="js/video.js"></script>
+  <script type="text/javascript" src="js/smooth-scroll.js"></script>
   <script type="text/javascript" src="js/nav-search.js"></script>
 </body>
 </html>

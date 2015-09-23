@@ -1,20 +1,58 @@
 .why-choose {
-  // position: relative;
+  padding-bottom: 2em;
   h2 {
     margin-top: 1em;
+    font: $head-big-light-font;
+    font-size: 150%;
+    color: $color-text-light;
+    text-align: center;
   }
-  .img-carousel {
-    position: relative;
-    margin: 0 auto;
-    max-width: 100%;
+  h4 { 
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    font: $head-x-small-light-font;
+    color: $color-text-light;
+    text-align: center;
     @media screen and (min-width: 50em) {
-      width: 80%;
+      padding-bottom: 3em;
     }
+  }
+  .icon-quotes {
+    color: $color-text-light;
   }
   .sm-semicircular-eclipse-border {
     margin: 0 auto;
     .icon-quotes {
       margin-top: 1em;
+    }
+  }
+  .arrow-position-wrapper {
+    position: relative;
+    width: 50%;
+    margin: 0 25%;
+  }
+  .focus-arrow {
+    position: absolute;
+    bottom: 0;
+    right: -3em;
+    @media screen and (min-width: 50em) {
+      bottom: 1.5em;
+      right: 5em;
+    }
+  }
+  .focus-arrow:before {
+    content: " ";
+    display: inline-block;
+    width: 42px;
+    height: 83px;
+    background-image: url("../assets/arrow.svg");
+    background-repeat: no-repeat;
+  }
+  .img-carousel {
+    position: relative;
+    margin: 0 auto;
+    @media screen and (min-width: 50em) {
+      width: 80%;
     }
   }
 }
@@ -35,20 +73,6 @@
       font: $text-bold-font;
     }
 
-  }
-}
-.arrow-position-wrapper {
-  position: relative;
-  width: 50%;
-  margin: 0 25%;
-  .focus-arrow {
-    position: absolute;
-    bottom: 0;
-    right: -3em;
-    @media screen and (min-width: 50em) {
-      bottom: 1.5em;
-      right: 5em;
-    }
   }
 }
 
