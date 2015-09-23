@@ -1,0 +1,44 @@
+.download-app {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: flex-start;
+	align-items: flex-start;
+	.download-img {
+		img:nth-child(1) {
+			position: relative;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+		img:nth-child(2) {
+			position: absolute;
+			top: 30px;
+			left: 70px;
+			z-index: 2;
+		}
+	}
+	.download-link {
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: flex-start;
+		align-items: center;
+		width: 50%;
+		h1 svg {
+			width: 100%;
+		}
+		p {
+			width: 100%;
+		}
+		a {
+			width: 60%;
+			
+		}
+	}
+	.download-form {
+		
+	}
+}
