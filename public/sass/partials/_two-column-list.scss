@@ -1,0 +1,61 @@
+.two-column-wrapper {
+  @include flexbox;
+  .column-one-list {
+    @include flexbox;
+    width: 23em;
+    margin: 5em 2em 5em 0;
+
+    align-content: space-around;
+    > li > div {
+      text-align: right;
+      margin-top: 1em;
+      margin-right: 2em;
+      > p {
+        text-align: right;
+      }
+    }
+    .dot-wrapper {
+      width: 22em;
+      margin-left: 19.8em
+    }
+  }
+  .column-two-list {
+    @include flexbox;
+    width: 23em;
+    margin: 5em 0 5em 2em;
+    align-content: space-around;
+    > li > div {
+      text-align: left;
+      margin-top: 1em;
+      margin-left: 2em;
+      > p {
+        text-align: left;
+      }
+    }
+  }
+  .column-item {
+    @include flexbox;
+    & > div {
+      width: 15em;
+      > h3 {
+        margin-bottom: 1em;
+        font-weight: 700;
+      }
+      > p {
+        color: $color-4;
+        font-size: .9em;
+      }
+    }
+    & > span {
+      color: $color-2;
+      &:hover {
+        color: $color-4;
+      }
+    }
+  
+  .dot-wrapper {
+    width: 22em;
+    margin-left: 2.8em;
+  }
+}
+
