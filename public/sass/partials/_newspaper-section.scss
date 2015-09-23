@@ -22,28 +22,28 @@
 
   li {
     &:first-child {
-      @include newspaper(url("../images/NewYorkTimes.svg.png"), 90%)
+      @include pic-insert(url("../images/NewYorkTimes.svg.png"), 90%)
     }
     &:nth-child(2) {
-      @include newspaper(url("../images/Forbes_logo.svg"), 40%)
+      @include pic-insert(url("../images/Forbes_logo.svg"), 40%)
     }
     &:nth-child(3) {
-      @include newspaper(url("../images/The_Wall_Street_Journal_Logo.svg.png"), 90%)
+      @include pic-insert(url("../images/The_Wall_Street_Journal_Logo.svg.png"), 90%)
     }
     &:nth-child(4) {
-      @include newspaper(url("../images/The_Guardian.svg.png"), 75%)
+      @include pic-insert(url("../images/The_Guardian.svg.png"), 75%)
     }
     &:nth-child(5) {
-      @include newspaper(url("../images/The_Verge_wordmark.svg"), 50%)
+      @include pic-insert(url("../images/The_Verge_wordmark.svg"), 50%)
     }
     &:nth-child(6) {
-      @include newspaper(url("../images/tc-techcrunch.svg"), 60%)
+      @include pic-insert(url("../images/tc-techcrunch.svg"), 60%)
     }
     &:nth-child(7) {
-      @include newspaper(url("../images/lifehacker-uk.svg"), 60%)
+      @include pic-insert(url("../images/lifehacker-uk.svg"), 60%)
     }
     &:nth-child(8) {
-      @include newspaper(url("../images/Mashable.png"), 55%)
+      @include pic-insert(url("../images/Mashable.png"), 55%)
     }
   }
 }

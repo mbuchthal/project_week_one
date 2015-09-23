@@ -1,0 +1,42 @@
+
+.screenshot-header {
+  font: $head-big-medium-font;
+  text-align: center;
+  color: $color-5;
+  margin: 2em 0;
+}
+
+.screenshot-list {
+  @include flexbox;
+  margin-bottom: 2em;
+  :first-child {
+    @include pic-insert(url("../assets/iphoneOutLine.svg"), 65%);
+    height: 29em;
+    width: 20em;
+  }
+  :nth-child(2) {
+    @include pic-insert(url("../assets/iphoneOutLine.svg"), 65%);
+    height: 29em;
+    width: 20em;
+  }
+  :nth-child(3) {
+    @include pic-insert(url("../assets/iphoneOutLine.svg"), 65%);
+    height: 29em;
+    width: 20em;
+  }
+}
+
+.screenshot-arrow-wrapper {
+  @include flexbox;
+  margin-bottom: 2em;
+}
+.screenshot-arrow-left {
+  transform: rotate(40deg);
+  &:after {
+    @include pic-insert(url("../assets/arrowblack.svg"), 10%);
+  }
+}
+.screenshot-arrow-right:after {
+  transform: scaleX(-1) rotate(40deg);
+  @include pic-insert(url("../assets/arrowblack.svg"), 10%);
+}
