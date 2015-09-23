@@ -1,4 +1,9 @@
 
+.video-header {
+  font: $head-big-medium-font;
+  color: $color-5;
+  margin-bottom: 2em;
+}
 .video-section {
   text-align: center;
 }
@@ -6,3 +11,4 @@ video {
   width: 60%;
   margin-bottom: 4em;
 }
+
