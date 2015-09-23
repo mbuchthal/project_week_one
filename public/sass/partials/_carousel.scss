@@ -1,24 +1,24 @@
-.img-carousel {
-  padding-bottom: 1.5em;
-  overflow: auto; 
-  max-width: 100%;
+.itemd {
+  // padding-bottom: 1.5em;
+  // overflow: auto; 
+  // max-width: 100%;
   // carousel items
   li {
-    float: left;
-    margin: 0 auto;
-    list-style-type: none;
+    // float: left;
+    // margin: 0 auto;
+    // list-style-type: none;
   }
   // carousel dots
   ol {  
-    position: absolute;
-    width: 30%;
-    top: 0;
-    right: 32%;
-    text-align: center;
-    @media screen and (min-width: 50em) {
-      width: 1%;
-      top: 0;
-      right: 10px;
+    // position: absolute;
+    // width: 30%;
+    // top: 0;
+    // right: 32%;
+    // text-align: center;
+    // @media screen and (min-width: 50em) {
+      // width: 1%;
+      // top: 0;
+      // right: 10px;
     }
     // individual dots
     .dot {

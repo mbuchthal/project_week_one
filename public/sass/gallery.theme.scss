@@ -1,0 +1,31 @@
+@import "modules/gallery-variables";
+@import "modules/colors";
+@import "modules/mixins/circular-images";
+
+.gallery {
+	position: relative;
+	
+  .item { height: 400px; overflow: hidden; text-align: center; background: transparent; 
+  	.circle {
+	    @include sm-circular-frame(3em);
+	    float: left;
+	    margin: 0 0.5em;
+	    @media screen and (min-width: 50em) {
+	      margin-left: 0;
+	    }
+	  }
+  }
+	.controls { position: absolute; bottom: 0; width: 100%; text-align: center; }
+	// changed to match our colors
+	.control-button {
+		@extend %inactive-button;
+		display: inline-block;
+		height: 1em;
+		width: 1em; 
+		border-radius: 50%;
+		transition: color .1s;
+		&:hover { 
+			@extend %active-button; 
+		}
+	}
+}
