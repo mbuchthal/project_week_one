@@ -1,16 +1,4 @@
 ul {
-  &.social-icon-links {
-    text-align: center;
-    @media screen and (min-width: 50em) {
-      text-align: right;
-    }
-  }
-  &.features {
-    @include flexbox;
-    li {
-      margin: 1em;
-    }
-  }
   &.pricing-list {
     @include flexbox;
 
@@ -19,12 +7,6 @@ ul {
 		border-top: 1px solid $color-border;
     :first-child {
       margin-top: 5.5em;
-    }
-  }
-  .img-carousel & {
-    width: none;
-    & li {
-      margin: 0 auto;
     }
   }
   &.why-choose-list-l {

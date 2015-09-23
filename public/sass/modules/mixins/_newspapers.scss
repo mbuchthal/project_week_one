@@ -1,0 +1,13 @@
+
+/* -- Adds newspaper svg/png --*/
+
+@mixin newspaper($url, $background-size) {
+  content: '';
+  height: 3em;
+  width: 12em;
+  background: $url;
+  background-size: $background-size;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}
