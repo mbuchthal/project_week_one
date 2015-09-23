@@ -8,13 +8,15 @@
 	width: 90%;
 	.download-img {
 		position: relative;
+		margin: 1em;
 		img:nth-child(1) {
 			z-index: 0;
 		}
 		img:nth-child(2) {
 			position: absolute;
-			top: -1em;
-			left: 8.5em;
+			width: 75%;
+			top: -5%;
+			left: 33%;
 			z-index: 0;
 		}
 	}
@@ -36,7 +38,9 @@
 			padding: 2em;
 		}
 	}
-	.download-form {
-		
+	.download-link-button {
+		display: flex;
+		justify-content: center;
+		padding-bottom: 10em;
 	}
 }
