@@ -8,6 +8,9 @@
     height: 26px;
     background: url("../images/appbox-wh.svg");
     background-repeat: no-repeat;
+    @media screen and (min-width: 50em) {
+      margin-top: 2.2em;
+    }
   }
   p {
     font: $text-small-light-font; 
