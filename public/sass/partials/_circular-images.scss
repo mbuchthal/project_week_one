@@ -12,6 +12,18 @@
     width: 100%;
   }
 }
+.sm-circular-frame {
+  @extend .circular-frame;
+  width: 3em;
+  height: 3em;
+  img {
+    display: inline;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+  }
+}
+
 
 
 // this should go into the partial for the Team section

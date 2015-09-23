@@ -1,4 +1,5 @@
 .why-choose {
+  background: $color-2;
   padding-bottom: 2em;
   h2 {
     margin-top: 1em;
@@ -26,27 +27,13 @@
       margin-top: 1em;
     }
   }
-  .arrow-position-wrapper {
-    position: relative;
-    width: 50%;
-    margin: 0 25%;
-  }
-  .focus-arrow {
-    position: absolute;
-    bottom: 0;
+  .drawn-arrow {
+    bottom: -1em;
     right: -3em;
     @media screen and (min-width: 50em) {
       bottom: 1.5em;
-      right: 5em;
+      right: 15%;
     }
-  }
-  .focus-arrow:before {
-    content: " ";
-    display: inline-block;
-    width: 42px;
-    height: 83px;
-    background-image: url("../assets/arrow.svg");
-    background-repeat: no-repeat;
   }
   .img-carousel {
     position: relative;
@@ -75,4 +62,62 @@
 
   }
 }
+.pricing {
+  background: $color-2;
+  padding-bottom: 3em;
+  h2 {
+    margin-top: 1em;
+    font: $head-big-light-font;
+    font-size: 150%;
+    color: $color-text-light;
+    text-align: center;
+  }
+  h4 { 
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    font: $head-x-small-light-font;
+    color: $color-text-light;
+    text-align: center;
+    @media screen and (min-width: 50em) {
+      padding-bottom: 3em;
+    }
+  }
+  a {
+    &:hover {
+      border-color: $color-text-light;
+    }
+  }
+  .team {
+    @media screen and (min-width: 50em) {
+      width: 100%;  
+      margin: 0 5%;
+    }
+  }
+  .team li {
+    @media screen and (min-width: 50em) {
+      float: left;
+      width: 15%;
+    }
+  }
+  .drawn-arrow {
+    bottom: -4em;
+    right: -3em;
+    @media screen and (min-width: 50em) {
+      right: 20%;
+      bottom: -2em;
+    }
+  }
+  .profile {
+    width: 100%;
+    margin-top: 2em;
+    .circular-frame {
+      margin: 0 auto;
+    }
+    figcaption {
+      text-align: center;
+    }
+  }
+}
+
+
 
