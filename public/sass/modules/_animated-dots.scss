@@ -1,24 +1,20 @@
-$neutral: #e4e4e4;
-$theme-color: #05c3f9;
-
 .animated-dots {
   width: 0.5em;
   height: 2.5em;
   padding: 0;
   .single-dot {
+    display: block;
     margin-top: 0.5em;
-    float: left;
     &:first-child {
       margin-top: 0;
     }
   }
 }
 .single-dot {
-  display: inline-block;
   height: 0.5em;
   width: 0.5em;
   border-radius: 50%;
-  background: $neutral;
+  background: $color-3;
  -webkit-animation:  animated-dots 4s linear infinite; // SAFARI
   animation:         animated-dots 4s linear infinite;
   &:nth-child(2) {
@@ -30,13 +26,13 @@ $theme-color: #05c3f9;
     animation-delay:         2s;
   }
   @-webkit-keyframes animated-dots { // SAFARI
-    0% { background: $neutral; }
-    50% { background: $theme-color; }
-    100% { background: $neutral; }
+    0% { background: $color-3; }
+    50% { background: $color-2; }
+    100% { background: $color-3; }
   }
   @keyframes animated-dots {
-    0% { background: $neutral; }
-    50% { background: $theme-color; }
-    100% { background: $neutral; }
+    0% { background: $color-3; }
+    50% { background: $color-2; }
+    100% { background: $color-3; }
   }
 }
