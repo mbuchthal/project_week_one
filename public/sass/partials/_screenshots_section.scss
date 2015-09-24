@@ -1,9 +1,16 @@
+
+
+.screenshot-section-wrapper {
+  position: relative;
+}
+
 .screenshots {
   h1 {
     font: $head-big-medium-font;
     text-align: center;
     color: $color-5;
-    margin: 2em 0;
+    position: relative;
+    padding: 2em;
   }
   .screenshot-gallery {
     margin: 0 auto 0 auto;

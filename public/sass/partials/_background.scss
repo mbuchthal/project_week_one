@@ -1,67 +1,110 @@
+
+// .bestway-wrapper {
+//   background-color: $color-background-dark;
+// }
+// .amazing-features {
+//   background-color: $color-text-medium-light;
+// }
+
+// .new-feature-wrapper {
+//   background-color: $color-text-theme;
+// }
+
+// .app-review-wrapper {
+//   background-color: $color-text-theme;
+// }
+
+// .video-section {
+//   background-color: $color-text-theme;
+// }
+
+// .newspaper-section {
+//   background-color: $color-text-medium-light;
+// }
+
+// .social-section {
+//   background-color: $color-background-dark;
+// }
 body {
-  background-color: #add8e6;
+  background-color: $color-background-dark;
 }
 
 
-// .first-skew:before {
-//   @include skewed_container(10em, 187em, -10, -5deg);
-//   background-color: $color-3;
-// }
 
-// .second-skew:before {
-//   @include skewed_container(30em, 23em, -8, -5deg);
-//   background-color: $color-8;
-// }
+.first-skew:before {
+  @include skewed_container(-2em, 10em, -7, -5deg);
+  background-color: $color-background-light;
+  @media only screen and (max-width: 450px) {
+    height: 13em;
+  }
+}
 
-// .third-skew:before {
-//   @include skewed_container(36em, 180em, -6, 0deg);
-//   background-color: $color-2;
-// }
+.second-skew {
+  &:before {
+    @include skewed_container(-4.5em, 44em, -8, -5deg);
+    background-color: $color-background-medium;
+  }
+}
 
-// .fourth-skew:before {
-//   @include skewed_container(40em, 41em, -5, -5deg);
-//   background: $color-3;
-// }
+.third-skew:before {
+  @include skewed_container(0, 35em, -6, 0deg);
+  background-color: $color-background-theme;
+}
 
-// .fifth-skew:before {
-//   @include skewed_container(97em, 2em, -4, 0);
-//   background-color: $color-3;
-// }
+
+.fourth-skew:before {
+  @include skewed_container(-5em, 60em, -5, -5deg);
+  background: $color-background-light;
+}
+
+.fifth-skew:before {
+  @include skewed_container(-4em, 13em, -4, -5deg);
+  background-color: $color-background-theme;
+}
 
 // .sixth-skew:before {
-//   @include skewed_container(136em, 58em, -3, -5deg);
-//   background-color: $color-3;
+//   @include skewed_container(-2em, 2em, -6, 0deg);
+//   background-color: $color-background-theme;
 // }
+.seven-skew:before {
+  @include skewed_container(-2.5em, 10em, -5, 5deg);
+  background-color: $color-background-light;
+}
 
-// .seventh-skew:before {
-//   @include skewed_container(146em, 10em, -2, 5deg);
-//   background-color: $color-8;
-// }
-// .seventh-skew-container:before {
-//   @include skewed_container(156em, 10em, -2, 0);
-//   background-color: $color-8;
-// }
-// .eigth-skew:before {
-//   @include skewed_container(223em, 10em, -2, -5deg);
-//   background-color: $color-8;
-// }
-// .eigth-skew-container:before {
-//   @include skewed_container(213em, 10em, -2, 0);
-//   background-color: $color-8;
-// }
-// .ninth-skew:before {
-//   @include skewed_container(233em, 30em, -2, -5deg);
-//   background-color: $color-3;
-// }
-// // @mixin skewed_container ($top, $height, $z-index, $angle) {
-// //   content: '';
-// //   position: absolute;
-// //   left: 0;
-// //   top: $top;   /* -- how far from top -- */
-// //   width: 100%;
-// //   height: $height; /* -- height of div -- */
-// //   background: aqua;
-// //   z-index: $z-index;
-// //   -webkit-transform: skewY($angle);
-// //   transform: skewY($angle);
-// // }
+.eight-skew:before {
+  @include skewed_container(8.5em, 35em, -6, 0);
+  background-color: $color-background-medium;
+}
+.nine-skew:before {
+  @include skewed_container(-4.5em, 49em, -7, -5deg);
+  background-color: $color-background-theme;
+}
+.ten-skew:before {
+  @include skewed_container(-8.5em, 34em, -8, -5deg);
+  background-color: $color-background-light;
+}
+.eleven-skew:before {
+  @include skewed_container(-6.5em, 47em, -8, -5deg);
+  background-color: $color-background-medium;
+}
+.twelve-skew:before {
+  @include skewed_container(-2.5em, 60em, -6, 0);
+  background-color: $color-background-light;
+}
+.thirteen-skew:before {
+  @include skewed_container(-5em, 30em, -5, -5deg);
+  background-color: $color-background-theme;
+}
+.fourteen-skew:before {
+  @include skewed_container(-4em, 24em, -4, 0);
+  background-color: $color-background-medium;
+}
+.fifteen-skew:before {
+  @include skewed_container(-4.5em, 32em, -3, -5deg);
+  background-color: $color-background-light;
+}
+.seventeen-skew:before {
+  @include skewed_container(-2em, 10em, -1, -2.5deg);
+  background-color: $color-background-dark;
+}
+
