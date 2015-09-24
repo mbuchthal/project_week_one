@@ -22,10 +22,10 @@
 {
     font-size: 0;
     line-height: 0;
-
     position: absolute;
+    top: 110%;
     @media screen and (min-width: 50em) {
-       top: 110%;
+       top: 90%;
     }
 
     display: block;
@@ -71,7 +71,7 @@
     font-size: 50px;
     line-height: 1;
 
-    opacity: .75;
+    opacity: 1;
     color: #000;
 
     -webkit-font-smoothing: antialiased;
@@ -80,7 +80,9 @@
 
 .slick-prev
 {
+  @media screen and (min-width: 50em) {
     left: 40%;
+  } 
 }
 [dir='rtl'] .slick-prev
 {
@@ -98,7 +100,9 @@
 
 .slick-next
 {
-    left: 55%;
+    @media screen and (min-width: 50em) {
+      left: 55%;
+    }
 }
 [dir='rtl'] .slick-next
 {

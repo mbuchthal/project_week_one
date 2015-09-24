@@ -6,7 +6,11 @@
     margin: 2em 0;
   }
   .screenshot-gallery {
-    margin: 0 auto 6em auto;
+    margin: 0 auto 0 auto;
+    padding-bottom: 3em;
+    @media screen and (min-width: 50em) {
+      padding-bottom: 6em;
+    }
     width: 80%;
     img {
       padding: 0 1em;
