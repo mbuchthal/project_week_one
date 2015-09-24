@@ -1,3 +1,25 @@
-@mixin widthDisplay() {
-	
+nav {
+	font-family: $header-font;
+	background: $color-background-header;
+	color: $color-text-light;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	height: 3em;
+	z-index: 1;
+	ul {
+		background-color: black;
+	}
+}
+.appbox-logo {
+	float: left;
+	margin-top: 2em;
+	margin: 0 auto;
+	display: block;
+	width: 5em;
+	float: left;
+	padding-top: 1.5em;
+}
+input[type=checkbox] {
+	display: none;
 }
