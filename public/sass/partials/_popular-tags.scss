@@ -1,0 +1,28 @@
+.popular-tags {
+  h1 {
+    font: $head-med-bold-font;
+    color: $color-text-theme;
+    margin-bottom: 2em;
+    .accent-bar-L {
+      height: 0.2em;
+      width: 20%;
+      background-color: $color-5;
+    }
+  }
+  .tags {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 0.2em;
+    border: 1px solid $color-border;
+    font: $text-small-light-font;
+    color: $color-text-medium-light;
+
+    &:hover {
+      color: $color-text-light;
+      background-color: $color-background-blue;
+      border-color: $color-border-h;
+    }
+
+  }
+
+}

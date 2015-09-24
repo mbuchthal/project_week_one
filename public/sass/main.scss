@@ -14,7 +14,7 @@
 
 
 // Partials
-
+@import "partials/background";
 @import "partials/accent-bar";
 @import "partials/button-and-mock";
 @import "partials/appbox-logo";
@@ -31,13 +31,13 @@
 @import "partials/nav";
 @import "partials/drawn-arrow";
 @import "partials/team";
-@import "partials/list-items";
-@import "partials/unordered-list";
+@import "partials/pricing";
 @import "partials/two-column-wrapper";
+
 @import "partials/footer";
 @import "partials/header";
-@import "partials/section";
 @import "partials/video";
+@import "partials/download-app";
 
 @import "partials/features";
 
@@ -46,6 +46,8 @@
 @import "partials/blogroll";
 
 @import "partials/new-feature";
+
+@import "partials/popular-tags";
 
 @import "partials/flickr";
 // Third Party

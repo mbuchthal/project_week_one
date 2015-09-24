@@ -2,9 +2,14 @@
   padding: 2em;
   background-color: $color-background-theme;
   @include flexbox;
+  @media screen and (min-width: 50em) {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
 }
 .feature-text-wrapper {
-  width: 15em;
+  width: 40%;
+  margin: 2em;
   @include flex_item;
   .sm-eclipse-border {  // small button
     font: $small-button-link-font;
@@ -72,6 +77,8 @@
   @include flex_item;
   margin-top: 2em;
   img {
-    height: 20em;
+    width: 28em;
+    margin: 0 auto;
+    display: block;
   }
 }
