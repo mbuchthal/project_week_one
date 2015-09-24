@@ -1,9 +1,9 @@
 .why-choose {
-  padding-bottom: 2em;
+  padding-top: 4em;
+  position: relative;
   h1 {
     font: $head-big-medium-font;
     color: $color-4;
-    margin-top: 2em;
     text-align: center;
   }
   h2 {
@@ -40,11 +40,42 @@
       right: 15%;
     }
   }
-  .img-carousel {
-    position: relative;
-    margin: 0 auto;
-    @media screen and (min-width: 50em) {
+  .review-gallery {
+    p {
+      width: 100%;
+      margin-top: 2em;
+      font: $text-light-font;
+      font-style: italic;
+      color: $color-text-light;
+      text-align: center;
+      @media screen and (min-width: 50em) {
+        width: 55%;
+        margin: 0 auto;
+      } 
+    }
+    .profile {
+      margin: 0 auto;
       width: 80%;
+      padding-left: 2em;
+      @media screen and (min-width: 50em) {
+        margin: 0 auto;
+        width: 28%;
+        padding-left: 4em;
+      }
+    }
+    .circle {
+      @include sm-circular-frame(3em);
+      float: left;
+      margin: 0 0.5em;
+      @media screen and (min-width: 50em) {
+        margin-left: 0;
+      }
     }
   }
+}
+
+.app-review-wrapper {
+  background-color: $color-background-theme;
+  padding-bottom: 4em;
+  position: relative;
 }

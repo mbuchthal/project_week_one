@@ -1,6 +1,8 @@
+
 .video-section {
   text-align: center;
   margin-bottom: 4em;
+  position: relative;
   h1 {
       font: $head-big-medium-font;
       color: $color-5;
@@ -10,5 +12,6 @@
     width: 60%;
     margin-bottom: 4em;
   }
+
 }
 

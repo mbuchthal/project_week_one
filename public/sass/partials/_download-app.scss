@@ -1,5 +1,8 @@
 .download-app-section {
+	margin-top: 8em;
+	padding-bottom: 2em;
 	@include flexbox;
+	position: relative;
 	h1 {
 		margin-bottom: 2em;
 	}
@@ -47,7 +50,7 @@
 		.lg-eclipse-border {
 			display: inline-block;
 			margin: 2em 1em 0 0;
-			
+
 		}
 		span {
 			display: inline-block;

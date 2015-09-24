@@ -18,7 +18,6 @@ div .skewed-container .inner-div {
   top: $top;   /* -- how far from top -- */
   width: 100%;
   height: $height; /* -- height of div -- */
-  background: aqua;
   z-index: $z-index;
   -webkit-transform: skewY($angle);
   transform: skewY($angle);
