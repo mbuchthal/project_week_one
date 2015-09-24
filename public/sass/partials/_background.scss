@@ -39,22 +39,35 @@ body {
   }
 }
 
-.second-skew {
-  &:before {
-    @include skewed_container(-4.5em, 44em, -8, -5deg);
-    background-color: $color-background-medium;
+.second-skew:before {
+  @include skewed_container(-4.5em, 44em, -8, -5deg);
+  background-color: $color-background-medium;
+  @media only screen and (max-width: 875px) {
+    height: 58em;
+  }
+  @media only screen and (max-width: 425px) {
+    height: 86em;
   }
 }
 
 .third-skew:before {
   @include skewed_container(0, 35em, -6, 0deg);
   background-color: $color-background-theme;
+  @media only screen and (max-width: 1025px) {
+    height: 52em;
+  }
+  @media only screen and (max-width: 600px) {
+    height: 59em;
+  }
 }
 
 
 .fourth-skew:before {
   @include skewed_container(-5em, 60em, -5, -5deg);
   background: $color-background-light;
+  @media only screen and (max-width: 1060px) {
+    height: 82em;
+  }
 }
 
 .fifth-skew:before {
