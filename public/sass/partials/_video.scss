@@ -2,11 +2,13 @@
 .video-header {
   font: $head-big-medium-font;
   color: $color-5;
-  margin-bottom: 2em;
+  padding: 2em;
+
 }
 .video-section {
   text-align: center;
   margin-bottom: 4em;
+  position: relative;
 }
 video {
   width: 60%;

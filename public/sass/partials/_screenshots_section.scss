@@ -1,9 +1,13 @@
 
+.screenshot-section-wrapper {
+  position: relative;
+}
 .screenshot-header {
   font: $head-big-medium-font;
   text-align: center;
   color: $color-5;
-  margin: 2em 0;
+  padding-top: 2em;
+  position: relative;
 }
 
 .screenshot-list {

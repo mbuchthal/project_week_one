@@ -1,6 +1,7 @@
 .new-feature-wrapper {
   padding: 2em;
-  background-color: $color-background-theme;
+  position: relative;
+  z-index: -7;
   @include flexbox;
   @media screen and (min-width: 50em) {
     padding-left: 5em;
@@ -80,5 +81,7 @@
     width: 28em;
     margin: 0 auto;
     display: block;
+    position: relative;
+    z-index: 1;
   }
 }

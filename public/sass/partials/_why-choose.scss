@@ -1,9 +1,10 @@
 .why-choose {
-  padding-bottom: 2em;
+  padding-top: 4em;
+
+  position: relative;
   h1 {
     font: $head-big-medium-font;
     color: $color-4;
-    margin-top: 2em;
     text-align: center;
   }
   h2 {
@@ -47,4 +48,10 @@
       width: 80%;
     }
   }
+}
+
+.app-review-wrapper {
+  background-color: $color-background-theme;
+  padding-bottom: 4em;
+  position: relative;
 }
