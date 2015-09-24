@@ -91,11 +91,21 @@
 }
 .slick-prev:before
 {
-    content: '\e624';
+    .screenshot-gallery & {
+        content: '\e624';
+    }
+    .review-gallery & {
+        content: '\e626';
+    }
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '\e624';
+    .screenshot-gallery & {
+        content: '\e624';
+    }
+    .review-gallery & {
+        content: '\e626';
+    }
 }
 
 .slick-next
@@ -111,11 +121,21 @@
 }
 .slick-next:before
 {
-    content: '\e622';
+    .screenshot-gallery & {
+        content: '\e622';
+    }
+    .review-gallery & {
+        content: '\e626';
+    }
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '\e622';
+    .screenshot-gallery & {
+        content: '\e622';
+    }
+    .review-gallery & {
+        content: '\e626';
+    }
 }
 
 /* Dots */
@@ -137,6 +157,12 @@
     list-style: none;
 
     text-align: center;
+    @media screen and (min-width: 50em) {
+        width: 1em;
+        left: 90%;
+        bottom: 50%;
+    }
+
 }
 .slick-dots li
 {
@@ -182,7 +208,7 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 16px;
     line-height: 20px;
 
     position: absolute;
@@ -195,14 +221,14 @@
     content: '•';
     text-align: center;
 
-    opacity: .25;
-    color: black;
+    opacity: 0.75;
+    color: $color-text-light;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: .75;
-    color: black;
+    opacity: 1;
+    color: $color-7;
 }
