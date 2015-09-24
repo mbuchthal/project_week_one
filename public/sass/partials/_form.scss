@@ -26,9 +26,11 @@ form {
     box-sizing: border-box;
     border: none;
     padding: 0;
+
     &::-webkit-input-placeholder {
       color: #bbb;
       line-height: 1;
+      background: transparent;
     }
     &:-moz-placeholder { /* Firefox 18- */
       @extend -webkit-input-placeholder }
