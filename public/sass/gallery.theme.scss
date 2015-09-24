@@ -1,11 +1,39 @@
 @import "modules/gallery-variables";
 @import "modules/colors";
+@import "modules/typography";
 @import "modules/mixins/circular-images";
 
 .gallery {
 	position: relative;
-	
-  .item { height: 400px; overflow: hidden; text-align: center; background: transparent; 
+	width: 80%;
+	margin: 0 auto;
+  .item { 
+  	width: 100%; 
+  	margin: 0 auto;
+  	overflow: hidden; 
+  	text-align: center; 
+  	background: transparent; 
+  	p {
+  		width: 100%;
+  		margin-top: 2em;
+  		font: $text-light-font;
+	    font-style: italic;
+	    color: $color-text-light;
+  		@media screen and (min-width: 50em) {
+      	width: 55%;
+  			margin: 0 auto;
+    	}	
+  	}
+  	.profile {
+	    margin: 0 auto;
+	    width: 80%;
+	    padding-left: 2em;
+	    @media screen and (min-width: 50em) {
+	      margin: 0 auto;
+	      width: 35%;
+	      padding-left: 4em;
+	    }
+	  }
   	.circle {
 	    @include sm-circular-frame(3em);
 	    float: left;
@@ -15,8 +43,18 @@
 	    }
 	  }
   }
-	.controls { position: absolute; bottom: 0; width: 100%; text-align: center; }
-	// changed to match our colors
+	.controls { 
+		position: absolute;
+		width: 24%;
+		right: 38%;
+		top: 0;
+		text-align: center; 
+		@media screen and (min-width: 50em) {
+			width: 1em; 
+			bottom: 50%;
+			right: 1em; 
+		}
+	}
 	.control-button {
 		@extend %inactive-button;
 		display: inline-block;
