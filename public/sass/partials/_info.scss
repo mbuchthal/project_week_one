@@ -1,20 +1,19 @@
 .info {
-  padding: 0.5em;
+  padding: 1em;
   .logo:before {
     content: " ";
     display: block;
-    margin-top: 0.2em;
     width: 105px;
     height: 26px;
     background: url("../images/appbox-wh.svg");
     background-repeat: no-repeat;
     @media screen and (min-width: 50em) {
-      margin-top: 2.2em;
+      // margin-top: 2.2em;
     }
   }
   p {
-    font: $text-small-light-font; 
+    font: $text-small-light-font;
     color: $color-text-medium-light;
-    margin-top: 2em;  
+    margin-top: 2em;
   }
 }
