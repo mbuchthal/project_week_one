@@ -1,11 +1,11 @@
 nav {
-	font-family: $header-font;
+	font: $header-font;
 	background: $color-background-header;
 	color: $color-text-light;
 	width: 100%;
 	top: 0;
-	height: 3em;
-	z-index: 1;
+	height: 5em;
+	z-index: 2;
 	ul {
 		background-color: black;
 	}
