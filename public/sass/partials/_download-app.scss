@@ -11,21 +11,21 @@
 	.download-img {
 		position: relative;
 		margin: 1em;
-
+		width: 16em;
 		img:nth-child(1) {
 			z-index: 0;
-			width: 16em;
-			height: 30em;
 		}
 		img:nth-child(2) {
 			position: absolute;
-			width: 17em;
+			width: 74%;
 			top: -5%;
 			left: 33%;
 			z-index: 0;
 		}
 	}
 	.download-link {
+		margin-right: .5em;
+		margin-left: .5em;
 		h1 {
 			width: 20em;
 			font: $head-big-light-font;
