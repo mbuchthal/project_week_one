@@ -1,5 +1,6 @@
 .new-feature-wrapper {
-  background-color: $color-background-blue;
+  padding: 2em;
+  background-color: $color-background-theme;
   @include flexbox;
   @media screen and (min-width: 50em) {
     padding-left: 5em;

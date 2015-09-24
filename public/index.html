@@ -10,6 +10,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,300italic,500" rel="stylesheet" type="text/css">
     <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/gallery.build.css">
+    <link rel="stylesheet" href="css/gallery.theme.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -185,36 +187,42 @@
       <h4>Read What Our Happy Customers Are Saying</h4>
       <span class="drawn-arrow-wh">&nbsp;</span>
     </div>
-    <div class="img-carousel">
-      <ul>
-        <li>
-          <p>Eleifend morbi orci velit porttitor sed imperdiet ac ullamcorper Fusce eget tortor vel magna iaculis convallis. Aeneaneros vitae metus pellentesque tincidunt.Cum sociis natoque penatibus et magnis dis parturient montes turpis donec tincidunt tellus.</p>
-            <figure class="profile">
-              <span class="circle">
-                <img src="images/edison.jpg" alt="Portrait of Thomas Edison">
-              </span>
-              <figcaption><span class="name">Thomas Edison</span>Inventor : The Lightbulb</figcaption>
-            </figure>
-        </li>
-        <li>
-          <p>Eleifend morbi orci velit porttitor sed imperdiet ac ullamcorper Fusce eget tortor vel magna iaculis convallis. Aeneaneros vitae metus pellentesque tincidunt.Cum sociis natoque penatibus et magnis dis parturient montes turpis donec tincidunt tellus.</p>
-            <figure class="profile clearfix">
-              <span class="circle">
-                <img src="images/edison.jpg" alt="Portrait of Thomas Edison">
-              </span>
-              <figcaption><span class="name">Thomas Edison</span>Inventor : The Lightbulb</figcaption>
-            </figure>
-        </li>
-        <li>
-          <p>Eleifend morbi orci velit porttitor sed imperdiet ac ullamcorper Fusce eget tortor vel magna iaculis convallis. Aeneaneros vitae metus pellentesque tincidunt.Cum sociis natoque penatibus et magnis dis parturient montes turpis donec tincidunt tellus.</p>
-            <figure class="profile clearfix">
-              <span class="circle">
-                <img src="images/edison.jpg" alt="Portrait of Thomas Edison">
-              </span>
-              <figcaption><span class="name">Thomas Edison</span>Inventor : The Lightbulb</figcaption>
-            </figure>
-        </li>
-      </ul>
+    <div class="gallery items-3">
+      <div id="no-autoplay-1" class="control-operator"></div>
+      <div id="no-autoplay-2" class="control-operator"></div>
+      <div id="no-autoplay-3" class="control-operator"></div>
+      <figure class="item">
+        <p>Eleifend morbi orci velit porttitor sed imperdiet ac ullamcorper Fusce eget tortor vel magna iaculis convallis. Aeneaneros vitae metus pellentesque tincidunt.Cum sociis natoque penatibus et magnis dis parturient montes turpis donec tincidunt tellus.</p>
+        <figure class="profile">
+          <span class="circle">
+            <img src="images/edison.jpg" alt="Portrait of Thomas Edison">
+          </span>
+          <figcaption><span class="name">Thomas Edison</span>Inventor : The Lightbulb</figcaption>
+        </figure>
+      </figure>
+      <figure class="item">
+        <p>Eleifend morbi orci velit porttitor sed imperdiet ac ullamcorper Fusce eget tortor vel magna iaculis convallis. Aeneaneros vitae metus pellentesque tincidunt.Cum sociis natoque penatibus et magnis dis parturient montes turpis donec tincidunt tellus.</p>
+        <figure class="profile">
+          <span class="circle">
+            <img src="images/buchanan.jpg" alt="Portrait of James Buchanan">
+          </span>
+          <figcaption><span class="name">James Buchanan</span>Winner : Best Hair</figcaption>
+        </figure>
+      </figure>
+      <figure class="item">
+        <p>Eleifend morbi orci velit porttitor sed imperdiet ac ullamcorper Fusce eget tortor vel magna iaculis convallis. Aeneaneros vitae metus pellentesque tincidunt.Cum sociis natoque penatibus et magnis dis parturient montes turpis donec tincidunt tellus.</p>
+        <figure class="profile">
+          <span class="circle">
+            <img src="images/stanton.jpg" alt="Portrait of Elizabeth Cady Stanton">
+          </span>
+          <figcaption><span class="name">Elizabeth Stanton</span>Champion : Women's Suffrage</figcaption>
+        </figure>
+      </figure>
+      <div class="controls">
+        <a href="#no-autoplay-1" class="control-button"></a>
+        <a href="#no-autoplay-2" class="control-button"></a>
+        <a href="#no-autoplay-3" class="control-button"></a>
+      </div>
     </div>
     </section>
 		<section id="screens-nav">
@@ -298,7 +306,6 @@
     </div>
       <ul class="team">
         <li>
-
             <figure class="profile">
               <a class="circle">
                   <img src="images/grant.jpg" alt="Portrait of Ulysses S Grant"/>
@@ -467,8 +474,6 @@
     </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/deps/jquery.js"><\/script>')</script>
-  <script type="text/javascript" src="js/deps/unslider.min.js"></script>
-  <script type="text/javascript" src="js/carousel.js"></script>
   <script type="text/javascript" src="js/video.js"></script>
   <script type="text/javascript" src="js/smooth-scroll.js"></script>
   <script type="text/javascript" src="js/nav-search.js"></script>

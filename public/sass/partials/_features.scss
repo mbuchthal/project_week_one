@@ -1,42 +1,74 @@
 .amazing-features {
-  background-color: $color-background-lightGray;
+  background-color: $color-background-medium;
   h1 {
     text-align: center;
     font: $head-big-bold-font;
     color: $color-text-dark;
     padding-top: 1em;
   }
-}
-
-.features {
-  @include flexbox;
-  li {
-    @include flex_item;
-    margin: 1em;
-    width: 11em;
-    padding: 2em 0;
-    &:hover {
-    background: $color-icon-background-h;
-    box-shadow: -0.01em -0.01em 1em 0.05em #888888;
-      span {
-        color: $color-icon-h;
-        border-color: $hover-color-1;
+  .features {
+    @include flexbox;
+    li {
+      @include flex_item;
+      margin: 1em;
+      width: 11em;
+      padding: 2em 0;
+      &:hover {
+      background: $color-icon-background-h;
+      box-shadow: -0.01em -0.01em 1em 0.05em #888888;
+        span {
+          color: $color-icon-h;
+          border-color: $hover-color-1;
+        }
       }
     }
-  }
-  span {
-    margin: 0 auto;
-    color: $color-icon-circle-h;
-  }
-  h3 {
-    margin: 1em;
-    font: $head-small-bold-font;
-    text-align: center;
-  }
-  p {
-    margin: 1em;
-    text-align: center;
-    font: $text-light-font;
-    color: $color-text-dark;
+    span {
+      margin: 0 auto;
+      color: $color-icon-circle-h;
+    }
+    h3 {
+      margin: 1em;
+      font: $head-small-bold-font;
+      text-align: center;
+    }
+    p {
+      margin: 1em;
+      text-align: center;
+      font: $head-big-bold-font;
+      color: $color-text-dark;
+      padding-top: 1em;
+    }
+    .features {
+      @include flexbox;
+      li {
+        @include flex_item;
+        margin: 1em;
+        width: 11em;
+        padding: 2em 0;
+        &:hover {
+        background: $color-icon-background-h;
+        box-shadow: -0.01em -0.01em 1em 0.05em #888888;
+          span {
+            color: $color-icon-h;
+            border-color: $hover-color-1;
+          }
+        }
+      }
+      span {
+        margin: 0 auto;
+        color: $color-icon-circle-h;
+      }
+      h3 {
+        margin: 1em;
+        font: $head-small-bold-font;
+        text-align: center;
+      }
+      p {
+        margin: 1em;
+        text-align: center;
+        font: $text-light-font;
+        color: $color-text-dark;
+      }
+    }
   }
 }

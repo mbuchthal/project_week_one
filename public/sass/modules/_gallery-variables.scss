@@ -1,0 +1,14 @@
+@import "modules/colors";
+
+$item-display-duration: 5 !default; //seconds
+$transition-duration: 2 !default; // seconds
+$display-duration: $transition-duration + $item-display-duration;
+
+@mixin inactive-button { background-color: transparent; } // changed to match colors
+@mixin active-button { background-color: $color-3; }      // changed to match colors
+
+%inactive-button { 
+  @include inactive-button; 
+  border: 1px solid $color-3; 
+}
+%active-button { @include active-button; }
