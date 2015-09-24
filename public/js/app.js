@@ -25,4 +25,10 @@ $(document).ready(function(){
       }
     ]
   });
+  $('.review-gallery').slick({
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 10000
+  });
 });

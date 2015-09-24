@@ -1,5 +1,0 @@
-@import "partials/gallery";
-
-@for $i from 2 through 5 {
-  @include gallery($i);
-}
