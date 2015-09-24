@@ -5,44 +5,11 @@
     color: $color-5;
     margin: 2em 0;
   }
-
-@keyframes fadeOut {
-  from {opacity: 1;}
-  to {opacity: 0;}
-}
-
-.fadeOut {
-  animation-name: fadeOut;
-}
-
-
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-.fadeIn {
-  animation-name: fadeIn;
-}
-
-
-  .screenshot-list {
-    @include flexbox;
-    margin-bottom: 2em;
-    :first-child {
-      @include pic-insert(url("../assets/iphoneOutLine.svg"), 65%);
-      height: 29em;
-      width: 20em;
-    }
-    :nth-child(2) {
-      @include pic-insert(url("../assets/iphoneOutLine.svg"), 65%);
-      height: 29em;
-      width: 20em;
-    }
-    :nth-child(3) {
-      @include pic-insert(url("../assets/iphoneOutLine.svg"), 65%);
-      height: 29em;
-      width: 20em;
+  .screenshot-gallery {
+    margin: 0 auto 6em auto;
+    width: 80%;
+    img {
+      padding: 0 1em;
     }
   }
   .screenshot-arrow-wrapper {
