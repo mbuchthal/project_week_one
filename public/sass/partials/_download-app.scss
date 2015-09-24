@@ -1,5 +1,8 @@
 .download-app-section {
 	@include flexbox;
+	h1 {
+		margin-bottom: 2em;
+	}
 	justify-content: space-around;
 
 	.download-img {
@@ -39,9 +42,15 @@
 			font: $text-light-font;
 			color: $color-text-medium;
 	}
-	.download-link-button {
-		display: flex;
-		justify-content: center;
-		padding-bottom: 10em;
+	.download-link-wrapper {
+		display: inline-block;
+		.lg-eclipse-border {
+			display: inline-block;
+			margin: 2em 1em 0 0;
+			
+		}
+		span {
+			display: inline-block;
+		}
 	}
 }

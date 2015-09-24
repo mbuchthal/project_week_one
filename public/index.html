@@ -33,7 +33,7 @@
         <li><a href="#"><span class="icon-search"></span></a></li>
       </ul>
     </nav>
-		<section id="home-nav">
+		<section id="home-nav" class="best-way">
       <div class="bestway-wrapper">
         <div class="bestway">
           <h1>Best Way To Present Your Beautiful Mobile App</h1>
@@ -44,14 +44,22 @@
           <img src="assets/iPhone.png" alt="iPhone">
         </div>
       </div>
+
+      <!-- these are styled in a very weird way... -->
       <h2 class="getitfree">GET IT FOR FREE</h2>
-    <div>
-      <p>Choose your native platform and download the app FREE!</p>
-    </div>
-      <div class="getitfree-link-wrapper">
-        <a href="#" class="google-play-link lg-eclipse-border"><svg width=32 height=32></svg>Google Play</a>
-        <a href="#" class="ios-store-link lg-eclipse-border"><span class="icon-apple">iOS App Store</span></a>
+      <div>
+        <p>Choose your native platform and download the app FREE!</p>
       </div>
+      
+      <div class="download-link-wrapper">
+        <a href="#" class="lg-eclipse-border">
+          <span class="icon-google-play">Google Play</span>
+        </a>
+        <a href="#" class="lg-eclipse-border">
+          <span class="icon-apple">iOS App Store</span>
+        </a>
+      </div>
+      
     </section>
     <section id="features-nav" class="amazing-features">
       <h1>Some Amazing Features</h1>
@@ -250,10 +258,16 @@
 				<div class="download-link">
 					<h1><span>Download</span> Our App<span class="accent-bar-L"></span></h1>
 					<p>Choose your native platform and download the app FREE!</p>
-					<div class="download-link-button">
-						<a href="#" class="google-play-link lg-eclipse-border"><img src="assets/googleLogo.svg" alt="Google Play"><p>Google Play</p></a>
-						<a href="#" class="ios-store-link lg-eclipse-border"><span class="icon-apple"></span>iOS App Store</a>
-					</div>
+					
+          <div class="download-link-wrapper">
+            <a href="#" class="lg-eclipse-border">
+              <span class="icon-google-play">Google Play</span>
+            </a>
+            <a href="#" class="lg-eclipse-border">
+              <span class="icon-apple">iOS App Store</span>
+            </a>
+          </div>
+
 				</div>
 				<form action="" class="download-form quickform"><fieldset><legend>Subscribe To Newsletter</legend><input type="email" placeholder="Enter your email address"/><button type="submit" class="sm-button-eclipse-border">SUBMIT</button></fieldset></form>
 			</div>

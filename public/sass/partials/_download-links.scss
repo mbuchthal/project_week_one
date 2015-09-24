@@ -1,0 +1,42 @@
+.download-link-wrapper {
+  @include flexbox;
+  margin-bottom: 3em;
+  a {
+    margin: 0 1em;
+    background-color: $color-background-light;
+    &:hover {
+      border-color: $color-7;
+      background-color: $color-background-theme;
+      color: $color-text-light;
+      .icon-google-play:before {
+        background: url("../assets/googleLogo-wh.svg") no-repeat;
+        background-size: contain;
+      }
+      .icon-apple:before {
+        background: url("../assets/icons/appleLogo.svg") no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+  %icon {
+    font: $text-light-font;
+    line-height: 2;
+    padding: 1em;
+  }
+  .icon-google-play {
+    @extend %icon;
+  }
+  .icon-apple {
+    @extend %icon;
+  }
+  .icon-google-play:before {
+    @include icon-before (0.5em, 2em, 2em, left);
+    background: url("../assets/googleLogo.svg") no-repeat;
+    background-size: contain;
+  }
+  .icon-apple:before {
+    @include icon-before (0.25em, 1em, 1em, left);
+    background: url("../assets/icons/appleLogo-grey.svg") no-repeat;
+    background-size: contain;
+  }
+}

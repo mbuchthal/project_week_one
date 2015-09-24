@@ -1,0 +1,8 @@
+@mixin icon-before($margin-right, $width, $height, $float) {
+  content: " ";
+  display: block;
+  float: $float;
+  margin-right: $margin-right;
+  width: $width;
+  height: $height;
+}

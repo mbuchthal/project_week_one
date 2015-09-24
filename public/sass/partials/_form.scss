@@ -45,6 +45,7 @@ form {
 }
 .quickform {
   @extend form;
+  margin-left: 0;
   border-bottom: 1px solid #bbb;
   legend {
     margin-bottom: 1em;

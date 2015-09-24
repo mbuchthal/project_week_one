@@ -81,28 +81,4 @@ $lg-radius: ($lg-width - $lg-height) / 2;
   padding: ($height * 0.25) 1.5em;
 }
 
-.google-play-link {
-    width: 11.5em;
-    height: 4em;
-    font: 300 0.9em Roboto;
-  > svg {
-    content: '';
-    display: block;
-    height: 2em;
-    background: url("../assets/googleLogo.svg") no-repeat;
-    background-size: contain;
-  }
-}
 
-
-.ios-store-link {
-  width: 11.5em;
-  height: 4em;
-  background-color: $color-2;
-  border-color: $color-7;
-  span {
-    font: 300 0.9em Roboto;
-    color: $color-3;
-  }
-
-}
