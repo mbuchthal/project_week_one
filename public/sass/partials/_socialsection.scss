@@ -2,6 +2,9 @@
   @include flexbox;
   position: relative;
   padding: 2em;
+  @media screen and (min-width: 50em) {
+    padding-left: 5em;
+  }
   section {
     width: 100%;
     @media screen and (min-width: 50em) {
