@@ -12,18 +12,4 @@
       padding: 0 1em;
     }
   }
-  .screenshot-arrow-wrapper {
-    @include flexbox;
-    margin-bottom: 2em;
-  }
-  .screenshot-arrow-left {
-    transform: rotate(40deg);
-    &:after {
-      @include pic-insert(url("../assets/arrowblack.svg"), 10%);
-    }
-  }
-  .screenshot-arrow-right:after {
-    transform: scaleX(-1) rotate(40deg);
-    @include pic-insert(url("../assets/arrowblack.svg"), 10%);
-  }
 }
