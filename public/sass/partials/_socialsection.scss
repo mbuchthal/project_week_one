@@ -2,7 +2,7 @@
   @include flexbox;
   margin: 2em;
   padding: 2em;
-  background-color: $color-background-widget;
+  background-color: $color-background-dark;
   section {
     width: 100%;
     @media screen and (min-width: 50em) {
