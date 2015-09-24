@@ -1,5 +1,5 @@
-
 .flickr {
+  padding: 1em;
   h1 {
     font: $head-med-bold-font;
     color: $color-text-theme;
@@ -11,8 +11,8 @@
     }
   }
   div {
-    width: 90px;
-    height: 90px;
+    width: 4em;
+    height: 4em;
     text-align: center;
     margin: .5em .5em .5em 0;
     display: inline-block;
