@@ -1,0 +1,29 @@
+.triangle {
+  width: 100px;
+  height: 100px;
+  background: #313131; // $color-10
+  -webkit-clip-path: polygon(49% 46%, 0% 100%, 100% 100%);
+  clip-path: polygon(49% 46%, 0% 100%, 100% 100%);
+  position: relative;
+  // top: 3em;
+  // left: 3em;
+}
+.arrow {
+  position: absolute;
+  top: 70%;
+  left: 42%;
+  width: 1em;
+  height: 1em;
+  background: transparent;
+  border-top: .2em solid white;
+  border-right: .2em solid white;
+  box-shadow: 0 0 0 lightgray;
+  transition: all 200ms ease;
+  transform: translate3d(0,-50%,0) rotate(-45deg);
+
+  &:hover {
+    border-top: .2em solid aqua;
+    border-right: .2em solid aqua;
+    box-shadow: .2em -.2em 0 white;
+  }
+}
