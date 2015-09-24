@@ -1,20 +1,19 @@
-.download-app {
-	display:flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+.download-app-section {
+	@include flexbox;
 	justify-content: space-around;
-	align-content: flex-start;
-	align-items: flex-start;
-	width: 90%;
+
 	.download-img {
 		position: relative;
 		margin: 1em;
+
 		img:nth-child(1) {
 			z-index: 0;
+			width: 16em;
+			height: 30em;
 		}
 		img:nth-child(2) {
 			position: absolute;
-			width: 75%;
+			width: 17em;
 			top: -5%;
 			left: 33%;
 			z-index: 0;
@@ -22,21 +21,23 @@
 	}
 	.download-link {
 		h1 {
-			@include pic-insert(url("../assets/arrowblack.svg"), contain);
-			background-position: 70%, 90%; 
-			background-size: 8%;
-			height: 5em;
 			width: 20em;
 			font: $head-big-light-font;
 			span {
-				font: $head-big-bold-font;
-				}
+				font: $head-med-bold-font;
 			}
-		p {			
+			span.accent-bar-L {
+				width: 13%;
+				color: $color-5;
+			}
+		}
+		&:before {
+			@include pic-insert(url("../assets/arrowblack.svg"), 8%);
+		}
+	}
+		p {
 			font: $text-light-font;
 			color: $color-text-medium;
-			padding: 2em;
-		}
 	}
 	.download-link-button {
 		display: flex;
