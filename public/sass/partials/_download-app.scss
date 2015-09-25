@@ -3,11 +3,7 @@
 	padding-bottom: 2em;
 	@include flexbox;
 	position: relative;
-	h1 {
-		margin-bottom: 2em;
-	}
 	justify-content: space-around;
-
 	.download-img {
 		@media screen and (max-width:550px){
 			display: none;
@@ -28,27 +24,10 @@
 			z-index: 0;
 		}
 	}
-	.download-link {
-		margin-right: .5em;
-		margin-left: .5em;
-		h1 {
-			width: 19em;
-			font: $head-big-light-font;
-			span {
-				font: $head-med-bold-font;
-			}
-			span.accent-bar-L {
-				width: 13%;
-				color: $color-5;
-			}
-		}
-		&:before {
-			@include pic-insert(url("../assets/arrowblack.svg"), 8%);
-		}
-	}
 		p {
 			font: $text-light-font;
 			color: $color-text-medium;
+			margin-top: 3em;
 	}
 	.download-link-wrapper {
 		display: inline-block;
@@ -61,3 +40,21 @@
 		}
 	}
 }
+
+.download-link {
+		margin-top: 3em;
+		margin-right: .5em;
+		margin-left: .5em;
+		}
+		h1 {
+			width: 19em;
+			font: $head-big-light-font;
+			span {
+				font: $head-med-bold-font;
+			}
+			span.accent-bar-L {
+				width: 13%;
+				color: $color-5;
+			}
+	}
+
