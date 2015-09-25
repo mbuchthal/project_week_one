@@ -12,13 +12,14 @@
   }
 }
 .feature-text-wrapper {
-  width: 40%;
+  width: 80%;
   @include flex_item;
   @media only screen and (min-width: 550px) {
     margin: 2em;
+    width: 60%;
   }
   @media screen and (min-width: 1030px) {
-
+    width: 40%;
   }
   .sm-eclipse-border {  // small button
     font: $small-button-link-font;
@@ -45,7 +46,7 @@
   aside {
     @include flexbox;
     color: $color-text-light;
-    width: 22em;
+    width: 18em;
 
     .download-text-wrapper {
       width: 10em;
