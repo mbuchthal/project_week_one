@@ -16,10 +16,15 @@
   @include flex_item;
   @media only screen and (min-width: 550px) {
     margin: 2em;
-    width: 60%;
+
   }
   @media screen and (min-width: 1030px) {
     width: 40%;
+    max-width: 53%;
+  }
+  @media screen and (min-width: 900px) {
+    max-width: 50%;
+
   }
   .sm-eclipse-border {  // small button
     font: $small-button-link-font;

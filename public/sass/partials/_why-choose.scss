@@ -1,11 +1,30 @@
 .why-choose {
-  padding-top: 2em;
+  padding-top: 1em;
   position: relative;
   h1 {
     font: $head-big-medium-font;
     color: $color-4;
     text-align: center;
-  }
+    &:before {
+      @include pic-insert(url("../assets/live-support.png"), 100%);
+        content: '';
+        height: 15em;
+        width: 12em;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: -14.5em;
+        margin-left: 27em;
+        @media screen and (max-width: 1150px) {
+          margin-left: 22em;
+        }
+        @media screen and (max-width: 1000px) {
+          margin-left: 19em;
+        }
+        @media screen and (max-width: 900px) {
+          display: none;
+        }
+      }
+    }
   h2 {
     margin-top: 1em;
     font: $head-big-light-font;
@@ -75,7 +94,6 @@
 }
 
 .app-review-wrapper {
-
   padding-bottom: 4em;
   position: relative;
 }

@@ -34,13 +34,13 @@ body {
 
 
 .fourth-skew:before {
-  @include skewed_container(-5em, 60em, -5, -5deg);
+  @include skewed_container(-4em, 60em, -5, -5deg);
   background: $color-background-light;
   @media only screen and (max-width: 1060px) {
     height: 82em;
   }
   @media only screen and (max-width: 400px) {
-    top: 0;
+    top: -1em;
   }
 }
 
@@ -126,7 +126,7 @@ body {
   background-color: $color-background-light;
 }
 .eleven-skew:before {
-  @include skewed_container(20em, 26em, -8, 5deg);
+  @include skewed_container(20em, 36em, -8, 5deg);
   background-color: $color-background-medium;
 }
 .twelve-skew:before {
