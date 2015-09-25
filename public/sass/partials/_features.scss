@@ -11,7 +11,7 @@
     @include flexbox;
     li {
       @include flex_item;
-      margin: 0.5em;
+      margin: 0.75em;
       width: 11em;
       padding: 0.5em 0;
       @media screen and (min-width: 550px) {
