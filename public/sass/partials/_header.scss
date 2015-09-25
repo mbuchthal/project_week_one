@@ -1,4 +1,5 @@
 // --- MOBILE NAV BAR --- //
+// THIS IS MOBILE VIEW
 @media screen and (max-width: 50em) {
 	.show-menu {
 		display: block;
@@ -6,7 +7,8 @@
 		background: $color-background-header;
 		color: $color-text-light;
 		text-align: center;
-		padding: 0.5em 0; 
+		padding: 1em 0;
+		width: 70%;
 	}
 	input[type=checkbox]:not(:checked) ~
 		.menu {
@@ -20,7 +22,7 @@
 			display: block;
 			text-align: center;
 			text-decoration: none;
-			color: $color-text-light;		
+			color: $color-text-light;
 			padding: 0.5em;
 			&:hover {
 				color: $color-link-button-h;
@@ -28,6 +30,7 @@
 		}
 	}
 }
+// THIS IS BIG SCREEN
 @media screen and (min-width: 50em) {
 	.show-menu {
 		display: none;
