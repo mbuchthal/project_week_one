@@ -1,6 +1,8 @@
 // BUTTON CLASSES - to be applied to real button elements
 .jiggle-effect {
-	@include button-jiggleOne();
+	&:hover {
+		@include button-jiggleOne();
+	}
 }
 .sm-button-eclipse-border {
   @include button-eclipse-border($border-color-1, $light, $sm-width, $sm-height, $sm-radius);
