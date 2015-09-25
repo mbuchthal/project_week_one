@@ -82,16 +82,22 @@ body {
   @media only screen and (max-width: 1050px) {
     height: 33em;
   }
+  @media only screen and (max-width: 975px) {
+    height: 30em;
+  }
   @media only screen and (max-width: 925px) {
     height: 29em;
   }
-  @media only screen and (max-width: 800px) {
-    height: 26em;
+  @media only screen and (max-width: 850px) {
+    height: 27em;
   }
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 800px) {
     height: 21em;
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 675px) {
+    height: 19em;
+  }
+  @media only screen and (max-width: 620px) {
     height: 16em;
   }
   @media only screen and (max-width: 475px) {
@@ -103,22 +109,36 @@ body {
   @media only screen and (max-width: 375px) {
     height: 26em;
   }
-
 }
 .nine-skew:before {
-  @include skewed_container(-4.5em, 56em, -7, -5deg);
+  @include skewed_container(-6.5em, 54em, -7, -5deg);
   background-color: $color-background-theme;
-  @media screen and (max-width: 1250px) {
+  @media screen and (max-width: 1350px) {
     height: 51em;
+  }
+  @media screen and (max-width: 1250px) {
+    height: 48em;
   }
   @media screen and (max-width: 1100px) {
     height: 45em;
   }
-  @media screen and (max-width: 875px) {
-    height: 41em;
+  @media screen and (max-width: 1025px) {
+    height: 39.5em;
   }
-  @media screen and (max-width: 675px) {
-    height: 36em;
+  @media screen and (max-width: 925px) {
+    height: 37.5em;
+  }
+  @media screen and (max-width: 875px) {
+    height: 36.5em;
+  }
+  @media screen and (max-width: 800px) {
+    -webkit-transform: skewY(0);
+    transform: skewY(0);
+    height: 33.5em;
+  }
+  @media screen and (max-width: 650px) {
+    transform: skewY(0);
+    height: 30em;
   }
 }
 .ten-skew:before {
@@ -141,6 +161,8 @@ body {
   }
   @media screen and (max-width: 600px) {
     top: -1em;
+    -webkit-transform: skewY(0);
+    transform: skewY(0);
   }
 }
 .fourteen-skew:before {
@@ -155,7 +177,7 @@ body {
   }
 }
 .seventeen-skew:before {
-  @include skewed_container(-2em, 28em, -1, -2.5deg);
+  @include skewed_container(-2em, 26em, -1, -2.5deg);
   background-color: $color-background-dark;
   @media screen and (max-width: 550px) {
     top: 0;
