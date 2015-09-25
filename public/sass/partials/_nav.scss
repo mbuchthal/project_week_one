@@ -6,6 +6,7 @@ nav {
 	top: 0;
 	height: 5em;
 	z-index: 2;
+	text-align: center;
 	ul {
 		background-color: black;
 	}
@@ -15,9 +16,9 @@ nav {
 	margin-top: 2em;
 	margin: 0 auto;
 	display: block;
-	width: 5em;
-	float: left;
+	width: 10em;
 	padding-top: 1.5em;
+	padding-left: 4em;
 }
 input[type=checkbox] {
 	display: none;
