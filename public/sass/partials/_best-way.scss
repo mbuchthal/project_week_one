@@ -59,6 +59,7 @@
     }
   }
   .get-it-free {
+    position: relative;
     p {
       text-align: center;
       margin: 0.5em auto;
@@ -70,14 +71,21 @@
       }
     }
     &:after {
-      background: url("../assets/arrowblack.svg") no-repeat;
-      background-size: contain;
-      content: '';
-      height: 4em;
-      width: 2em;
-      margin-left: 2em;
-      @media screen and (max-width: 550px) {
-        display: none;
+      display: none;
+      @media screen and (min-width: 750px) {
+        background: url("../assets/arrowblack.svg") no-repeat;
+        display: block;
+        background-size: contain;
+        content: '';
+        height: 4em;
+        width: 2em;
+        margin-left: 2em;
+        position: absolute;
+        right: 22%;
+        bottom: 5em;
+        @media screen and (min-width: 650px) {
+          // right: 15%;
+        }
       }
     }
     .download-link-wrapper {
