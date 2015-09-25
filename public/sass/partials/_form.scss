@@ -15,6 +15,7 @@ form {
     border-bottom: 1px solid $color-border;
     font-size: 0.7em;
     color: $color-border;
+    font: $text-form-textarea;
   }
   legend, label {
     color: $color-text-dark;
@@ -26,7 +27,6 @@ form {
     box-sizing: border-box;
     border: none;
     padding: 0;
-
     &::-webkit-input-placeholder {
       color: #bbb;
       line-height: 1;
@@ -39,6 +39,23 @@ form {
     &:-ms-input-placeholder {
       @extend -webkit-input-placeholder }
   }
+
+  ::-webkit-input-placeholder {
+    font: $text-light-font;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    font: $text-light-font;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+    font: $text-light-font;
+  }
+
+  :-ms-input-placeholder {
+    font: $text-light-font ;
+  }
+
   .sm-button-eclipse-border {
     border-color: $color-7;
     background: $color-2;
@@ -51,15 +68,19 @@ form {
   border-bottom: 1px solid #bbb;
   legend {
     margin-bottom: 1em;
+
   }
   input {
     padding-bottom: 0.5em;
     height: 3em;
     width: 60%;
     margin-bottom: 5px;
+    background-color: $color-background-medium;
+    font-size: 1em;
   }
   button {
     float: right;
     margin-top: 0.1em;
   }
 }
+
