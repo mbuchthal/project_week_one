@@ -11,7 +11,7 @@
   }
 }
 
-
+/*--Links to newspapers--*/
 
 .newspaper-list {
   @include flexbox;
@@ -27,7 +27,7 @@
       @include pic-insert(url("../images/NewYorkTimes.svg.png"), 90%)
     }
     &:nth-child(2) {
-      @include pic-insert(url("../images/Forbes_logo.svg"), 40%)
+      @include pic-insert(url("../images/Forbes_logo.svg.png"), 40%)
     }
     &:nth-child(3) {
       @include pic-insert(url("../images/The_Wall_Street_Journal_Logo.svg.png"), 90%)
