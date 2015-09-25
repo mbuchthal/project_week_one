@@ -22,8 +22,8 @@
   transform: translate3d(0,-50%,0) rotate(-45deg);
   -webkit-transform: translate3d(0,-50%,0) rotate(-45deg);
   &:hover {
-    border-top: .2em solid aqua;
-    border-right: .2em solid aqua;
+    border-top: .2em solid $color-2;
+    border-right: .2em solid $color-2;
     box-shadow: .2em -.2em 0 white;
   }
 }
