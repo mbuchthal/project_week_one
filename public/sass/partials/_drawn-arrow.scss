@@ -31,15 +31,15 @@
   background-repeat: no-repeat;
 }
 .drawn-arrow-blk-rotate::after {
-    background: url("../assets/arrowblack.svg") no-repeat;
-    background-size: contain;
-    content: '';
-    height: 3em;
-    width: 2em;
-    margin-left: 2em;
-    display: inline-block;
-    margin-left: 19em;
-    margin-top: -2em;
-    transform: rotate(-30deg);
+  background: url("../assets/arrowblack.svg") no-repeat;
+  background-size: contain;
+  content: '';
+  height: 3em;
+  width: 2em;
+  margin-left: 2em;
+  display: inline-block;
+  margin-left: 19em;
+  margin-top: -2em;
+  transform: rotate(-30deg);
 }
 

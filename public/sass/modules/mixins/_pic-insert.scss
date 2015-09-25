@@ -1,6 +1,4 @@
-
 /* -- Adds svg/png --*/
-
 @mixin pic-insert($url, $background-size) {
   content: '';
   display: block;
@@ -10,5 +8,5 @@
   background-size: $background-size;
   background-repeat: no-repeat;
   background-position: center;
-  
+
 }
