@@ -10,6 +10,7 @@
     margin-top: 6em;
   }
   h1 {
+		z-index: -1;
     font: $head-largest-bold-font;
     color: $color-3;
   }
