@@ -23,6 +23,10 @@
     color: $color-4;
     margin: 2em auto;
     text-align: center;
+		width: 70%;
+		@media screen and (min-width:550px){
+			width: 60%;
+		}
   }
   h2 {
     margin-top: 1em;
