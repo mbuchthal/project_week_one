@@ -4,7 +4,6 @@ h1 {
     text-align: center;
     display: block;
     margin: 2em 0;
-    // margin-bottom: 1em;
   }
 h2 {
   font: $head-big-bold-font;
@@ -75,7 +74,7 @@ h3 {
     @media screen and (min-width: 50em) {
       width: 55%;
       margin: 0 auto;
-    } 
+    }
   }
   .profile {
     margin: 0 auto;
