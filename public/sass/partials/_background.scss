@@ -142,7 +142,7 @@ body {
   background-color: $color-background-theme;
 }
 .fourteen-skew:before {
-  @include skewed_container(-4em, 24em, -4, 0);
+  @include skewed_container(-4em, 34em, -4, 0);
   background-color: $color-background-medium;
 }
 .fifteen-skew:before {
