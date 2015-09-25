@@ -9,8 +9,13 @@
 	justify-content: space-around;
 
 	.download-img {
+		@media screen and (max-width:550px){
+			display: none;
+		}
 		position: relative;
-		margin: 1em;
+		margin-top: 5%;
+		margin-right: 5%;
+		margin-left: 5%;
 		width: 16em;
 		img:nth-child(1) {
 			z-index: 0;
