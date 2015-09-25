@@ -3,8 +3,6 @@ form {
   box-sizing: border-box;
   width: 90%;
   margin: 0 auto 2em auto;
-  // @media screen and (min-width: 50em) {
-  // }
   p {
     color: $color-text-medium;
     text-align: center;
@@ -39,23 +37,18 @@ form {
     &:-ms-input-placeholder {
       @extend -webkit-input-placeholder }
   }
-
   ::-webkit-input-placeholder {
     font: $text-light-font;
   }
-
   :-moz-placeholder { /* Firefox 18- */
     font: $text-light-font;
   }
-
   ::-moz-placeholder {  /* Firefox 19+ */
     font: $text-light-font;
   }
-
   :-ms-input-placeholder {
     font: $text-light-font ;
   }
-
   .sm-button-eclipse-border {
     border-color: $color-7;
     background: $color-2;

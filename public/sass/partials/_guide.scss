@@ -1,11 +1,10 @@
 h1 {
-    font: $head-big-medium-font;
-    color: $color-text-medium;
-    text-align: center;
-    display: block;
-    margin: 2em 0;
-    // margin-bottom: 1em;
-  }
+  font: $head-big-medium-font;
+  color: $color-text-medium;
+  text-align: center;
+  display: block;
+  margin: 2em 0;
+}
 h2 {
   font: $head-big-bold-font;
   color: $color-text-medium;
@@ -90,7 +89,7 @@ h3 {
     @media screen and (min-width: 50em) {
       width: 55%;
       margin: 0 auto;
-    } 
+    }
   }
   .profile {
     margin: 0 auto;

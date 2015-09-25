@@ -79,7 +79,6 @@ $lg-radius: ($lg-width - $lg-height) / 2;
 		transform: scale(1.4, 1.0) translate(0, -10px)
 	}
 }
-
 @mixin circular-eclipse-border($color, $weight, $size) {
   @include text-behavior;
   @include border-weight($weight);
@@ -98,5 +97,4 @@ $lg-radius: ($lg-width - $lg-height) / 2;
   @include border-look($color, $width, $height, $radius);
   padding: ($height * 0.25) 1.5em;
 }
-
 
