@@ -61,6 +61,24 @@ $lg-radius: ($lg-width - $lg-height) / 2;
     background-color: $background;
   }
 }
+@mixin button-jiggleOne() {
+	animation: jiggle 2s infinite ease-in;
+}
+
+@keyframes jiggle {
+	45%, 65% {
+		transform: scale(1.0, 1.0)
+	}
+	50% {
+		transform: scale(1.1, 0.9)
+	}
+	55% {
+		transform: scale(0.9, 1.1) translate(0, -5px)
+	}
+	60% {
+		transform: scale(1.0, 1.0) translate(0, -5px)
+	}
+}
 
 @mixin circular-eclipse-border($color, $weight, $size) {
   @include text-behavior;
