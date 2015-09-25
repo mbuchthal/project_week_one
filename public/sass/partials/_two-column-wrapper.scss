@@ -28,8 +28,10 @@
   // all column items
   .column-item {
     @include flexbox;
+    position: relative;
     margin: 0;
-    div {
+    .info {
+      padding-top: 0;
       width: 15em;
       h3 {
         margin-bottom: 1em;
@@ -40,9 +42,11 @@
         color: $color-4;
         font-size: .8em;
         line-height: 1.4;
+        padding-bottom: 2em;
+        margin-top: 0.5em;
       }
     }
-    span {
+    .sm-circular-eclipse-border {
       color: $color-2;
       &:hover {
         color: $color-4;
@@ -50,6 +54,9 @@
       &:before {
         font-size: 2em;
       }
+    }
+    .animated-dots {
+      position: absolute;
     }
   }
   // column styles
@@ -68,8 +75,8 @@
       display: none;
       @media screen and (min-width: 50em) {
         display: block;
-        position: relative;
-        top: 8.9em;
+        position: absolute;
+        top: 6em;
       }
     }
   }
@@ -84,15 +91,15 @@
       @media screen and (min-width: 50em) {
         margin-right: 1em;
       }
-      div {
-        padding-right: 1em;
-      }
+      // div {
+      //   padding-right: 1em;
+      // }
     }
     p {
       text-align: right;
     }
     .animated-dots {
-      right: 3.8em;
+      right: 12%;
     }
   }
   // right column
@@ -108,15 +115,15 @@
       @media screen and (min-width: 50em) {
       margin-left: 1em;
       }
-      div {
-        padding-left: 1em;
-      }
+      // div {
+      //   padding-left: 1em;
+      // }
     }
     p {
       text-align: left;
     }
     .animated-dots {
-      right: 17.8em;
+      right: 86%;
     }
   }
 }
