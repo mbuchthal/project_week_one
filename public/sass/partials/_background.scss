@@ -137,8 +137,14 @@ body {
     height: 33.5em;
   }
   @media screen and (max-width: 650px) {
+    -webkit-transform: skewY(0);
     transform: skewY(0);
     height: 30em;
+  }
+  @media screen and (max-width: 360px) {
+    -webkit-transform: skewY(0);
+    transform: skewY(0);
+    height: 27em;
   }
 }
 .ten-skew:before {
