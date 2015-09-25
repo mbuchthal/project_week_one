@@ -20,6 +20,9 @@
       height: 4em;
       width: 2em;
       margin-left: 2em;
+      @media screen and (max-width: 550px) {
+        display: none;
+      }
     }
   }
 }
