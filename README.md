@@ -1,26 +1,13 @@
-# Welcome to Project Week: One
+# Code Fellows Front-End DA - Project Week: One
+## Mark Buchthal, Brian Fink, Molly Kent, & Alina To
 
-You are completing your first month in the Code Fellows Front-End Development Accelerator. Now it's time to exercise all the new things you have learned. 
+### Description
 
-### Here is the scenario: 
+For our Project Week: One, we created a front-end prototype for a new app branding marketing site. We were given a comp for full desktop view, and created a fully-functional prototype following mobile-first approach, tailored for handheld mobile device, tablet, and desktop RWD views. 
 
-You are a 4 person team and the next project you are to deliver is the front-end prototype for a new app branding marketing site. The expectation is that you can deliver a fully functional, mobile first, and desktop RWD version of the provided comp. 
+Besides semantically correct HTML, we focused heavily on Sass architecture. We built smaller components, then built up surrounding pieces from there. As a four person team, we made a plan based on defining component pieces, then delegated responsibilities among the group. When we ran into overlap issues, we resolved them cooperatively. Along the way, we tested on mobile (Safari and Chrome), tablet (Safari), and desktop (Safari, Chrome, and Firefox). 
 
-Again, the design team came up short and there is no mobile comp, so please use your best judgement for how this will work, look and feel on a handheld mobile device and tablet. 
-
-Think COMPONENT ARCHITECTURE! Think about breaking the UI up into it's smallest parts and building up from there. 
-
-### Fork and build
-
-You know the drill, fork the repo and let it take on a life of it's own, you are on control of your own destiny! 
-
-### Be agile
-
-It is HIGHLY suggested that you come up with a plan of attack. It's a four person team (2 pairs, no solo work!), so planning will help reduce the amount of over-lap work. Assign some responsibilities of things to be completed that can be addressed while others are addressing other needs of the project. 
-
-QA IS ESSENTIAL! Make sure that all your work is being reviewed as your progress. Catch bugs early and solve problems before they get too big. 
-
-
+## From our initial assignment repo: 
 ### The comp
 
 See the the `comps/` directory. Choose the one that you want to execute on and DO IT!
@@ -44,9 +31,3 @@ There are three individual deliverables:
 1. Update top nav and link to each section of the view / smooth scrolling a +
 1. jQuery plug-ins are optional, but limited to one per project
 1. Deployed to http://surge.sh/
-
-## Project week demo
-
-Projects are due to be completed by Friday NOON! Take lunch and we will have demo reviews at 3pm. Please no commits after NOON or we will have to be angry O_O
-
-Demos your completed project; things you learned and approaches you took to solve the problem will be expected to be presented. 
