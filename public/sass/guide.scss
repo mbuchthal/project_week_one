@@ -7,7 +7,7 @@
 @import "modules/icon-styles";
 
 // Mixins
-// @import "modules/mixins/skewed_div";
+@import "modules/mixins/skewed_div";
 @import "modules/mixins/circular-images";
 @import "modules/mixins/button-borders";
 @import "modules/mixins/flex-box";
@@ -15,17 +15,17 @@
 @import "modules/mixins/icon-before";
 
 // Partials
-// @import "partials/background";
+@import "partials/background";
 @import "partials/accent-bar";
 @import "partials/button-and-mock";
 @import "partials/appbox-logo";
 @import "partials/images";
 @import "partials/profile";
 @import "partials/form";
+@import "partials/search-input";
 @import "partials/screenshots_section";
 @import "partials/newspaper-section";
 @import "partials/best-way";
-@import "partials/get-it-free";
 @import "partials/why-choose";
 @import "partials/app-support";
 @import "partials/nav";
@@ -51,3 +51,4 @@
 
 @import "partials/slick";
 @import "partials/slick-theme"; //modified
+
