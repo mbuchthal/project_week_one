@@ -76,6 +76,9 @@
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    @media screen and (max-width: 50em) {
+        display: none;
+      } 
 }
 
 .slick-prev
