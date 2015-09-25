@@ -64,18 +64,18 @@ form {
 }
 .quickform {
   @extend form;
-  width: 60%;
-  margin-left: 0;
+  @media only screen and (min-width: 550px) {
+    width: 70%;
+  }
+  width: 90%;
+  margin-left: 1em;
   border-bottom: 1px solid #bbb;
   legend {
     margin-bottom: 1em;
-
   }
   input {
     padding-bottom: 0.5em;
     height: 3em;
-    width: 60%;
-    margin-bottom: 5px;
     background-color: $color-background-medium;
     font-size: 1em;
   }
