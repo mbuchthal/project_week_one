@@ -1,19 +1,11 @@
 .searchbox {
-
   // MOBILE VIEW
   @media screen and (max-width: 50em) {
     text-align: center;
   }
-
-  // DESKTOP
-  @media screen and (min-width: 50em) {
-
-  }
 }
 .searchbox-input {
   border: none;
-  padding: 0.25em;
-
-
+  padding: 0.5em;
 }
 
