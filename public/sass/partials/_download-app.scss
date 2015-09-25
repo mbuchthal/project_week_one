@@ -1,16 +1,17 @@
 .download-app-section {
-	margin-top: 8em;
+	margin-top: 2em;
 	padding-bottom: 2em;
 	@include flexbox;
 	position: relative;
-	h1 {
-		margin-bottom: 2em;
-	}
 	justify-content: space-around;
-
 	.download-img {
+		@media screen and (max-width:550px){
+			display: none;
+		}
 		position: relative;
-		margin: 1em;
+		margin-top: 5%;
+		margin-right: 5%;
+		margin-left: 5%;
 		width: 16em;
 		img:nth-child(1) {
 			z-index: 0;
@@ -23,11 +24,18 @@
 			z-index: 0;
 		}
 	}
+		p {
+			font: $text-light-font;
+			color: $color-text-medium;
+			margin-top: 3em;
+	}
 	.download-link {
+		margin-top: 3em;
 		margin-right: .5em;
 		margin-left: .5em;
+		}
 		h1 {
-			width: 20em;
+			width: 19em;
 			font: $head-big-light-font;
 			span {
 				font: $head-med-bold-font;
@@ -37,23 +45,17 @@
 				color: $color-5;
 			}
 		}
-		&:before {
-			@include pic-insert(url("../assets/arrowblack.svg"), 8%);
-		}
-	}
-		p {
-			font: $text-light-font;
-			color: $color-text-medium;
-	}
 	.download-link-wrapper {
 		display: inline-block;
 		.lg-eclipse-border {
 			display: inline-block;
 			margin: 2em 1em 0 0;
-
 		}
 		span {
 			display: inline-block;
 		}
 	}
 }
+
+
+
