@@ -1,5 +1,5 @@
 .why-choose {
-  padding-top: 4em;
+  padding-top: 2em;
   position: relative;
   h1 {
     font: $head-big-medium-font;
@@ -51,7 +51,7 @@
       @media screen and (min-width: 50em) {
         width: 55%;
         margin: 0 auto;
-      } 
+      }
     }
     .profile {
       margin: 0 auto;
@@ -75,7 +75,7 @@
 }
 
 .app-review-wrapper {
-  background-color: $color-background-theme;
+
   padding-bottom: 4em;
   position: relative;
 }

@@ -73,14 +73,20 @@ body {
 .fifth-skew:before {
   @include skewed_container(-4em, 13em, -4, -5deg);
   background-color: $color-background-theme;
+  @media screen and (max-width: 1030px) {
+    top: 0;
+  }
 }
 
-// .sixth-skew:before {
-//   @include skewed_container(-2em, 2em, -6, 0deg);
-//   background-color: $color-background-theme;
-// }
+.sixth-skew:before {
+  @include skewed_container(-10em, 22em, -4, 0deg);
+  background-color: $color-background-theme;
+  @media screen and (max-width: 900px) {
+    height: 27em;
+  }
+}
 .seven-skew:before {
-  @include skewed_container(-2.5em, 10em, -5, 5deg);
+  @include skewed_container(-4.5em, 12em, -5, 5deg);
   background-color: $color-background-light;
 }
 
@@ -122,8 +128,20 @@ body {
   }
 }
 .nine-skew:before {
-  @include skewed_container(-4.5em, 62em, -7, -5deg);
+  @include skewed_container(-4.5em, 56em, -7, -5deg);
   background-color: $color-background-theme;
+  @media screen and (max-width: 1250px) {
+    height: 51em;
+  }
+  @media screen and (max-width: 1100px) {
+    height: 45em;
+  }
+  @media screen and (max-width: 875px) {
+    height: 41em;
+  }
+  @media screen and (max-width: 650px) {
+    height: 36em;
+  }
 }
 .ten-skew:before {
   @include skewed_container(-8.5em, 38em, -8, -5deg);
@@ -134,23 +152,35 @@ body {
   background-color: $color-background-medium;
 }
 .twelve-skew:before {
-  @include skewed_container(-2.5em, 60em, -6, 0);
+  @include skewed_container(-2.5em, 135em, -6, 0);
   background-color: $color-background-light;
 }
 .thirteen-skew:before {
-  @include skewed_container(-5em, 30em, -5, -5deg);
+  @include skewed_container(-5em, 80em, -5, -5deg);
   background-color: $color-background-theme;
+  @media screen and (max-width: 1050px) {
+    top: -2em;
+  }
+  @media screen and (max-width: 600px) {
+    top: -1em;
+  }
 }
 .fourteen-skew:before {
-  @include skewed_container(-4em, 34em, -4, 0);
+  @include skewed_container(-4em, 45em, -4, 0);
   background-color: $color-background-medium;
 }
 .fifteen-skew:before {
-  @include skewed_container(-4.5em, 35em, -3, -5deg);
+  @include skewed_container(-4.5em, 53em, -3, -5deg);
   background-color: $color-background-light;
+  @media screen and (max-width: 1030px) {
+    top: -1.5em;
+  }
 }
 .seventeen-skew:before {
-  @include skewed_container(-2em, 10em, -1, -2.5deg);
+  @include skewed_container(-2em, 28em, -1, -2.5deg);
   background-color: $color-background-dark;
+  @media screen and (max-width: 550px) {
+    top: 0;
+  }
 }
 

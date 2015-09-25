@@ -28,7 +28,7 @@
   background: url("../assets/whiteArrow.svg");
   background-repeat: no-repeat;
 }
-.drawn-arrow-blk-rotate:after {
+.drawn-arrow-blk-rotate::after {
     background: url("../assets/arrowblack.svg") no-repeat;
     background-size: contain;
     content: '';

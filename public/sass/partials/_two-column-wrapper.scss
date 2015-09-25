@@ -110,6 +110,9 @@
       margin-left: 1em;
       padding-top: 0;
     }
+    @media screen and (max-width: 1075px) {
+      margin-bottom: -5em;
+    }
     li {
       text-align: left;
       @media screen and (min-width: 50em) {
