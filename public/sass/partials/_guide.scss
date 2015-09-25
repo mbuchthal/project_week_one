@@ -46,8 +46,23 @@ h3 {
 }
 .why-choose {
   padding-top: 0;
+  h1:before {
+    display: none;
+  }
 }
 .two-column-wrapper {
+  .column-one-list {
+    width: 50%
+    div {
+      width: 60%;
+    }
+  }
+  .column-two-list {
+    width: 50%
+    div {
+      width: 60%;
+    }
+  }
   .column-one-list h3 {
     text-align: right;
   }
