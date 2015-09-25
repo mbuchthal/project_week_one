@@ -3,11 +3,8 @@
 	padding-bottom: 2em;
 	@include flexbox;
 	position: relative;
-	justify-content: center;
+
 	.download-img {
-		@media screen and (max-width:1030px){
-			display: none;
-		}
 		position: relative;
 		margin-top: 5%;
 		margin-right: 5%;
@@ -24,6 +21,9 @@
 			left: 33%;
 			z-index: 0;
 		}
+		@media screen and (max-width:1075px) {
+			display: none;
+		}
 	}
 		p {
 			font: $text-light-font;
@@ -36,10 +36,10 @@
 		margin-left: .5em;
 		}
 		h1 {
-			width: 19em;
+
 			font: $head-big-light-font;
 			span {
-				font: $head-med-bold-font;
+				font-weight: 600;
 			}
 			span.accent-bar-L {
 				width: 13%;
