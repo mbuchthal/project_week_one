@@ -10,6 +10,7 @@
   }
   // arrow graphic
   .arrow-position-wrapper {
+    margin-top: 0;
     @media screen and (min-width: 50em) {
       display: none;
     }
@@ -117,5 +118,5 @@
     .animated-dots {
       right: 17.8em;
     }
-  } 
+  }
 }
