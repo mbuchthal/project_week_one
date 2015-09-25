@@ -58,7 +58,15 @@
 	}
 }
 .download-link-form {
-	margin-left: 4em;
+	margin-left: 1em;
+	margin-right: 1em;
+	@media only screen and (min-width: 550px) {
+
+  }
+  @media screen and (min-width: 1030px) {
+		margin-left: 4em;
+
+  }
 }
 
 
