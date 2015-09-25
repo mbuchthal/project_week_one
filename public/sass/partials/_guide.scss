@@ -1,0 +1,252 @@
+h1 {
+    font: $head-big-medium-font;
+    color: $color-text-medium;
+    text-align: center;
+    display: block;
+    margin: 2em 0;
+    // margin-bottom: 1em;
+  }
+h2 {
+  font: $head-big-bold-font;
+  color: $color-text-medium;
+  margin: 2em 0 1em 0;
+  text-align: center;
+}
+h3 {
+  font: $head-med-light-font;
+  text-align: center;
+  margin: 1em 0;
+  .pricing-list-item & {
+    margin: 0;
+  }
+}
+.download-link-wrapper {
+  margin-bottom: 0;
+}
+.amazing-features {
+  margin-top: 2em;
+  .features {
+    width: 25%;
+    margin: 0 auto;
+  }
+}
+.feature-text-wrapper {
+  width: 50%;
+  margin: 0 auto;
+  h2 {
+    color: $color-text-medium;
+    margin-top: 2em;
+  }
+  p {
+    color: $color-text-medium;
+  }
+  .sm-eclipse-border {
+    margin: 0 auto;
+  }
+}
+.why-choose {
+  padding-top: 0;
+}
+.two-column-wrapper {
+  .column-one-list h3 {
+    text-align: right;
+  }
+  .column-two-list h3 {
+    text-align: left;
+  }
+}
+.review {
+  background-color: $color-2;
+  h1 {
+    color: $color-text-light;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    .accent-bar-C {
+      background-color: $color-3;
+    }
+  }
+  p {
+    width: 100%;
+    margin-top: 2em;
+    font: $text-light-font;
+    font-style: italic;
+    color: $color-text-light;
+    text-align: center;
+    @media screen and (min-width: 50em) {
+      width: 55%;
+      margin: 0 auto;
+    } 
+  }
+  .profile {
+    margin: 0 auto;
+    width: 80%;
+    padding-left: 2em;
+    padding-bottom: 2em;
+    @media screen and (min-width: 50em) {
+      margin: 0 auto;
+      width: 28%;
+      padding-left: 4em;
+    }
+  }
+  .circle {
+    @include sm-circular-frame(3em);
+    float: left;
+    margin: 0 0.5em;
+    @media screen and (min-width: 50em) {
+      margin-left: 1em;
+    }
+  }
+}
+.team-wrapper {
+  .team {
+    padding-bottom: 2em;
+    width: 6em;
+    margin: 2em auto;
+    figcaption {
+      width: 8em;
+      margin: 0 auto;
+    }
+  }
+  .profile {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+}
+.video-section {
+  padding-top: 0;
+}
+.download-link-form {
+  width: 50%;
+}
+.app-support {
+  margin: 2em auto;
+  width: 60%;
+  h1 {
+    text-align: left;
+    margin-top: 0;
+  }
+  form {
+    width: 100%;
+  }
+}
+.dark-background {
+  background-color: $color-10;
+  padding-top: 1em;
+  h1 {
+    color: $color-text-light;
+    margin-bottom: 0;
+    .accent-bar-C {
+      background-color: $color-text-light;
+    }
+  }
+}
+.social-section {
+  background-color: $color-10;
+  h1 {
+    text-align: left;
+  }
+}
+.example-social-icon-links {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  @media screen and (min-width: 50em) {
+    margin: 0 auto;
+  }
+  li {
+    padding: 0.5em;
+    display: inline-block;
+    font-size: 1em;
+  }
+  img {
+    width: 1em;
+    height: 1em;
+  }
+}
+.colors {
+  margin-bottom: 2em;
+  h1 {
+    margin: 0;
+  }
+  .swatches {
+    @include flexbox;
+
+  }
+  %color {
+    margin: 0 0.5em;
+    padding: 1em;
+    font: $text-light-font;
+    .var-name {
+      font-style: italic;
+    }
+  }
+  .color-1 {
+    @extend %color;
+    background-color: $color-1;
+    color: $color-text-light;
+  }
+  .color-2 {
+    @extend %color;
+    background-color: $color-2;
+    color: $color-text-light;
+  }
+  .color-3 {
+    @extend %color;
+    background-color: $color-3;
+    border: 1px solid $color-11;
+  }
+  .color-4 {
+    @extend %color;
+    background-color: $color-4;
+  }
+  .color-5 {
+    @extend %color;
+    background-color: $color-5;
+    color: $color-text-light;
+  }
+  .color-6 {
+    @extend %color;
+    background-color: $color-6;
+    color: $color-text-light;
+  }
+  .color-7 {
+    @extend %color;
+    background-color: $color-7;
+    color: $color-text-light;
+  }
+  .color-8 {
+    @extend %color;
+    background-color: $color-8;
+    border: 1px solid $color-11;
+  }
+  .color-9 {
+    @extend %color;
+    background-color: $color-9;
+    color: $color-text-light;
+  }
+  .color-10 {
+    @extend %color;
+    background-color: $color-10;
+    color: $color-text-light;
+  }
+  .color-11 {
+    @extend %color;
+    background-color: $color-11;
+  }
+}
+.type {
+  margin-bottom: 2em;
+  h1 {
+    margin: 0;
+  }
+  h2 {
+    font: $head-med-bold-font;
+    margin: 0 0 1em 0;
+  }
+  p {
+    font: $text-light-font;
+    text-align: center;
+  }
+}
+
