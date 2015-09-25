@@ -29,19 +29,7 @@
 			color: $color-text-medium;
 			margin-top: 3em;
 	}
-	.download-link-wrapper {
-		display: inline-block;
-		.lg-eclipse-border {
-			display: inline-block;
-			margin: 2em 1em 0 0;
-		}
-		span {
-			display: inline-block;
-		}
-	}
-}
-
-.download-link {
+	.download-link {
 		margin-top: 3em;
 		margin-right: .5em;
 		margin-left: .5em;
@@ -57,4 +45,17 @@
 				color: $color-5;
 			}
 	}
+	.download-link-wrapper {
+		display: inline-block;
+		.lg-eclipse-border {
+			display: inline-block;
+			margin: 2em 1em 0 0;
+		}
+		span {
+			display: inline-block;
+		}
+	}
+}
+
+
 
