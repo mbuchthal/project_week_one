@@ -1,3 +1,6 @@
-$('.icon-search').on('click', function(e) {
-  // show the search box
+$('.searchbox-input').hide();
+
+$('.icon-search').on('click', function() {
+  $('.searchbox-input').animate({width:'toggle'},800);
 });
+

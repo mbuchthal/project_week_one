@@ -10,8 +10,11 @@
   }
   h1 {
     font: $head-big-medium-font;
-    color: $color-5;
+    color: $color-text-light;
     margin-bottom: 2em;
+    .accent-bar-C {
+      background-color: $color-text-light;
+    }
   }
   video {
     width: 90%;
