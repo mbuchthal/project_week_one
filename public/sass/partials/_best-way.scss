@@ -2,7 +2,10 @@
 .bestway-wrapper {
   @include flexbox;
   align-items: center;
-  margin-top: 8em;
+  margin-top: 1em;
+  @media screen and (min-width: 1030px) {
+    margin-top: 8em;
+  }
   h1 {
     font: $head-largest-bold-font;
     color: $color-3;
@@ -16,8 +19,11 @@
   }
 }
 .bestway {
-  padding: 5em;
-  width: 34em;
+  padding: 1em;
+  @media screen and (min-width: 1030px) {
+    padding: 5em;
+    width: 34em;
+  }
 }
 .bestway, .bestway-image-wrapper {
   width: 34em;
