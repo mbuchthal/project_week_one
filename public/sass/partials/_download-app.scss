@@ -3,7 +3,6 @@
 	padding-bottom: 2em;
 	@include flexbox;
 	position: relative;
-
 	.download-img {
 		position: relative;
 		margin-top: 5%;
@@ -36,7 +35,6 @@
 		margin-left: .5em;
 		}
 		h1 {
-
 			font: $head-big-light-font;
 			span {
 				font-weight: 600;
@@ -60,12 +58,8 @@
 .download-link-form {
 	margin-left: 1em;
 	margin-right: 1em;
-	@media only screen and (min-width: 550px) {
-
-  }
   @media screen and (min-width: 1030px) {
 		margin-left: 4em;
-
   }
 }
 

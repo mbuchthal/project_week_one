@@ -1,7 +1,6 @@
 body {
   background-color: $color-background-dark;
 }
-
 .first-skew:before {
   @include skewed_container(-2em, 11em, -7, -5deg);
   background-color: $color-background-light;
@@ -9,7 +8,6 @@ body {
     height: 13em;
   }
 }
-
 .second-skew:before {
   @include skewed_container(-7.5em, 44em, -8, -5deg);
   background-color: $color-background-medium;
@@ -20,7 +18,6 @@ body {
     height: 86em;
   }
 }
-
 .third-skew:before {
   @include skewed_container(0, 35em, -6, 0deg);
   background-color: $color-background-theme;
@@ -31,8 +28,6 @@ body {
     height: 59em;
   }
 }
-
-
 .fourth-skew:before {
   @include skewed_container(-4em, 60em, -5, -5deg);
   background: $color-background-light;
@@ -43,7 +38,6 @@ body {
     top: -1em;
   }
 }
-
 .fifth-skew:before {
   @include skewed_container(-4em, 13em, -4, -5deg);
   background-color: $color-background-theme;
@@ -54,7 +48,6 @@ body {
     top: 4em;
   }
 }
-
 .sixth-skew:before {
   @include skewed_container(-10em, 22em, -4, 0deg);
   background-color: $color-background-theme;
@@ -66,7 +59,6 @@ body {
   @include skewed_container(-4.5em, 12em, -5, 5deg);
   background-color: $color-background-light;
 }
-
 .eight-skew:before {
   @include skewed_container(8.5em, 47em, -6, 0);
   background-color: $color-background-medium;

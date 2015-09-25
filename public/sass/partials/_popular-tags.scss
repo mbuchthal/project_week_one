@@ -17,13 +17,10 @@
     border: 1px solid $color-border;
     font: $text-small-light-font;
     color: $color-text-medium-light;
-
     &:hover {
       color: $color-text-light;
       background-color: $color-background-theme;
       border-color: $color-border-h;
     }
-
   }
-
 }

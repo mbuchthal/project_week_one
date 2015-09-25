@@ -10,7 +10,6 @@ div .skewed-container .inner-div {
   margin-left: auto;
   margin-right: auto;
 }
-
 @mixin skewed_container ($top, $height, $z-index, $angle) {
   content: '';
   position: absolute;
