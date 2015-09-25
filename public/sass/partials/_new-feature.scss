@@ -1,17 +1,26 @@
 .new-feature-wrapper {
-  padding: 2em;
+  padding: 1em;
   position: relative;
   z-index: -7;
   @include flexbox;
-  @media screen and (min-width: 50em) {
+  @media only screen and (min-width: 550px) {
+    padding: 1em 2em 1em 2em;
+  }
+  @media screen and (min-width: 1030px) {
     padding-left: 5em;
     padding-right: 5em;
   }
 }
 .feature-text-wrapper {
-  width: 40%;
-  margin: 2em;
+  width: 80%;
   @include flex_item;
+  @media only screen and (min-width: 550px) {
+    margin: 2em;
+    width: 60%;
+  }
+  @media screen and (min-width: 1030px) {
+    width: 40%;
+  }
   .sm-eclipse-border {  // small button
     font: $small-button-link-font;
     background-color: $color-link-button-background;
@@ -37,8 +46,7 @@
   aside {
     @include flexbox;
     color: $color-text-light;
-    width: 19em;
-
+    width: 18em;
     .download-text-wrapper {
       width: 10em;
       padding-top: 1em;
@@ -76,16 +84,18 @@
 }
 .feature-img-wrapper {
   @include flex_item;
-  margin-top: 2em;
   img {
-    width: 28em;
-    margin: 0 auto;
-    display: block;
+    display: none;
     position: relative;
     z-index: 1;
-    @media screen and (max-width: 550px) {
-      display: none;
+    @media only screen and (min-width: 550px) {
+      display: initial;
+      width: 28em;
+      margin: 0 auto;
     }
+  }
+  @media only screen and (min-width: 1030px) {
+    margin-top: 2em;
   }
 }
 .feature-text-wrapper {
