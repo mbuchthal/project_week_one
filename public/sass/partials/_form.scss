@@ -51,15 +51,19 @@ form {
   border-bottom: 1px solid #bbb;
   legend {
     margin-bottom: 1em;
+
   }
   input {
     padding-bottom: 0.5em;
     height: 3em;
     width: 60%;
     margin-bottom: 5px;
+    background-color: $color-background-medium;
+    font-size: 1em;
   }
   button {
     float: right;
     margin-top: 0.1em;
   }
 }
+
